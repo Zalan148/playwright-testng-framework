@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Zalan148"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Zalan148/playwright-testng-framework",
+    "accountId": "aa318cad-6ec4-494f-a90a-92e5a3a31c3c"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3GEUII1KIAnqaNMTrmMFSSHfBcU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/src/test/resources/testng.xml.executor": "Run",
+    "TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml.executor": "Run",
+    "TestNG.CartTest.executor": "Run",
+    "TestNG.CheckoutTest.executor": "Run",
+    "TestNG.InventoryTest.executor": "Run",
+    "TestNG.LoginTest.failingTest.executor": "Run",
+    "TestNG.LoginTest.validLoginNavigatesToInventoryPage.executor": "Run",
+    "TestNG.Run as TestNG.executor": "Run",
+    "TestNG.ScreenshotTest.failingTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/zalanwadood/IdeaProjects/playwright-testng-framework/pom.xml",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.ScreenshotTest.failingTest">
+    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.framework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.CheckoutTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.framework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.InventoryTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.failingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.framework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.LoginTest" />
+      <option name="METHOD_NAME" value="failingTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.validLoginNavigatesToInventoryPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.framework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.LoginTest" />
+      <option name="METHOD_NAME" value="validLoginNavigatesToInventoryPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run as TestNG" type="TestNG">
+      <module name="playwright-testng-framework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.LoginTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScreenshotTest.failingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.framework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.ScreenshotTest" />
+      <option name="METHOD_NAME" value="failingTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.Run as TestNG" />
+      <item itemvalue="TestNG.ScreenshotTest.failingTest" />
+      <item itemvalue="TestNG.LoginTest.failingTest" />
+      <item itemvalue="TestNG.LoginTest.validLoginNavigatesToInventoryPage" />
+      <item itemvalue="TestNG.CheckoutTest" />
+      <item itemvalue="TestNG.InventoryTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.ScreenshotTest.failingTest" />
+        <item itemvalue="TestNG.LoginTest.failingTest" />
+        <item itemvalue="TestNG.CheckoutTest" />
+        <item itemvalue="TestNG.LoginTest.validLoginNavigatesToInventoryPage" />
+        <item itemvalue="TestNG.InventoryTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="" />
+      <created>1779978827901</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779978827901</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Module 1 — Core Framework Foundation">
+      <option name="closed" value="true" />
+      <created>1785418681808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1785418681808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Module 1 — Core Framework Foundation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module 1 — Core Framework Foundation" />
+  </component>
+</project>

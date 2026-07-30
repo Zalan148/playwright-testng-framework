@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel Suite" parallel="tests" thread-count="5">
+
+    <test name="Cart Test">
+        <classes>
+            <class name="com.example.framework.tests.CartTest"/>
+        </classes>
+    </test>
+
+    <test name="Screenshot Test">
+        <classes>
+            <class name="com.example.framework.tests.ScreenshotTest"/>
+        </classes>
+    </test>
+
+    <test name="Checkout Test">
+        <classes>
+            <class name="com.example.framework.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Inventory Test">
+        <classes>
+            <class name="com.example.framework.tests.InventoryTest"/>
+        </classes>
+    </test>
+
+    <test name="Login Test">
+        <classes>
+            <class name="com.example.framework.tests.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
