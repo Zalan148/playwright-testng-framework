@@ -1,7 +1,10 @@
 package com.example.framework.pages;
 
+import com.example.framework.components.DropdownComponent;
+import com.example.framework.components.ProductCard;
 import com.example.framework.core.BasePage;
 import com.example.framework.core.Log;
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.slf4j.Logger;
@@ -14,17 +17,18 @@ public class InventoryPage extends BasePage {
     private static final Logger log = Log.getLogger(InventoryPage.class);
 
     //locators
-    private final String itemName = ".inventory_item_name";
-    private final String cartBadge = ".shopping_cart_badge";
-    private final String cartIcon = ".shopping_cart_link";
+    private final Locator itemName = page.locator(".inventory_item_name");
+    private final Locator cartBadge = page.locator(".shopping_cart_badge");
+    private final Locator cartIcon = page.locator(".shopping_cart_link");
 
+    
     public InventoryPage(Page page){
         super(page);
     }
 
     //Get all product names
     public List<String> getAllProductNames(){
-        return page.locator(itemName)
+        return itemName
                 .allInnerTexts()
                 .stream()
                 .map(String::trim)
@@ -40,19 +44,42 @@ public class InventoryPage extends BasePage {
                 .click();
     }
 
+    //component-based approach
+    public List<ProductCard> getProducts() {
+        return page.locator(".inventory_item")
+                .all()
+                .stream()
+                .map(ProductCard::new)
+                .toList();
+    }
+
+    //helper for cleaner tests
+    public ProductCard getProductByName(String name) {
+        return getProducts()
+                .stream()
+                .filter(p -> p.getName().equalsIgnoreCase(name))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Product not found: " + name));
+    }
 
     //Get cart count
     public int getCartCount() {
-        if (page.locator(cartBadge).count() == 0){
+        if (cartBadge.count() == 0){
             return 0;
         }
-        return Integer.parseInt(page.locator(cartBadge).innerText());
+        return Integer.parseInt(cartBadge.innerText());
     }
 
     //Navigate to cart
     @Step("Open cart")
     public void openCart(){
         log.info("Opening cart");
-        click(cartIcon);
+        cartIcon.click();
+    }
+
+
+    public DropdownComponent getSortDropdown() {
+        Locator dropdownRoot = page.locator("select[data-test='product-sort-container']");
+        return new DropdownComponent(dropdownRoot);
     }
 }

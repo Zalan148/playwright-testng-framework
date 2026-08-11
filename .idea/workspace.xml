@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation" />
+    <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/AuthComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/DropdownComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/IFrameComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ModalComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/MultiTabComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ProductCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ShadowComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/ApiUiHybridTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/NetworkMocking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/WaitStrategies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng-suites/testng-login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutCompletePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepOnePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepOnePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepTwoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepTwoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/InventoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/InventoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/eab46f572beea39ba74daef7c53b0eca.webm" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,20 +45,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Zalan148"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Zalan148&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Zalan148/playwright-testng-framework",
-    "accountId": "aa318cad-6ec4-494f-a90a-92e5a3a31c3c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://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@github.com/Zalan148/playwright-testng-framework.git&quot;,
+    &quot;accountId&quot;: &quot;aa318cad-6ec4-494f-a90a-92e5a3a31c3c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -41,116 +73,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/src/test/resources/testng.xml.executor": "Run",
-    "TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml.executor": "Run",
-    "TestNG.CartTest.executor": "Run",
-    "TestNG.CheckoutTest.executor": "Run",
-    "TestNG.InventoryTest.executor": "Run",
-    "TestNG.LoginTest.failingTest.executor": "Run",
-    "TestNG.LoginTest.validLoginNavigatesToInventoryPage.executor": "Run",
-    "TestNG.Run as TestNG.executor": "Run",
-    "TestNG.ScreenshotTest.failingTest.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/zalanwadood/IdeaProjects/playwright-testng-framework/pom.xml",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng-suite/testng-login.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng-suites/testng-login.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CartTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CheckoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.InventoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Login Suite.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.failingTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.invalidLoginShowsErrorMessage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.validLoginNavigatesToInventoryPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Run as TestNG.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ScreenshotTest.failingTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;module-2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zalanwadood/IdeaProjects/playwright-testng-framework/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.ScreenshotTest.failingTest">
-    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="playwright-testng-framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.framework.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.CheckoutTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InventoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="playwright-testng-framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.framework.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.InventoryTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.failingTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="playwright-testng-framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.framework.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.LoginTest" />
-      <option name="METHOD_NAME" value="failingTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.validLoginNavigatesToInventoryPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="playwright-testng-framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.framework.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.LoginTest" />
-      <option name="METHOD_NAME" value="validLoginNavigatesToInventoryPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run as TestNG" type="TestNG">
+}</component>
+  <component name="RunManager" selected="TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml">
+    <configuration name="Login Suite" type="TestNG">
       <module name="playwright-testng-framework" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.LoginTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng-suites/testng-login.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
       <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
@@ -158,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScreenshotTest.failingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="playwright-testng-framework" />
       <extension name="coverage">
         <pattern>
@@ -167,30 +132,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.framework.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.ScreenshotTest" />
-      <option name="METHOD_NAME" value="failingTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="TestNG.Run as TestNG" />
-      <item itemvalue="TestNG.ScreenshotTest.failingTest" />
-      <item itemvalue="TestNG.LoginTest.failingTest" />
-      <item itemvalue="TestNG.LoginTest.validLoginNavigatesToInventoryPage" />
-      <item itemvalue="TestNG.CheckoutTest" />
-      <item itemvalue="TestNG.InventoryTest" />
-    </list>
+    <configuration name="/Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ScreenshotTest.failingTest" />
-        <item itemvalue="TestNG.LoginTest.failingTest" />
-        <item itemvalue="TestNG.CheckoutTest" />
-        <item itemvalue="TestNG.LoginTest.validLoginNavigatesToInventoryPage" />
-        <item itemvalue="TestNG.InventoryTest" />
+        <item itemvalue="TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml" />
+        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>

@@ -15,18 +15,34 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void invalidLoginShowsErrorMessage() {
+
+        //Navigate to login page
+        page.navigate(ConfigManager.getBaseUrl());
+
+        //Create page object
         LoginPage loginPage = new LoginPage(page);
-        loginPage.navigate(ConfigManager.getBaseUrl());
+
+        //Perform invalid login
         loginPage.login("wrong_user", "wrong_password");
+
+        //Assert error message
         String error = loginPage.getErrorMessage();
         Assert.assertTrue(error.contains("Username and password do not match"), "Error message did not match expected text");
     }
 
     @Test
     public void validLoginNavigatesToInventoryPage(){
+
+        //Navigate to login page
+        page.navigate(ConfigManager.getBaseUrl());
+
+        //Create page object
         LoginPage loginPage = new LoginPage(page);
-        loginPage.navigate(ConfigManager.getBaseUrl());
+
+        //Perform valid login
         loginPage.login(Secrets.getUsername(), Secrets.getPassword());
+
+        //Assert navigation
         Assert.assertTrue(page.url().contains("inventory.html"), "User did not navigate to inventory page after login");
     }
 

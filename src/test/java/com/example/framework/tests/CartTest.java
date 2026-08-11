@@ -20,8 +20,8 @@ public class CartTest extends BaseTest {
         LoginPage loginPage = new LoginPage(page);
         InventoryPage inventoryPage = new InventoryPage(page);
         CartPage cartPage = new CartPage(page);
+        page.navigate(ConfigManager.getBaseUrl());
 
-        loginPage.navigate(ConfigManager.getBaseUrl());
         loginPage.login(Secrets.getUsername(), Secrets.getPassword());
 
         inventoryPage.addProductToCart("Sauce Labs Backpack");

@@ -1,7 +1,9 @@
 package com.example.framework.pages;
 
+import com.example.framework.components.CartItem;
 import com.example.framework.core.BasePage;
 import com.example.framework.core.Log;
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.slf4j.Logger;
@@ -13,10 +15,11 @@ public class CartPage extends BasePage {
 
     private static final Logger log = Log.getLogger(CartPage.class);
 
-    private final String cartItem = ".cart_item";
-    private final String itemName = ".inventory_item_name";
-    private final String removeButton = "button[id^='remove']";
-    private final String checkoutButton = "#checkout";
+    private final Locator cartItems = page.locator(".cart_item");
+    private final Locator itemNames = page.locator(".inventory_item_name");
+    private final Locator removeButtons = page.locator("button[id^='remove']");
+    private final Locator checkoutButton = page.locator("#checkout");
+
 
     public CartPage(Page page) {
         super(page);
@@ -24,9 +27,7 @@ public class CartPage extends BasePage {
 
     //get all item names in the cart
     public List<String> getCartItemNames(){
-        return page.locator(cartItem)
-                .locator(itemName)
-                .allInnerTexts()
+        return itemNames.allInnerTexts()
                 .stream()
                 .map(String::trim)
                 .collect(Collectors.toList());
@@ -38,16 +39,33 @@ public class CartPage extends BasePage {
     public void removeItem(String productName){
         log.info("Removing item: {}", productName);
 
-        page.locator(cartItem + ":has(" + itemName + ":has-text('" + productName + "'))")
-                .locator(removeButton)
+        page.locator( ".cart_item:has(.inventory_item_name:has-text('" + productName + "'))")
+                .locator("button[id^='remove']")
                 .click();
+    }
+
+    public List<CartItem> getCartItems(){
+        return page.locator(".cart_item")
+                .all()
+                .stream()
+                .map(CartItem::new)
+                .toList();
+    }
+
+    public CartItem getCartItemByName(String name) {
+        return getCartItems()
+                .stream()
+                .filter(i -> i.getName().equalsIgnoreCase(name))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Cart item not found: " + name));
     }
 
     //proceed to checkout
     @Step("Click checkout")
     public void clickCheckout() {
         log.info("Clicking checkout button");
-        click(checkoutButton);
+        checkoutButton.click();
+
     }
 
 }

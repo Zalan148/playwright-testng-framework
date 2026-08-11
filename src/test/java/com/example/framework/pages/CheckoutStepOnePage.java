@@ -2,6 +2,7 @@ package com.example.framework.pages;
 
 import com.example.framework.core.BasePage;
 import com.example.framework.core.Log;
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.slf4j.Logger;
@@ -10,31 +11,32 @@ public class CheckoutStepOnePage extends BasePage {
 
     private static final Logger log = Log.getLogger(CheckoutStepOnePage.class);
 
-    private final String firstNameField = "#first-name";
-    private final String lastNameField = "#last-name";
-    private final String postalCodeField = "#postal-code";
-    private final String continueButton = "#continue";
+    private final Locator firstNameField = page.locator("#first-name");
+    private final Locator lastNameField = page.locator("#last-name");
+    private final Locator postalCodeField = page.locator("#postal-code");
+    private final Locator continueButton = page.locator("#continue");
+
 
     public CheckoutStepOnePage(Page page) {
         super(page);
     }
 
     public void enterFirstName(String firstName) {
-        type(firstNameField, firstName);
+        firstNameField.fill(firstName);
     }
 
     public void enterLastName(String lastName){
-        type(lastNameField, lastName);
+        lastNameField.fill(lastName);
     }
 
     public void enterPostalCode(String postalCode){
-        type(postalCodeField, postalCode);
+        postalCodeField.fill(postalCode);
     }
 
     @Step("Click continue")
     public void clickContinue() {
         log.info("Clicking continue button");
-        click(continueButton);
+        continueButton.click();
     }
 
     @Step("Fill checkout info: {0} {1} {2}")

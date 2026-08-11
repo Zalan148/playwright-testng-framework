@@ -22,7 +22,7 @@ public class CheckoutTest extends BaseTest {
         CheckoutStepTwoPage stepTwo = new CheckoutStepTwoPage(page);
         CheckoutCompletePage completePage = new CheckoutCompletePage(page);
 
-        loginPage.navigate(ConfigManager.getBaseUrl());
+        page.navigate(ConfigManager.getBaseUrl());
         loginPage.login(Secrets.getUsername(), Secrets.getPassword());
 
         inventoryPage.addProductToCart("Sauce Labs Backpack");
