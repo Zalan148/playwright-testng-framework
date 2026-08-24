@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/AuthComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/DropdownComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/IFrameComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ModalComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/MultiTabComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ProductCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ShadowComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/ApiUiHybridTesting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/NetworkMocking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/WaitStrategies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng-suites/testng-login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/simplelogger.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutCompletePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepOnePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepOnePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepTwoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepTwoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/InventoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/InventoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/eab46f572beea39ba74daef7c53b0eca.webm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/components/MultiTabComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/MultiTabComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +71,7 @@
     &quot;TestNG.LoginTest.validLoginNavigatesToInventoryPage.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Run as TestNG.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.ScreenshotTest.failingTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;module-2&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/zalanwadood/IdeaProjects/playwright-testng-framework/pom.xml&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
@@ -103,7 +80,24 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml">
+  <component name="RunManager" selected="TestNG.InventoryTest">
+    <configuration name="InventoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.framework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.InventoryTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Login Suite" type="TestNG">
       <module name="playwright-testng-framework" />
       <shortenClasspath name="NONE" />
@@ -150,8 +144,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.Login Suite" />
+      <item itemvalue="TestNG.InventoryTest" />
+      <item itemvalue="TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml" />
+      <item itemvalue="TestNG.LoginTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.InventoryTest" />
         <item itemvalue="TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml" />
         <item itemvalue="TestNG.LoginTest" />
       </list>
@@ -178,6 +179,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Module 1 — Core Framework Foundation" />
