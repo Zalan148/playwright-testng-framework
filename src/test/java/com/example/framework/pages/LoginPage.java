@@ -1,5 +1,6 @@
 package com.example.framework.pages;
 
+import com.example.framework.config.Environment;
 import com.example.framework.core.BasePage;
 import com.example.framework.core.Log;
 import com.microsoft.playwright.Locator;
@@ -17,8 +18,15 @@ public class LoginPage extends BasePage {
     private final Locator loginButton = $("#login-button");
     private final Locator errorMessage = $("[data-test='error']");
 
-    public LoginPage(Page page) {
+    private final Environment env;
+
+    public LoginPage(Page page, Environment env) {
         super(page);
+        this.env = env;
+    }
+
+    public void open(){
+        page.navigate(env.getBaseURL());
     }
 
     //Actions
@@ -40,7 +48,7 @@ public class LoginPage extends BasePage {
         enterUsername(username);
         enterPassword(password);
         clickLogin();
-        return new InventoryPage(page);
+        return new InventoryPage(page, env);
     }
 
     //UI checks

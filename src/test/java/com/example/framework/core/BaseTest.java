@@ -1,14 +1,19 @@
 package com.example.framework.core;
 
+import com.example.framework.config.ApiSecrets;
+import com.example.framework.config.ApiSecretsLoader;
 import com.example.framework.config.ConfigManager;
+import com.example.framework.config.Environment;
 import com.microsoft.playwright.*;
 import org.slf4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -18,7 +23,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-@Listeners({AllureListener.class})
+
 public class BaseTest {
 
     private static final Logger log = Log.getLogger(BaseTest.class);
@@ -27,11 +32,20 @@ public class BaseTest {
     protected Browser browser;
     protected BrowserContext context;
     public Page page;
+    protected Environment env;
+    protected ApiSecrets apiSecrets;
 
     private List<String> consoleLogs = new ArrayList<>();
 
-    @BeforeMethod
-    public void setUp() {
+
+    @BeforeClass(alwaysRun = true)
+    public void beforeClassSetup() {
+        env = ConfigManager.getEnvironment();
+        apiSecrets = ApiSecretsLoader.load(env.getName());
+    }
+
+    @BeforeMethod(alwaysRun = true)
+    public void setUp(Method method, ITestResult result) {
 
         consoleLogs.clear();
 
@@ -68,6 +82,10 @@ public class BaseTest {
         System.out.println("[" + currentTime + "] SETUP: " + this.getClass().getSimpleName()
                 + " on thread " + Thread.currentThread().getName());
 
+        // 3. Print active groups for this test
+        String[] groups = result.getMethod().getGroups();
+        System.out.println("Active groups for test '" + method.getName() + "': "
+                + (groups.length > 0 ? String.join(", ", groups) : "none"));
     }
 
   @AfterMethod

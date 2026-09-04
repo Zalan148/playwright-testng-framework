@@ -13,6 +13,12 @@ public class ConfigManager {
 
     private static final String CONFIG_PATH = "src/test/resources/config.properties";
 
+    private static Environment environment = EnvironmentSelector.load();
+
+    public static Environment getEnvironment() {
+        return environment;
+    }
+
     public static synchronized Properties getProperties() {
         if (properties == null) {
             properties = new Properties();

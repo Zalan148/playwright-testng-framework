@@ -2,6 +2,7 @@ package com.example.framework.pages;
 
 import com.example.framework.components.DropdownComponent;
 import com.example.framework.components.ProductCard;
+import com.example.framework.config.Environment;
 import com.example.framework.core.BasePage;
 import com.example.framework.core.Log;
 import com.microsoft.playwright.Locator;
@@ -21,9 +22,15 @@ public class InventoryPage extends BasePage {
     private final Locator cartBadge = page.locator(".shopping_cart_badge");
     private final Locator cartIcon = page.locator(".shopping_cart_link");
 
-    
-    public InventoryPage(Page page){
+    private final Environment env;
+
+    public InventoryPage(Page page, Environment env){
         super(page);
+        this.env = env;
+    }
+
+    public void open(){
+        page.navigate(env.getBaseURL() + "/inventory");
     }
 
     //Get all product names

@@ -1,5 +1,6 @@
 package com.example.framework.pages;
 
+import com.example.framework.config.Environment;
 import com.example.framework.core.BasePage;
 import com.example.framework.core.Log;
 import com.microsoft.playwright.Locator;
@@ -16,9 +17,15 @@ public class CheckoutStepOnePage extends BasePage {
     private final Locator postalCodeField = page.locator("#postal-code");
     private final Locator continueButton = page.locator("#continue");
 
+    private final Environment env;
 
-    public CheckoutStepOnePage(Page page) {
+    public CheckoutStepOnePage(Page page, Environment env) {
         super(page);
+        this.env = env;
+    }
+
+    public void open(){
+        page.navigate(env.getBaseURL() + "/checkout-step-one");
     }
 
     public void enterFirstName(String firstName) {

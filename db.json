@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "price": 1200
+    },
+    {
+      "id": 102,
+      "name": "Phone",
+      "price": 800
+    }
+  ],
+  "orders": [
+    {
+      "id": 1001,
+      "userId": 1,
+      "productId": 101,
+      "quantity": 1
+    },
+    {
+      "id": 1002,
+      "userId": 2,
+      "productId": 102,
+      "quantity": 2
+    }
+  ],
+  "auth": [
+    {
+      "id": 1,
+      "username": "admin_user",
+      "password": "admin_password123",
+      "token": "fake-token-123"
+    }
+  ]
+}

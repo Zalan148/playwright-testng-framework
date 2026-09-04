@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+<h1>Products</h1>
+<div class="products_list">
+    <p>Product ID: <span id="productId"></span></p>
+</div>
+
+<script>
+    const productId = localStorage.getItem('lastProductId');
+    if (productId) {
+      document.getElementById('productId').textContent = productId;
+    }
+</script>
+</body>
+</html>

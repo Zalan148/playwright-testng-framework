@@ -5,9 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/simplelogger.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/test-suite.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/orders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/AuthClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/OrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/ProductClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ApiSecrets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ApiSecretsLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/EnvironmentSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/FeatureFlags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/Viewport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/models/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/TeardownValidationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/ResponseValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridLoginBypassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridOrderFlowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridProductFlowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridUserFlowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/ApiSmokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/DataFactorySmokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/EnvironmentSmokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/env.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/env.local.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/env.prod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/env.qa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/env.staging.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/secrets.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/secrets.local.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/secrets.prod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/secrets.qa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/secrets.stage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/components/MultiTabComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/MultiTabComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/AllureListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutCompletePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepOnePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepOnePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepTwoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepTwoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/InventoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/InventoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/ScreenshotTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/ApiUiHybridTesting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +109,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -59,10 +117,18 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng-suite/testng-login.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng-suites/diagnostic.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng-suites/testng-login.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ApiSmokeTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CartTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CheckoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DataFactorySmokeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EnvironmentSmokeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HybridLoginBypassTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HybridOrderFlowTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HybridProductFlowTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HybridUserFlowTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.InventoryTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Login Suite.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
@@ -71,7 +137,8 @@
     &quot;TestNG.LoginTest.validLoginNavigatesToInventoryPage.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Run as TestNG.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.ScreenshotTest.failingTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;TestNG.TeardownValidationTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;module-3&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/zalanwadood/IdeaProjects/playwright-testng-framework/pom.xml&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
@@ -80,17 +147,90 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.InventoryTest">
-    <configuration name="InventoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.HybridUserFlowTest">
+    <configuration name="DataFactorySmokeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="playwright-testng-framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.framework.tests.*" />
+          <option name="PATTERN" value="com.example.tests.smoke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.InventoryTest" />
+      <option name="PACKAGE_NAME" value="com.example.tests.smoke" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.smoke.DataFactorySmokeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HybridLoginBypassTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.hybrid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tests.hybrid" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.hybrid.HybridLoginBypassTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HybridOrderFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.hybrid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tests.hybrid" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.hybrid.HybridOrderFlowTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HybridProductFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.hybrid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tests.hybrid" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.hybrid.HybridProductFlowTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HybridUserFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="playwright-testng-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.hybrid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tests.hybrid" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.hybrid.HybridUserFlowTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -117,44 +257,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="playwright-testng-framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.framework.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.framework.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.framework.tests.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="playwright-testng-framework" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.Login Suite" />
-      <item itemvalue="TestNG.InventoryTest" />
-      <item itemvalue="TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml" />
-      <item itemvalue="TestNG.LoginTest" />
+      <item itemvalue="TestNG.HybridLoginBypassTest" />
+      <item itemvalue="TestNG.HybridOrderFlowTest" />
+      <item itemvalue="TestNG.HybridProductFlowTest" />
+      <item itemvalue="TestNG.HybridUserFlowTest" />
+      <item itemvalue="TestNG.DataFactorySmokeTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.InventoryTest" />
-        <item itemvalue="TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml" />
-        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.HybridUserFlowTest" />
+        <item itemvalue="TestNG.HybridProductFlowTest" />
+        <item itemvalue="TestNG.HybridOrderFlowTest" />
+        <item itemvalue="TestNG.HybridLoginBypassTest" />
+        <item itemvalue="TestNG.DataFactorySmokeTest" />
       </list>
     </recent_temporary>
   </component>

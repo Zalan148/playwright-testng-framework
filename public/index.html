@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        .hidden { display: none; }
+        .dashboard { padding: 1rem; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+<h1>Mock App</h1>
+<div id="login" class="login">
+    <p>Please log in via API first.</p>
+</div>
+<div id="dashboard" class="dashboard hidden">
+    <h2>Welcome to the Dashboard</h2>
+    <p>Your inventory list will appear here.</p>
+    <div class="inventory_list">
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Check localStorage for token
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      document.getElementById('login').classList.add('hidden');
+      document.getElementById('dashboard').classList.remove('hidden');
+    }
+</script>
+</body>
+</html>

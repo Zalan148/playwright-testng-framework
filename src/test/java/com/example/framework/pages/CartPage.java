@@ -1,6 +1,7 @@
 package com.example.framework.pages;
 
 import com.example.framework.components.CartItem;
+import com.example.framework.config.Environment;
 import com.example.framework.core.BasePage;
 import com.example.framework.core.Log;
 import com.microsoft.playwright.Locator;
@@ -20,9 +21,15 @@ public class CartPage extends BasePage {
     private final Locator removeButtons = page.locator("button[id^='remove']");
     private final Locator checkoutButton = page.locator("#checkout");
 
+    private final Environment env;
 
-    public CartPage(Page page) {
+    public CartPage(Page page, Environment env) {
         super(page);
+        this.env = env;
+    }
+
+    public void open(){
+        page.navigate(env.getBaseURL() + "/cart");
     }
 
     //get all item names in the cart

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+</head>
+<body>
+<h1>Orders</h1>
+<div class="orders_list">
+    <!-- Example: render order IDs -->
+    <p>Order ID: <span id="orderId"></span></p>
+</div>
+
+<script>
+    // For demo purposes, read orderId from localStorage
+    const orderId = localStorage.getItem('lastOrderId');
+    if (orderId) {
+      document.getElementById('orderId').textContent = orderId;
+    }
+</script>
+</body>
+</html>

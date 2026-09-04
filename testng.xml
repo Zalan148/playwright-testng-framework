@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" parallel="classes" thread-count="5">
     <test name="Playwright TestNG Suite" parallel="classes" thread-count="5" verbose="2">
-    <classes>
-        <class name="com.example.framework.tests.CartTest"/>
-        <class name="com.example.framework.tests.CheckoutTest"/>
-        <class name="com.example.framework.tests.InventoryTest"/>
-        <class name="com.example.framework.tests.LoginTest"/>
-        <class name="com.example.framework.tests.ScreenshotTest"/>
-    </classes>
+        <classes>
+            <class name="com.example.framework.tests.CartTest"/>
+            <class name="com.example.framework.tests.CheckoutTest"/>
+            <class name="com.example.framework.tests.InventoryTest"/>
+            <class name="com.example.framework.tests.LoginTest"/>
+            <class name="com.example.framework.tests.TeardownValidationTest"/>
+        </classes>
     </test>
 </suite>
