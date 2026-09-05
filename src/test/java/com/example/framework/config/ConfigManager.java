@@ -54,9 +54,13 @@ public class ConfigManager {
     }
 
     public static boolean isHeadless() {
-       boolean headless = Boolean.parseBoolean(get("headless"));
-       log.info("Headless: {}", headless);
-       return headless;
+        // Force headless in CI
+        if (System.getenv("CI") != null) {
+            return true;
+        }
+        boolean headless = Boolean.parseBoolean(get("headless"));
+        log.info("Headless: {}", headless);
+        return headless;
     }
 
     public static int getDefaultTimeout() {
