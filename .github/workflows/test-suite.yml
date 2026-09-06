@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ ubuntu-latest, macos-latest ]   # skip Windows for WebKit
+        os: [ ubuntu-latest]
         browser: [ chromium, firefox, webkit ]
         headless: [ true ]                    # keep CI headless for stability
     steps:

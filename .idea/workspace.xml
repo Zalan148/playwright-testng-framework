@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/test-suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test-suite.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
