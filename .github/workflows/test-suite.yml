@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-22.04 ]
-        browser: [ firefox ]
+        browser: [ firefox, chromium ]
         headless: [ true ]
     steps:
       - name: Checkout repository
