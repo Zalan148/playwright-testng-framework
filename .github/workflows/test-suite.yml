@@ -7,13 +7,13 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 30   # prevent GitHub from killing long jobs
+  # Job A: Chromium + WebKit
+  test-chromium-webkit:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
     strategy:
       matrix:
-        os: [ubuntu-22.04]
-        browser: [chromium, firefox, webkit]
+        browser: [chromium, webkit]
         headless: [true]
     steps:
       - name: Checkout repository
@@ -30,12 +30,11 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Cache Playwright
+      - name: Cache Playwright binaries
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright
-
 
       - name: Install dependencies
         run: |
@@ -47,10 +46,6 @@ jobs:
           for i in 1 2 3; do
               npx playwright install-deps && break || sleep 30
           done
-
-      - name: Install system dependencies for Playwright
-        run: |
-          sudo apt-get update
 
       - name: Start mock server
         run: |
@@ -64,13 +59,70 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
+          name: allure-results-${{ matrix.browser }}
           path: target/allure-results
 
       - name: Upload videos
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-videos-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
+          name: test-videos-${{ matrix.browser }}
           path: videos
 
+  # Job B: Firefox isolated
+  test-firefox:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Cache Playwright binaries
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright
+
+      - name: Install dependencies
+        run: |
+          npm install
+          mvn install -DskipTests
+
+      - name: Install Playwright dependencies
+        run: |
+          for i in 1 2 3; do
+              npx playwright install-deps && break || sleep 30
+          done
+
+      - name: Start mock server
+        run: |
+          nohup node server.js &
+          sleep 5
+
+      - name: Run TestNG suite (sequential for Firefox)
+        run: mvn test -DsuiteXmlFile=testng.xml -Dbrowser=firefox -Dheadless=true -Ddataproviderthreadcount=1
+
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-firefox
+          path: target/allure-results
+
+      - name: Upload videos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-videos-firefox
+          path: videos
