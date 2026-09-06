@@ -34,6 +34,9 @@ jobs:
           npm install
           mvn install -DskipTests
 
+      - name: Install Playwright dependencies
+        run: npx playwright install-deps
+
       - name: Start mock server
         run: |
           nohup node server.js &
