@@ -3,11 +3,23 @@
 <suite name="All Test Suite" parallel="classes" thread-count="5">
     <test name="Playwright TestNG Suite" parallel="classes" thread-count="5" verbose="2">
         <classes>
+            <!-- UI Tests -->
             <class name="com.example.framework.tests.CartTest"/>
             <class name="com.example.framework.tests.CheckoutTest"/>
             <class name="com.example.framework.tests.InventoryTest"/>
             <class name="com.example.framework.tests.LoginTest"/>
             <class name="com.example.framework.tests.TeardownValidationTest"/>
+
+            <!-- API Smoke Tests -->
+            <class name="com.example.tests.smoke.ApiSmokeTest"/>
+            <class name="com.example.tests.smoke.DataFactorySmokeTest"/>
+            <class name="com.example.tests.smoke.EnvironmentSmokeTest"/>
+
+            <!-- Hybrid Tests -->
+            <class name="com.example.tests.hybrid.HybridLoginBypassTest"/>
+            <class name="com.example.tests.hybrid.HybridOrderFlowTest"/>
+            <class name="com.example.tests.hybrid.HybridProductFlowTest"/>
+            <class name="com.example.tests.hybrid.HybridUserFlowTest"/>
         </classes>
     </test>
 </suite>
