@@ -11,9 +11,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ ubuntu-latest]
-        browser: [ chromium, firefox, webkit ]
-        headless: [ true ]                    # keep CI headless for stability
+        os: [ubuntu-latest]
+        browser: [chromium, firefox, webkit]
+        headless: [true]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,7 +27,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '24'
 
       - name: Install dependencies
         run: |
@@ -58,3 +58,4 @@ jobs:
         with:
           name: test-videos-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
           path: videos
+
