@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="classes" thread-count="5">
-    <test name="Playwright TestNG Suite" parallel="classes" thread-count="5" verbose="2">
+<suite name="All Test Suite">
+    <test name="Playwright TestNG Suite" verbose="2">
         <classes>
             <!-- UI Tests -->
             <class name="com.example.framework.tests.CartTest"/>
