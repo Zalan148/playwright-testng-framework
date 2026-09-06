@@ -48,7 +48,7 @@ jobs:
       - name: Run TestNG suite
         run: |
           if [ "${{ matrix.browser }}" = "firefox" ]; then
-            mvn test -DsuiteXmlFile=testng.xml -Dbrowser=firefox -Dheadless=false -Ddataproviderthreadcount=1 -DforkCount=1
+            mvn test -DsuiteXmlFile=testng.xml -Dbrowser=firefox -Dheadless=true -Ddataproviderthreadcount=1 -DforkCount=1
           else
             mvn test -DsuiteXmlFile=testng.xml -Dbrowser=${{ matrix.browser }} -Dheadless=${{ matrix.headless }}
           fi
