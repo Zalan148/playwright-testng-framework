@@ -40,7 +40,7 @@ public class CheckoutTest extends BaseTest {
         stepTwo.clickFinish();
 
         CheckoutCompletePage completePage = new CheckoutCompletePage(page, env);
-        Assert.assertEquals(completePage.getCompleteMessage(), "Thank you for your order!zz");
+        Assert.assertEquals(completePage.getCompleteMessage(), "Thank you for your order!");
     }
 
 }
