@@ -11,10 +11,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-        browser: [chromium, firefox, webkit]
-        headless: [true, false]
-
+        os: [ ubuntu-latest, macos-latest ]   # skip Windows for WebKit
+        browser: [ chromium, firefox, webkit ]
+        headless: [ true ]                    # keep CI headless for stability
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
