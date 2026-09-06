@@ -46,7 +46,12 @@ jobs:
           sleep 5
 
       - name: Run TestNG suite
-        run: mvn test -DsuiteXmlFile=testng.xml -Dbrowser=${{ matrix.browser }} -Dheadless=${{ matrix.headless }}
+        run: |
+          if [ "${{ matrix.browser }}" = "firefox" ]; then
+            mvn test -DsuiteXmlFile=testng.xml -Dbrowser=firefox -Dheadless=false -Ddataproviderthreadcount=1 -DforkCount=1
+          else
+            mvn test -DsuiteXmlFile=testng.xml -Dbrowser=${{ matrix.browser }} -Dheadless=${{ matrix.headless }}
+          fi
 
       - name: Upload Allure results
         if: always()
