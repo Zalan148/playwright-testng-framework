@@ -44,7 +44,7 @@ jobs:
 
       - name: Run TestNG diagnostic suite
         run: |
-          mvn test -DsuiteXmlFile=testng-diagnostic.xml -Dbrowser=chromium -Dheadless=true
+          mvn test -Dsurefire.suiteXmlFiles=testng-diagnostic.xml -Dbrowser=chromium -Dheadless=true
 
       - name: Upload Allure results
         if: always()
