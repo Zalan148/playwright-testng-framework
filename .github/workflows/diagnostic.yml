@@ -1,7 +1,11 @@
 name: Playwright TestNG Diagnostics
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ main, module-3 ]
+  pull_request:
+    branches: [ main ]
+
 
 jobs:
   test:
