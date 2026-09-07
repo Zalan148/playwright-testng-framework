@@ -11,7 +11,7 @@
 
 
 
-          <!--  <class name="com.example.tests.smoke.ApiSmokeTest"/>
+            <class name="com.example.tests.smoke.ApiSmokeTest"/>
             <class name="com.example.tests.smoke.DataFactorySmokeTest"/>
             <class name="com.example.tests.smoke.EnvironmentSmokeTest"/>
 
@@ -20,7 +20,7 @@
             <class name="com.example.tests.hybrid.HybridOrderFlowTest"/>
             <class name="com.example.tests.hybrid.HybridProductFlowTest"/>
             <class name="com.example.tests.hybrid.HybridUserFlowTest"/>
-            -->
+
         </classes>
     </test>
 </suite>
