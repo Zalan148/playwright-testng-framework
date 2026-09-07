@@ -21,11 +21,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Install dependencies
-        run: |
-          npm install
-          mvn install -DskipTests
-
       - name: Install Playwright dependencies
         run: |
           for i in 1 2 3; do
