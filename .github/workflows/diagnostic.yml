@@ -21,12 +21,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Install Playwright dependencies
-        run: |
-          for i in 1 2 3; do
-              npx playwright install-deps && break || sleep 30
-          done
-
       - name: Run TestNG diagnostic suite
         run: |
           mvn test -Dsurefire.suiteXmlFiles=testng-diagnostic.xml -Dbrowser=chromium -Dheadless=true
