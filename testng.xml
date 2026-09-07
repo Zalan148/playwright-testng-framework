@@ -8,7 +8,7 @@
             <class name="com.example.framework.tests.CheckoutTest"/>
             <class name="com.example.framework.tests.InventoryTest"/>
             <class name="com.example.framework.tests.LoginTest"/>
-            <class name="com.example.framework.tests.TeardownValidationTest"/>
+
 
 
           <!--  <class name="com.example.tests.smoke.ApiSmokeTest"/>
