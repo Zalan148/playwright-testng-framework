@@ -1,0 +1,18 @@
+# Maven build output
+target/
+
+# Playwright artifacts
+videos/
+screenshots/
+traces/
+
+# Logs
+*.log
+
+# Node modules (if ever added locally)
+node_modules/
+
+# OS / IDE files
+.DS_Store
+.idea/
+.vscode/

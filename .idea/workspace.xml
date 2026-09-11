@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/diagnostic.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/diagnostic.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/docker-tests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/diagnostic/PlaywrightStartupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/Secrets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/Secrets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/ApiSmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/ApiSmokeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +59,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.PlaywrightStartupTest.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -94,20 +102,16 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HybridUserFlowTest">
-    <configuration name="DataFactorySmokeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.PlaywrightStartupTest">
+    <configuration name="PlaywrightStartupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.diagnostic.PlaywrightStartupTest" />
       <module name="playwright-testng-framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.tests.smoke.*" />
+          <option name="PATTERN" value="com.example.tests.diagnostic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.tests.smoke" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.smoke.DataFactorySmokeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,20 +204,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.PlaywrightStartupTest" />
       <item itemvalue="TestNG.Login Suite" />
       <item itemvalue="TestNG.HybridLoginBypassTest" />
       <item itemvalue="TestNG.HybridOrderFlowTest" />
       <item itemvalue="TestNG.HybridProductFlowTest" />
       <item itemvalue="TestNG.HybridUserFlowTest" />
-      <item itemvalue="TestNG.DataFactorySmokeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PlaywrightStartupTest" />
         <item itemvalue="TestNG.HybridUserFlowTest" />
         <item itemvalue="TestNG.HybridProductFlowTest" />
         <item itemvalue="TestNG.HybridOrderFlowTest" />
         <item itemvalue="TestNG.HybridLoginBypassTest" />
-        <item itemvalue="TestNG.DataFactorySmokeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +241,7 @@
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="Dockerfile" />
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

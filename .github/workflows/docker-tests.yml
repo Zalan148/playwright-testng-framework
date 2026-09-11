@@ -1,0 +1,35 @@
+name: Playwright TestNG CI
+
+on:
+  push:
+    branches: [ main, module-3 ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  docker-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        run: docker build -t playwright-tests .
+
+      - name: Run tests in Docker
+        run: |
+          docker run --rm \
+            --platform linux/amd64 \
+            --env-file .env \
+            -v ${{ github.workspace }}/reports:/app/target/surefire-reports \
+            playwright-tests
+
+      - name: Upload Surefire reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: reports

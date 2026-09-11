@@ -16,10 +16,12 @@ public class BaseApiClient {
         this.env = env;
         this.apiSecrets = apiSecrets;
 
+        System.out.println("API DEBUG: Before Playwright.create()");
         Playwright playwright = Playwright.create();
-
+        System.out.println("API DEBUG: After Playwright.create()");
         // Version only supports this simple context creation
         this.request = playwright.request().newContext();
+        System.out.println("API DEBUG: After request.newContext()");
     }
 
     protected RequestOptions withHeaders() {

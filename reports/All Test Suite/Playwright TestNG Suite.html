@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  Playwright TestNG Suite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Playwright TestNG Suite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 11 10:59:06 UTC 2026</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12663 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.framework.tests.LoginTest.validLoginNavigatesToInventoryPage()'><b>validLoginNavigatesToInventoryPage</b><br>Test class: com.example.framework.tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.example.framework.tests.LoginTest@4525d1d3</td></tr>
+<tr>
+<td title='com.example.framework.tests.InventoryTest.productsSortAlphabetically()'><b>productsSortAlphabetically</b><br>Test class: com.example.framework.tests.InventoryTest</td>
+<td></td>
+<td>1</td>
+<td>com.example.framework.tests.InventoryTest@3e9803c2</td></tr>
+<tr>
+<td title='com.example.framework.tests.LoginTest.invalidLoginShowsErrorMessage()'><b>invalidLoginShowsErrorMessage</b><br>Test class: com.example.framework.tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>com.example.framework.tests.LoginTest@4525d1d3</td></tr>
+<tr>
+<td title='com.example.tests.hybrid.HybridUserFlowTest.createUserViaApiAndLoginViaUi()'><b>createUserViaApiAndLoginViaUi</b><br>Test class: com.example.tests.hybrid.HybridUserFlowTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.hybrid.HybridUserFlowTest@5eeedb60</td></tr>
+<tr>
+<td title='com.example.tests.hybrid.HybridProductFlowTest.createProductViaApiAndVerifyInUi()'><b>createProductViaApiAndVerifyInUi</b><br>Test class: com.example.tests.hybrid.HybridProductFlowTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.hybrid.HybridProductFlowTest@6443b128</td></tr>
+<tr>
+<td title='com.example.tests.smoke.DataFactorySmokeTest.verifyDynamicUserCreation()'><b>verifyDynamicUserCreation</b><br>Test class: com.example.tests.smoke.DataFactorySmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.smoke.DataFactorySmokeTest@1eea9d2d</td></tr>
+<tr>
+<td title='com.example.tests.hybrid.HybridLoginBypassTest.loginViaApiAndBypassUiLogin()'><b>loginViaApiAndBypassUiLogin</b><br>Test class: com.example.tests.hybrid.HybridLoginBypassTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.hybrid.HybridLoginBypassTest@bd2f5a9</td></tr>
+<tr>
+<td title='com.example.framework.tests.InventoryTest.addItemToCartIncreasesCartCount()'><b>addItemToCartIncreasesCartCount</b><br>Test class: com.example.framework.tests.InventoryTest</td>
+<td></td>
+<td>2</td>
+<td>com.example.framework.tests.InventoryTest@3e9803c2</td></tr>
+<tr>
+<td title='com.example.framework.tests.CheckoutTest.userCanCompleteCheckoutFlow()'><b>userCanCompleteCheckoutFlow</b><br>Test class: com.example.framework.tests.CheckoutTest</td>
+<td></td>
+<td>3</td>
+<td>com.example.framework.tests.CheckoutTest@16fe9c29</td></tr>
+<tr>
+<td title='com.example.framework.tests.CartTest.addedItemAppearsInCart()'><b>addedItemAppearsInCart</b><br>Test class: com.example.framework.tests.CartTest</td>
+<td></td>
+<td>2</td>
+<td>com.example.framework.tests.CartTest@1136b469</td></tr>
+<tr>
+<td title='com.example.tests.smoke.EnvironmentSmokeTest.verifyEnvironmentLoadsCorrectly()'><b>verifyEnvironmentLoadsCorrectly</b><br>Test class: com.example.tests.smoke.EnvironmentSmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.smoke.EnvironmentSmokeTest@60921b21</td></tr>
+<tr>
+<td title='com.example.tests.hybrid.HybridOrderFlowTest.createOrderViaApiAndVerifyInUi()'><b>createOrderViaApiAndVerifyInUi</b><br>Test class: com.example.tests.hybrid.HybridOrderFlowTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.hybrid.HybridOrderFlowTest@3f36b447</td></tr>
+<tr>
+<td title='com.example.tests.smoke.ApiSmokeTest.verifyApiIsReachable()'><b>verifyApiIsReachable</b><br>Test class: com.example.tests.smoke.ApiSmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.smoke.ApiSmokeTest@7c974942</td></tr>
+</table><p>
+</body>
+</html>

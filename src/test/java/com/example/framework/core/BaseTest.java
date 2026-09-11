@@ -53,21 +53,24 @@ public class BaseTest {
               this.getClass().getSimpleName(),
               Thread.currentThread().getName());
 
+      System.out.println("BASE DEBUG: Before Playwright.create()");
       playwright = Playwright.create();
-
+      System.out.println("BASE DEBUG: After Playwright.create()");
       BrowserType browserType = switch (ConfigManager.getBrowser()) {
           case "firefox" -> playwright.firefox();
           case "webkit" -> playwright.webkit();
           default -> playwright.chromium();
       };
 
+        System.out.println("BASE DEBUG: Before browser.launch()");
       browser = browserType.launch(new BrowserType.LaunchOptions()
               .setHeadless(ConfigManager.isHeadless()));
-
+        System.out.println("BASE DEBUG: After browser.launch()");
       context = browser.newContext(
               new Browser.NewContextOptions().setRecordVideoDir(Paths.get("videos")).setRecordVideoSize(1280,720)
       );
       page = context.newPage();
+        System.out.println("BASE DEBUG: After page creation");
       page.setDefaultTimeout(ConfigManager.getDefaultTimeout());
       page.onConsoleMessage(msg -> {
           consoleLogs.add(msg.type() + ": " + msg.text());
