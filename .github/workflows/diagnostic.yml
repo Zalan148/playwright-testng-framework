@@ -1,4 +1,4 @@
-name: Playwright TestNG Diagnostics
+name: Playwright TestNG CI Diagnostic
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-name: Playwright TestNG CI
+name: Playwright TestNG CI (Docker)
 
 on:
   push:
