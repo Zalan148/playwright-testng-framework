@@ -41,3 +41,4 @@ build/
 ### extras ###
 .env
 videos/
+.idea/workspace.xml
