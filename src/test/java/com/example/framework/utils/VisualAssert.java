@@ -30,6 +30,15 @@ public class VisualAssert {
             // Ensure baseline folder exists
             baselineFile.getParentFile().mkdirs();
 
+            // Check if baseline mode is enabled via system property
+            boolean baselineMode = Boolean.getBoolean("baseline");
+
+            if (baselineMode || !baselineFile.exists()) {
+                page.screenshot(new Page.ScreenshotOptions().setPath(baselinePath));
+                System.out.println("Baseline created/updated: " + baselinePath);
+                return; // Exit after saving baseline
+            }
+
             // First run → create baseline and exit
             if (!baselineFile.exists()) {
                 page.screenshot(new Page.ScreenshotOptions().setPath(baselinePath));
