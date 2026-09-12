@@ -108,9 +108,10 @@ Notes
 - Faster test execution
 - More stable tests with fewer UI dependencies
 - Ability to test edge cases and backend‑driven scenarios
-- Cleaner test data setup and teardown  # trigger regression
-# trigger regression
-# trigger regression
+- Cleaner test data setup and teardown 
+
+
+------------------------------------------------------------------
 
 
 Visual Regression Workflow
@@ -162,3 +163,31 @@ Any further commit/push triggers visual-tests again
 Step4 run is effectively your first regression confirmation.
 Step5 is optional unless you want to re‑validate after new commits.
 Skipped jobs during baseline generation are harmless and acceptable in a professional setup.
+
+🔹 Baseline Refresh Policy
+Baseline images are the “golden” reference for regression checks. To keep them reliable:
+
+When to refresh
+After intentional UI changes (new layout, design updates).
+
+At the start of a new sprint or release cycle.
+
+How to refresh
+Trigger baseline generation in CI (workflow_dispatch).
+
+Download the visual-regression-baseline artifact.
+
+Replace images in src/test/resources/baseline/.
+
+Commit and push with a clear message:
+
+bash
+git commit -m "Refresh CI baselines after UI update"
+git push origin main
+Who approves
+Baseline updates should be reviewed in pull requests to confirm changes are deliberate.
+
+Golden rule
+Never overwrite baselines unless the UI change is intentional.
+
+Investigate regression failures first — don’t “fix” them by refreshing baselines unless the UI change is expected.
