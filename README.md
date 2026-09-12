@@ -109,3 +109,4 @@ Notes
 - More stable tests with fewer UI dependencies
 - Ability to test edge cases and backend‑driven scenarios
 - Cleaner test data setup and teardown  # trigger regression
+# trigger regression
