@@ -1,0 +1,77 @@
+name: Playwright Visual Regression CI
+
+on:
+  push:
+    branches: [ main, module-4 ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  visual-tests:
+    runs-on: ubuntu-22.04
+
+    steps:
+      # Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set up Java 21
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      # Install project dependencies
+      - name: Install dependencies
+        run: |
+          npm install
+          mvn install -DskipTests
+
+      # Install Playwright system dependencies (with retry loop for stability)
+      - name: Install Playwright dependencies
+        run: |
+          for i in 1 2 3; do
+              npx playwright install-deps && break || sleep 30
+          done
+
+      # Install Playwright browsers
+      - name: Install Playwright browsers
+        run: npx playwright install
+
+      # Run visual regression tests
+      - name: Run VisualRegressionTest suite
+        run: mvn test -Dtest=VisualRegressionTest
+
+      # Upload allure results (always)
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: target/allure-results
+
+      # Upload videos (always)
+      - name: Upload videos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-videos
+          path: videos
+
+      # Upload visual regression artifacts (only if tests fail)
+      - name: Upload current screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-regression-current
+          path: target/*-current.png
+          retention-days: 7
+
+      - name: Upload diff screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-regression-diffs
+          path: target/*-diff.png
+          retention-days: 7
