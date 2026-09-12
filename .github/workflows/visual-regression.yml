@@ -10,7 +10,7 @@ on:
 jobs:
   visual-tests:
     runs-on: ubuntu-22.04
-    if: github.event_name != 'workflow_dispatch'
+
     steps:
       # Checkout repo
       - name: Checkout repository

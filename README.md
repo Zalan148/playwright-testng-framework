@@ -111,3 +111,54 @@ Notes
 - Cleaner test data setup and teardown  # trigger regression
 # trigger regression
 # trigger regression
+
+
+Visual Regression Workflow
+This framework uses Playwright + VisualAssert for screenshot‑based regression testing.
+Follow the cycle below to generate and validate baselines consistently across local and CI environments.
+
+Workflow Checklist
+**Step 0 — Reset**
+Clear src/test/resources/baseline/
+Clear target/
+✅ Start from a clean slate
+
+**Step 1 — Local run**
+Run tests locally:
+bash
+mvn test -Dtest=VisualRegressionTest
+Framework generates local baselines
+✅ Expectation: passes locally
+
+**Step 2 — CI run with local baselines**
+Commit/push local baselines:
+bash
+git add src/test/resources/baseline/
+git commit -m "Push local baselines"
+git push origin main
+CI runs visual-tests automatically
+✅ Expectation: fails (local vs CI mismatch)
+
+**Step 3 — Generate baselines in CI**
+Go to Actions → Run workflow → select main
+CI runs generate-baseline job
+✅ Expectation: baseline artifact produced
+
+**Step 4 — Commit CI baselines**
+Download artifact → copy PNGs into src/test/resources/baseline/
+Commit/push:
+bash
+git add src/test/resources/baseline/
+git commit -m "Commit CI-generated baselines"
+git push origin main
+CI runs visual-tests automatically
+✅ Expectation: passes (CI vs CI baselines match)
+
+**Step 5 — Regression confirmation**
+Any further commit/push triggers visual-tests again
+✅ Expectation: passes unless code changes introduce differences
+
+🔹 Notes
+Step4 run is effectively your first regression confirmation.
+Step5 is optional unless you want to re‑validate after new commits.
+Skipped jobs during baseline generation are harmless and acceptable in a professional setup.
