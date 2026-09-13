@@ -1,5 +1,6 @@
 package com.example.framework.utils;
 
+import com.example.framework.config.ConfigManager;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import javax.imageio.ImageIO;
@@ -26,7 +27,15 @@ public class VisualAssert {
      */
     public static void assertScreenshot(Page page, Path baselinePath, int tolerance, Locator... masks) throws IOException {
         File baselineFile = baselinePath.toFile();
-        baselineFile.getParentFile().mkdirs();
+
+        // Ensure parent directories exist
+        File parentDir = baselineFile.getParentFile();
+        if (parentDir != null && !parentDir.exists()) {
+            boolean created = parentDir.mkdirs();
+            if (created) {
+                System.out.println("Created baseline directory: " + parentDir.getAbsolutePath());
+            }
+        }
 
         boolean baselineMode = Boolean.getBoolean("baseline");
 
@@ -43,8 +52,11 @@ public class VisualAssert {
 
         // Current screenshot capture
         String baseName = baselinePath.getFileName().toString().replace(".png", "");
-        Path currentPath = Paths.get("target", baseName + "-current.png");
-        Path diffPath = Paths.get("target", baseName + "-diff.png");
+
+        // Add browser name into filenames to avoid overwriting
+        String browserName = ConfigManager.getBrowser();
+        Path currentPath = Paths.get("target", baseName + "-" + browserName + "-current.png");
+        Path diffPath = Paths.get("target", baseName + "-" + browserName + "-diff.png");
 
         Page.ScreenshotOptions currentOptions = new Page.ScreenshotOptions().setPath(currentPath);
         if (masks != null && masks.length > 0) {

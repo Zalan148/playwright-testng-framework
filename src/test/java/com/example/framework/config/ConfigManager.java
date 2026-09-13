@@ -47,9 +47,13 @@ public class ConfigManager {
     }
 
     public static String getBrowser() {
-       String browser = get("browser");
-       log.info("Browser: {}", browser);
-       return browser;
+        // Default to chromium if no property is set
+        String browser = System.getProperty("browser", get("browser"));
+        if (browser == null || browser.isBlank()) {
+            browser = "chromium";
+        }
+        log.info("Browser: {}", browser);
+        return browser;
 
     }
 

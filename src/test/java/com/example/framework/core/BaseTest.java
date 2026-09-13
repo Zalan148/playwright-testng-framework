@@ -10,7 +10,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.lang.reflect.Method;
@@ -66,7 +65,7 @@ public class BaseTest {
       browser = browserType.launch(new BrowserType.LaunchOptions()
               .setHeadless(ConfigManager.isHeadless()));
         System.out.println("BASE DEBUG: After browser.launch()");
-      context = browser.newContext(
+        context = browser.newContext(
               new Browser.NewContextOptions().setRecordVideoDir(Paths.get("videos")).setRecordVideoSize(1280,720)
       );
       page = context.newPage();
@@ -89,10 +88,17 @@ public class BaseTest {
         String[] groups = result.getMethod().getGroups();
         System.out.println("Active groups for test '" + method.getName() + "': "
                 + (groups.length > 0 ? String.join(", ", groups) : "none"));
+
+        // 4. Print browser info (after page is created)
+        System.out.println("Playwright browser type: " + browserType.name());
+        System.out.println("User agent: " + page.evaluate("navigator.userAgent"));
+
     }
 
   @AfterMethod
     public void tearDown(ITestResult result){
+
+        String browserName = ConfigManager.getBrowser();
 
         log.info("Finished test {} on thread {}",
                 this.getClass().getSimpleName(),
@@ -109,7 +115,7 @@ public class BaseTest {
             );
 
             io.qameta.allure.Allure.addAttachment(
-                    "Screenshot",
+                    "Screenshot (" + browserName + ")",
                     "image/png",
                     new ByteArrayInputStream(screenshot),
                     "png"
@@ -118,7 +124,7 @@ public class BaseTest {
             //HTML Snapshot
             String html = page.content();
             io.qameta.allure.Allure.addAttachment(
-                    "HTML Snapshot",
+                    "HTML Snapshot (" + browserName + ")",
                     "text/html",
                     new ByteArrayInputStream(html.getBytes(StandardCharsets.UTF_8)),
                     "html"
@@ -128,7 +134,7 @@ public class BaseTest {
             if (!consoleLogs.isEmpty()) {
                 String logs = String.join("\n", consoleLogs);
                 io.qameta.allure.Allure.addAttachment(
-                        "Console Logs",
+                        "Console Logs (" + browserName + ")",
                         "text/plain",
                         new ByteArrayInputStream(logs.getBytes(StandardCharsets.UTF_8)),
                         "txt"
@@ -165,7 +171,7 @@ public class BaseTest {
             byte[] videoBytes = Files.readAllBytes(videoPath);
 
             io.qameta.allure.Allure.addAttachment(
-                  "Video",
+                    "Video (" + browserName + ")",
                   "video/mp4",
                   new ByteArrayInputStream(videoBytes),
                   "mp4"

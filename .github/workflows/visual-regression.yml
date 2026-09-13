@@ -2,7 +2,7 @@ name: Playwright Visual Regression CI
 
 on:
   push:
-    branches: [ main, module-4 ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
   workflow_dispatch:   # allows manual trigger from GitHub UI
@@ -10,6 +10,9 @@ on:
 jobs:
   visual-tests:
     runs-on: ubuntu-22.04
+    strategy:
+     matrix:
+       browser: [chromium, firefox, webkit]
 
     steps:
       # Checkout repo
@@ -40,16 +43,16 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install
 
-      # Run visual regression tests (default mode)
+      # Run visual regression tests (per browser)
       - name: Run VisualRegressionTest suite
-        run: mvn test -Dtest=VisualRegressionTest
+        run: mvn test -Dtest=VisualRegressionTest -Dbrowser=${{ matrix.browser }}
 
       # Upload allure results (always)
       - name: Upload Allure results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results
+          name: allure-results-${{ matrix.browser }}
           path: target/allure-results
 
       # Upload videos (always)
@@ -57,7 +60,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-videos
+          name: test-videos-${{ matrix.browser }}
           path: videos
 
       # Upload visual regression artifacts (only if tests fail)
@@ -65,21 +68,25 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: visual-regression-current
-          path: target/*-current.png
+          name: visual-regression-current-${{ matrix.browser }}
+          path: target/${{ matrix.browser }}/*-current.png
           retention-days: 7
 
       - name: Upload diff screenshots
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: visual-regression-diffs
-          path: target/*-diff.png
+          name: visual-regression-diffs-${{ matrix.browser }}
+          path: target/${{ matrix.browser }}/*-diff.png
           retention-days: 7
 
   generate-baseline:
     runs-on: ubuntu-22.04
     if: github.event_name == 'workflow_dispatch'   # only runs when manually triggered
+    strategy:
+      matrix:
+        browser: [ chromium, firefox, webkit ]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -104,12 +111,16 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install
 
-      # Run tests in baseline mode
+      # Create baseline subfolder for this browser
+      - name: Create baseline directory
+        run: mkdir -p src/test/resources/baseline/${{ matrix.browser }}
+
+      # Run tests in baseline mode per browser
       - name: Generate baseline screenshots
-        run: mvn test -Dtest=VisualRegressionTest -Dbaseline=true
+        run: mvn test -Dtest=VisualRegressionTest -Dbaseline=true -Dbrowser=${{ matrix.browser }}
 
       - name: Upload baseline screenshots
         uses: actions/upload-artifact@v4
         with:
-          name: visual-regression-baseline
-          path: src/test/resources/baseline/*.png
+            name: visual-regression-baseline-${{ matrix.browser }}
+            path: src/test/resources/baseline/${{ matrix.browser }}/*.png

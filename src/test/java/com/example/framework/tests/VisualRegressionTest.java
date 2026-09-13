@@ -1,5 +1,6 @@
 package com.example.framework.tests;
 
+import com.example.framework.config.ConfigManager;
 import com.example.framework.config.Secrets;
 import com.example.framework.core.BaseTest;
 import com.example.framework.pages.InventoryPage;
@@ -8,21 +9,42 @@ import com.example.framework.utils.VisualAssert;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.LoadState;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
+@Listeners({io.qameta.allure.testng.AllureTestNg.class})
 public class VisualRegressionTest extends BaseTest {
+
+    @BeforeClass(alwaysRun = true)
+    public void setSuiteLabels() {
+        String browserName = ConfigManager.getBrowser();
+        String envName = env.getName();
+
+        io.qameta.allure.Allure.label("suite", "Visual Regression - " + browserName);
+        io.qameta.allure.Allure.label("environment", envName);
+    }
+
 
     // Helper method to wait until page is fully stable
     private void waitForPageReady(Page page) {
         page.waitForLoadState(LoadState.NETWORKIDLE);
     }
 
+    private void tagTestCase(String testName) {
+        String browserName = ConfigManager.getBrowser();
+        io.qameta.allure.Allure.label("testcase", testName + " [" + browserName + "]");
+    }
+
     @Test
     public void loginPageVisualCheck() throws IOException {
+        tagTestCase("loginPageVisualCheck");
+
         LoginPage loginPage = new LoginPage(page, env);
         loginPage.open();
 
@@ -35,12 +57,16 @@ public class VisualRegressionTest extends BaseTest {
                 page.locator(".rotating-banner")
         };
 
-        VisualAssert.assertScreenshot(page, Paths.get("src/test/resources/baseline/login.png"), 5, masks);
+        String browserName = ConfigManager.getBrowser();
+        Path baselinePath = Paths.get("src/test/resources/baseline", browserName, "login.png");
+        VisualAssert.assertScreenshot(page, baselinePath, 5, masks);
 
     }
 
     @Test
     public void inventoryPageVisualCheck() throws IOException {
+
+        tagTestCase("InventoryPageVisualCheck");
         LoginPage loginPage = new LoginPage(page, env);
         loginPage.open();
         InventoryPage inventoryPage = loginPage.login(Secrets.getUsername(), Secrets.getPassword());
@@ -54,7 +80,10 @@ public class VisualRegressionTest extends BaseTest {
                 page.locator(".rotating-banner")
         };
 
-        VisualAssert.assertScreenshot(page, Paths.get("src/test/resources/baseline/inventory.png"), 5, masks);
+        String browserName = ConfigManager.getBrowser();
+        Path baselinePath = Paths.get("src/test/resources/baseline", browserName, "inventory.png");
+        VisualAssert.assertScreenshot(page, baselinePath, 5, masks);
+
 
     }
 

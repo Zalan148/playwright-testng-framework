@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/visual-regression.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/visual-regression.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/VisualRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/VisualRegressionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/VisualAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/VisualAssert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/inventory.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/login.png" beforeDir="false" />
     </list>
@@ -82,7 +87,7 @@
     "TestNG.Run as TestNG.executor": "Run",
     "TestNG.ScreenshotTest.failingTest.executor": "Run",
     "TestNG.TeardownValidationTest.executor": "Run",
-    "TestNG.VisualRegressionTest.executor": "Run",
+    "TestNG.VisualRegressionTest.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/zalanwadood/IdeaProjects/playwright-testng-framework/pom.xml",
