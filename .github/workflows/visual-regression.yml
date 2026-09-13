@@ -11,6 +11,7 @@ jobs:
   visual-tests:
     runs-on: ubuntu-22.04
     strategy:
+     fail-fast: false
      matrix:
        browser: [chromium, firefox, webkit]
 
@@ -46,7 +47,7 @@ jobs:
       # Run visual regression tests (per browser)
       - name: Run VisualRegressionTest suite
         run: mvn test -Dtest=VisualRegressionTest -Dbrowser=${{ matrix.browser }}
-        continue-on-error: true
+
 
       # Upload allure results (always)
       - name: Upload Allure results

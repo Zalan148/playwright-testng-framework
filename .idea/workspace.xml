@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/visual-regression.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/visual-regression.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/chromium/inventory.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/baseline/chromium/inventory.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/chromium/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/baseline/chromium/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/firefox/inventory.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/baseline/firefox/inventory.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/firefox/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/baseline/firefox/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/webkit/inventory.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/baseline/webkit/inventory.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/webkit/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/baseline/webkit/login.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +99,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/baseline/webkit" />
+      <recent name="$PROJECT_DIR$/src/test/resources/baseline/firefox" />
+      <recent name="$PROJECT_DIR$/src/test/resources/baseline/chromium" />
       <recent name="$PROJECT_DIR$/src/test/resources/baseline" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
