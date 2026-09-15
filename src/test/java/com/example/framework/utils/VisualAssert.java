@@ -100,6 +100,7 @@ public class VisualAssert {
             }
         }
 
+
         ImageIO.write(diffImg, "png", diffPath.toFile());
         System.out.println("Diff screenshot saved at: " + diffPath.toAbsolutePath());
 

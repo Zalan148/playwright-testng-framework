@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Visual Regression">
-    <test name="Visual Regression">
+    <test name="Chromium">
         <classes>
             <class name="com.example.framework.tests.VisualRegressionTest"/>
         </classes>

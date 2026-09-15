@@ -9,7 +9,9 @@ import com.example.framework.utils.VisualAssert;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.LoadState;
+import io.qameta.allure.Allure;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -21,16 +23,6 @@ import java.nio.file.Paths;
 @Listeners({io.qameta.allure.testng.AllureTestNg.class})
 public class VisualRegressionTest extends BaseTest {
 
-    @BeforeClass(alwaysRun = true)
-    public void setSuiteLabels() {
-        String browserName = ConfigManager.getBrowser();
-        String envName = env.getName();
-
-        io.qameta.allure.Allure.label("suite", "Visual Regression - " + browserName);
-        io.qameta.allure.Allure.label("environment", envName);
-    }
-
-
     // Helper method to wait until page is fully stable
     private void waitForPageReady(Page page) {
         page.waitForLoadState(LoadState.NETWORKIDLE);
@@ -38,7 +30,10 @@ public class VisualRegressionTest extends BaseTest {
 
     private void tagTestCase(String testName) {
         String browserName = ConfigManager.getBrowser();
-        io.qameta.allure.Allure.label("testcase", testName + " [" + browserName + "]");
+
+        Allure.getLifecycle().updateTestCase(testResult ->
+                testResult.setName(testName + " [" + browserName + "]")
+        );
     }
 
     @Test
