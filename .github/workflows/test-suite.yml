@@ -68,9 +68,9 @@ jobs:
           name: test-videos-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
           path: videos
 
-performance-tests:
-  runs-on: ubuntu-22.04
-  steps:
+  performance-tests:
+    runs-on: ubuntu-22.04
+    steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
