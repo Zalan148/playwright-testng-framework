@@ -114,80 +114,144 @@ Notes
 ------------------------------------------------------------------
 
 
-Visual Regression Workflow
-This framework uses Playwright + VisualAssert for screenshot‑based regression testing.
-Follow the cycle below to generate and validate baselines consistently across local and CI environments.
+## Visual Regression Workflow
 
-Workflow Checklist
-**Step 0 — Reset**
-Clear src/test/resources/baseline/
-Clear target/
-✅ Start from a clean slate
+This framework uses Playwright + VisualAssert for screenshot-based regression testing.
 
-**Step 1 — Local run**
-Run tests locally:
-bash
-mvn test -Dtest=VisualRegressionTest
-Framework generates local baselines
-✅ Expectation: passes locally
+Visual baselines are maintained separately for Chromium, Firefox and WebKit and are generated from the CI environment to provide consistent reference images.
 
-**Step 2 — CI run with local baselines**
-Commit/push local baselines:
-bash
+### Workflow Checklist
+
+#### Step 0 — Reset
+
+Clear:
+
+src/test/resources/baseline/
+target/
+
+Start from a clean slate when establishing or validating baselines.
+
+#### Step 1 — Local baseline and visual regression run
+
+Run the visual regression tests separately for each browser using the dedicated TestNG suite files:
+
+mvn test -Dsurefire.suiteXmlFiles=testng-visual-chromium.xml -Dbrowser=chromium
+mvn test -Dsurefire.suiteXmlFiles=testng-visual-firefox.xml -Dbrowser=firefox
+mvn test -Dsurefire.suiteXmlFiles=testng-visual-webkit.xml -Dbrowser=webkit
+
+Dedicated suite files provide the correct browser-specific hierarchy in Allure.
+
+When baselines need to be generated or refreshed, run the tests explicitly with:
+
+mvn test -Dtest=VisualRegressionTest -Dbaseline=true -Dbrowser=chromium
+
+and repeat for Firefox and WebKit.
+
+Baselines are stored separately:
+
+src/test/resources/baseline/
+├── chromium/
+├── firefox/
+└── webkit/
+
+Normal visual regression runs compare screenshots against the existing baselines and do not overwrite them.
+
+Note: Running the three browsers using the generic `-Dtest=VisualRegressionTest` approach works functionally, but the Allure hierarchy falls back to the Surefire suite/test structure. Use the dedicated browser-specific TestNG suite files when clean Allure labelling is required.
+
+#### Step 2 — CI run with local baselines
+
+Commit and push the current baselines:
+
 git add src/test/resources/baseline/
 git commit -m "Push local baselines"
 git push origin main
-CI runs visual-tests automatically
-✅ Expectation: fails (local vs CI mismatch)
 
-**Step 3 — Generate baselines in CI**
-Go to Actions → Run workflow → select main
-CI runs generate-baseline job
-✅ Expectation: baseline artifact produced
+CI runs visual-tests automatically for:
 
-**Step 4 — Commit CI baselines**
-Download artifact → copy PNGs into src/test/resources/baseline/
-Commit/push:
-bash
+- Chromium
+- Firefox
+- WebKit
+
+Expectation: tests fail if local baselines differ from CI rendering.
+
+When failures occur, CI uploads:
+
+- Current screenshots
+- Diff screenshots
+- Test videos
+- Allure results containing failure attachments
+
+Diff screenshots highlight visual differences.
+
+#### Step 3 — Generate baselines in CI
+
+Manually trigger baseline generation:
+
+Actions → Run workflow → select `main`
+
+CI generates baseline screenshots for each browser.
+
+Expectation: baseline artifacts are produced separately for Chromium, Firefox and WebKit.
+
+#### Step 4 — Commit CI baselines
+
+Download the CI-generated baseline artifacts and copy the images into:
+
+src/test/resources/baseline/<browser>/
+
+Commit and push:
+
 git add src/test/resources/baseline/
 git commit -m "Commit CI-generated baselines"
 git push origin main
-CI runs visual-tests automatically
-✅ Expectation: passes (CI vs CI baselines match)
 
-**Step 5 — Regression confirmation**
-Any further commit/push triggers visual-tests again
-✅ Expectation: passes unless code changes introduce differences
+CI runs visual-tests automatically.
 
-🔹 Notes
-Step4 run is effectively your first regression confirmation.
-Step5 is optional unless you want to re‑validate after new commits.
-Skipped jobs during baseline generation are harmless and acceptable in a professional setup.
+Expectation: all browsers pass because CI is comparing against CI-generated baselines.
 
-🔹 Baseline Refresh Policy
-Baseline images are the “golden” reference for regression checks. To keep them reliable:
+#### Step 5 — Regression confirmation
 
-When to refresh
-After intentional UI changes (new layout, design updates).
+Any subsequent code change triggers visual-tests.
 
-At the start of a new sprint or release cycle.
+Expectation:
 
-How to refresh
-Trigger baseline generation in CI (workflow_dispatch).
+- Tests pass when the UI matches the approved baselines.
+- Tests fail when an unexpected visual difference is detected.
+- Diff screenshots highlight the differences.
+- Current screenshots show the actual rendered page.
+- Failure attachments and Allure results are uploaded.
 
-Download the visual-regression-baseline artifact.
+### Baseline Refresh Policy
 
-Replace images in src/test/resources/baseline/.
+Baseline images are the "golden" reference for regression checks.
 
-Commit and push with a clear message:
+#### When to refresh
 
-bash
-git commit -m "Refresh CI baselines after UI update"
-git push origin main
-Who approves
-Baseline updates should be reviewed in pull requests to confirm changes are deliberate.
+Refresh baselines only after intentional UI changes, such as:
 
-Golden rule
-Never overwrite baselines unless the UI change is intentional.
+- New layouts
+- Design changes
+- Approved visual updates
 
-Investigate regression failures first — don’t “fix” them by refreshing baselines unless the UI change is expected.
+#### How to refresh
+
+1. Trigger the CI baseline-generation workflow using `workflow_dispatch`.
+2. Download the baseline artifacts for each browser.
+3. Replace the corresponding images in:
+
+   src/test/resources/baseline/<browser>/
+
+4. Commit the updated baselines with a clear message, for example:
+
+   git commit -m "Refresh CI baselines after UI update"
+   git push origin main
+
+#### Review
+
+Baseline updates should be reviewed in pull requests to confirm that visual changes are deliberate and expected.
+
+#### Golden Rule
+
+**Never overwrite baselines simply to make a failing test pass.**
+
+Investigate visual-regression failures first. Refresh the baseline only when the UI change is intentional and approved.

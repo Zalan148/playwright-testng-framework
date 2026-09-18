@@ -46,7 +46,7 @@ jobs:
           nohup node server.js &
           sleep 5
 
-      - name: Run TestNG suite
+      - name: Run Functional TestNG suite
         run: |
           if [ "${{ matrix.browser }}" = "firefox" ]; then
             mvn test -DsuiteXmlFile=testng.xml -Dbrowser=firefox -Dheadless=true -Ddataproviderthreadcount=1 -DforkCount=1
@@ -54,17 +54,59 @@ jobs:
             mvn test -DsuiteXmlFile=testng.xml -Dbrowser=${{ matrix.browser }} -Dheadless=${{ matrix.headless }}
           fi
 
-      - name: Upload Allure results
+      - name: Upload Allure results (Functional)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
           path: target/allure-results
 
-      - name: Upload videos
+      - name: Upload videos (Functional)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-videos-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
           path: videos
 
+performance-tests:
+  runs-on: ubuntu-22.04
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Java 21
+      uses: actions/setup-java@v5
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '24'
+
+    - name: Install dependencies
+      run: |
+        npm install
+        mvn install -DskipTests
+
+    - name: Install Playwright dependencies
+      run: |
+        for i in 1 2 3; do
+            npx playwright install-deps && break || sleep 30
+        done
+
+    - name: Start mock server
+      run: |
+        nohup node server.js &
+        sleep 5
+
+    - name: Run Performance TestNG suite
+      run: mvn test -DsuiteXmlFile=testng-performance.xml -Dbrowser=chromium -Dheadless=true
+
+    - name: Upload Allure results (Performance)
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: allure-results-performance
+        path: target/allure-results

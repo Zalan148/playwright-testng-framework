@@ -29,6 +29,11 @@ public class InventoryPage extends BasePage {
         this.env = env;
     }
 
+    public void waitForPageLoad() {
+        page.waitForSelector(".inventory_list"); // waits until product grid is visible
+    }
+
+
     public void open(){
         page.navigate(env.getBaseURL() + "/inventory");
     }
