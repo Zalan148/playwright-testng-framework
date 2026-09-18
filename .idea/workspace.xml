@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/PerformanceUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/performance/PerformanceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng-performance.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/test-suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test-suite.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/chromium/inventory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/chromium/login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/firefox/inventory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/firefox/login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/webkit/inventory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/webkit/login.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
