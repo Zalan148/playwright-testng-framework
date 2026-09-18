@@ -77,6 +77,53 @@ jobs:
           name: test-videos-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
           path: videos
 
+            # Combine results from all three browsers and generate one Allure report
+  allure-report:
+              runs-on: ubuntu-22.04
+              needs: test
+              if: always()
+
+              steps:
+                # Download Chromium results
+                - name: Download Chromium Allure results
+                  uses: actions/download-artifact@v4
+                  with:
+                    name: allure-results-chromium
+                    path: target/allure-results
+
+                # Download Firefox results
+                - name: Download Firefox Allure results
+                  uses: actions/download-artifact@v4
+                  with:
+                    name: allure-results-firefox
+                    path: target/allure-results
+
+                # Download WebKit results
+                - name: Download WebKit Allure results
+                  uses: actions/download-artifact@v4
+                  with:
+                    name: allure-results-webkit
+                    path: target/allure-results
+
+                # Generate combined Allure report
+                - name: Generate combined Allure report
+                  run: |
+                    docker run --rm \
+                      -v "${{ github.workspace }}/target/allure-results:/allure-results" \
+                      -v "${{ github.workspace }}/target/allure-report:/allure-report" \
+                      frankescobar/allure-docker-service \
+                      allure generate /allure-results -o /allure-report --clean
+
+                # Upload combined Allure report
+                - name: Upload combined Allure report
+                  if: always()
+                  uses: actions/upload-artifact@v4
+                  with:
+                    name: allure-report-combined
+                    path: target/allure-report
+                    retention-days: 7
+
+
   performance-tests:
     runs-on: ubuntu-22.04
     steps:
