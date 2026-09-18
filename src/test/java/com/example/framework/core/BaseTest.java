@@ -39,12 +39,6 @@ public class BaseTest {
 
     private List<String> consoleLogs = new ArrayList<>();
 
-    @BeforeSuite(alwaysRun = true)
-    public void addBrowserLabel() {
-        // Pick up the browser system property passed in CI
-        String browserName = System.getProperty("browser", "unknown");
-        Allure.label("browser", browserName);
-    }
 
     @BeforeClass(alwaysRun = true)
     public void beforeClassSetup() {

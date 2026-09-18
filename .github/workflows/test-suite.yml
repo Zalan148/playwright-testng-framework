@@ -49,9 +49,11 @@ jobs:
       - name: Run Functional TestNG suite
         run: |
           if [ "${{ matrix.browser }}" = "firefox" ]; then
-            mvn test -DsuiteXmlFile=testng.xml -Dbrowser=firefox -Dheadless=true -Ddataproviderthreadcount=1 -DforkCount=1
+            mvn test -Dsurefire.suiteXmlFiles=testng-firefox.xml -Dbrowser=firefox -Dheadless=true -Ddataproviderthreadcount=1 -DforkCount=1
+          elif [ "${{ matrix.browser }}" = "chromium" ]; then
+            mvn test -Dsurefire.suiteXmlFiles=testng-chromium.xml -Dbrowser=chromium -Dheadless=true
           else
-            mvn test -DsuiteXmlFile=testng.xml -Dbrowser=${{ matrix.browser }} -Dheadless=${{ matrix.headless }}
+            mvn test -Dsurefire.suiteXmlFiles=testng-webkit.xml -Dbrowser=webkit -Dheadless=true
           fi
 
       - name: Add environment info
