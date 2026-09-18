@@ -54,6 +54,13 @@ jobs:
             mvn test -DsuiteXmlFile=testng.xml -Dbrowser=${{ matrix.browser }} -Dheadless=${{ matrix.headless }}
           fi
 
+      - name: Add environment info
+        run: |
+         echo "Browser=${{ matrix.browser }}" >> target/allure-results/environment.properties
+         echo "Headless=${{ matrix.headless }}" >> target/allure-results/environment.properties
+         echo "OS=${{ matrix.os }}" >> target/allure-results/environment.properties
+         echo "Suite=Functional" >> target/allure-results/environment.properties
+
       - name: Upload Allure results (Functional)
         if: always()
         uses: actions/upload-artifact@v4
@@ -103,6 +110,13 @@ jobs:
 
     - name: Run Performance TestNG suite
       run: mvn test -DsuiteXmlFile=testng-performance.xml -Dbrowser=chromium -Dheadless=true
+
+    - name: Add environment info
+      run: |
+        echo "Browser=chromium" >> target/allure-results/environment.properties
+        echo "Headless=true" >> target/allure-results/environment.properties
+        echo "OS=ubuntu-22.04" >> target/allure-results/environment.properties
+        echo "Suite=Performance" >> target/allure-results/environment.properties
 
     - name: Upload Allure results (Performance)
       if: always()
