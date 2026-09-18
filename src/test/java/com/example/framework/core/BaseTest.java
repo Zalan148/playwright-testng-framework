@@ -5,11 +5,14 @@ import com.example.framework.config.ApiSecretsLoader;
 import com.example.framework.config.ConfigManager;
 import com.example.framework.config.Environment;
 import com.microsoft.playwright.*;
+import io.qameta.allure.Allure;
 import org.slf4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.lang.reflect.Method;
@@ -36,6 +39,12 @@ public class BaseTest {
 
     private List<String> consoleLogs = new ArrayList<>();
 
+    @BeforeSuite(alwaysRun = true)
+    public void addBrowserLabel() {
+        // Pick up the browser system property passed in CI
+        String browserName = System.getProperty("browser", "unknown");
+        Allure.label("browser", browserName);
+    }
 
     @BeforeClass(alwaysRun = true)
     public void beforeClassSetup() {
