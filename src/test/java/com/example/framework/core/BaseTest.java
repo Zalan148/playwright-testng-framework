@@ -51,6 +51,8 @@ public class BaseTest {
 
         consoleLogs.clear();
 
+        Allure.parameter("browser", ConfigManager.getBrowser());
+
       log.info("Starting test {} on thread {}",
               this.getClass().getSimpleName(),
               Thread.currentThread().getName());
