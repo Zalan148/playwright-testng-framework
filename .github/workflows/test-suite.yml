@@ -15,6 +15,7 @@ jobs:
         os: [ ubuntu-22.04 ]
         browser: [ firefox, chromium, webkit ]
         headless: [ true ]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -58,10 +59,10 @@ jobs:
 
       - name: Add environment info
         run: |
-         echo "Browser=${{ matrix.browser }}" >> target/allure-results/environment.properties
-         echo "Headless=${{ matrix.headless }}" >> target/allure-results/environment.properties
-         echo "OS=${{ matrix.os }}" >> target/allure-results/environment.properties
-         echo "Suite=Functional" >> target/allure-results/environment.properties
+          echo "Browser=${{ matrix.browser }}" >> target/allure-results/environment.properties
+          echo "Headless=${{ matrix.headless }}" >> target/allure-results/environment.properties
+          echo "OS=${{ matrix.os }}" >> target/allure-results/environment.properties
+          echo "Suite=Functional" >> target/allure-results/environment.properties
 
       - name: Upload Allure results (Functional)
         if: always()
@@ -77,99 +78,139 @@ jobs:
           name: test-videos-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
           path: videos
 
-            # Combine results from all three browsers and generate one Allure report
-  allure-report:
-              runs-on: ubuntu-22.04
-              needs: test
-              if: always()
-
-              steps:
-                # Download Chromium results
-                - name: Download Chromium Allure results
-                  uses: actions/download-artifact@v4
-                  with:
-                    name: allure-results-chromium
-                    path: target/allure-results
-
-                # Download Firefox results
-                - name: Download Firefox Allure results
-                  uses: actions/download-artifact@v4
-                  with:
-                    name: allure-results-firefox
-                    path: target/allure-results
-
-                # Download WebKit results
-                - name: Download WebKit Allure results
-                  uses: actions/download-artifact@v4
-                  with:
-                    name: allure-results-webkit
-                    path: target/allure-results
-
-                # Generate combined Allure report
-                - name: Generate combined Allure report
-                  run: |
-                    docker run --rm \
-                      -v "${{ github.workspace }}/target/allure-results:/allure-results" \
-                      -v "${{ github.workspace }}/target/allure-report:/allure-report" \
-                      frankescobar/allure-docker-service \
-                      allure generate /allure-results -o /allure-report --clean
-
-                # Upload combined Allure report
-                - name: Upload combined Allure report
-                  if: always()
-                  uses: actions/upload-artifact@v4
-                  with:
-                    name: allure-report-combined
-                    path: target/allure-report
-                    retention-days: 7
-
 
   performance-tests:
     runs-on: ubuntu-22.04
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Java 21
-      uses: actions/setup-java@v5
-      with:
-        java-version: '21'
-        distribution: 'temurin'
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          distribution: 'temurin'
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '24'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
 
-    - name: Install dependencies
-      run: |
-        npm install
-        mvn install -DskipTests
+      - name: Install dependencies
+        run: |
+          npm install
+          mvn install -DskipTests
 
-    - name: Install Playwright dependencies
-      run: |
-        for i in 1 2 3; do
-            npx playwright install-deps && break || sleep 30
-        done
+      - name: Install Playwright dependencies
+        run: |
+          for i in 1 2 3; do
+              npx playwright install-deps && break || sleep 30
+          done
 
-    - name: Start mock server
-      run: |
-        nohup node server.js &
-        sleep 5
+      - name: Start mock server
+        run: |
+          nohup node server.js &
+          sleep 5
 
-    - name: Run Performance TestNG suite
-      run: mvn test -DsuiteXmlFile=testng-performance.xml -Dbrowser=chromium -Dheadless=true
+      - name: Run Performance TestNG suite
+        run: mvn test -DsuiteXmlFile=testng-performance.xml -Dbrowser=chromium -Dheadless=true
 
-    - name: Add environment info
-      run: |
-        echo "Browser=chromium" >> target/allure-results/environment.properties
-        echo "Headless=true" >> target/allure-results/environment.properties
-        echo "OS=ubuntu-22.04" >> target/allure-results/environment.properties
-        echo "Suite=Performance" >> target/allure-results/environment.properties
+      - name: Add environment info
+        run: |
+          echo "Browser=chromium" >> target/allure-results/environment.properties
+          echo "Headless=true" >> target/allure-results/environment.properties
+          echo "OS=ubuntu-22.04" >> target/allure-results/environment.properties
+          echo "Suite=Performance" >> target/allure-results/environment.properties
 
-    - name: Upload Allure results (Performance)
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: allure-results-performance
-        path: target/allure-results
+      - name: Upload Allure results (Performance)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-performance
+          path: target/allure-results
+
+
+  # ============================================================
+  # Combine all Allure results and generate one report
+  # ============================================================
+
+  allure-report:
+    runs-on: ubuntu-22.04
+    needs:
+      - test
+      - performance-tests
+    if: always()
+
+    steps:
+      - name: Download Chromium Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-ubuntu-22.04-chromium-true
+          path: allure-results/chromium
+
+      - name: Download Firefox Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-ubuntu-22.04-firefox-true
+          path: allure-results/firefox
+
+      - name: Download WebKit Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-ubuntu-22.04-webkit-true
+          path: allure-results/webkit
+
+      - name: Download Performance Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-performance
+          path: allure-results/performance
+
+      - name: Prepare combined Allure results
+        run: |
+          mkdir -p combined-allure-results
+
+          echo "Combining Chromium results..."
+          cp allure-results/chromium/*-result.json combined-allure-results/ || true
+          cp allure-results/chromium/*-attachment.* combined-allure-results/ 2>/dev/null || true
+
+          echo "Combining Firefox results..."
+          cp allure-results/firefox/*-result.json combined-allure-results/ || true
+          cp allure-results/firefox/*-attachment.* combined-allure-results/ 2>/dev/null || true
+
+          echo "Combining WebKit results..."
+          cp allure-results/webkit/*-result.json combined-allure-results/ || true
+          cp allure-results/webkit/*-attachment.* combined-allure-results/ 2>/dev/null || true
+
+          echo "Combining Performance results..."
+          cp allure-results/performance/*-result.json combined-allure-results/ || true
+          cp allure-results/performance/*-attachment.* combined-allure-results/ 2>/dev/null || true
+
+          echo "Combined Allure result files:"
+          find combined-allure-results -maxdepth 1 -type f -print
+
+      - name: Create Allure environment information
+        run: |
+          {
+            echo "Functional Chromium: Browser=chromium"
+            echo "Functional Firefox: Browser=firefox"
+            echo "Functional WebKit: Browser=webkit"
+            echo "Performance: Browser=chromium"
+          } > combined-allure-results/environment-summary.txt
+
+      - name: Generate combined Allure report
+        run: |
+          docker run --rm \
+            -v "${{ github.workspace }}/combined-allure-results:/allure-results" \
+            -v "${{ github.workspace }}/allure-report:/allure-report" \
+            frankescobar/allure-docker-service \
+            allure generate /allure-results -o /allure-report --clean
+
+      - name: Upload combined Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report-combined
+          path: allure-report
+          retention-days: 7
