@@ -143,6 +143,23 @@ jobs:
     if: always()
 
     steps:
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline
+
+      - name: Check Allure version
+        run: allure --version
+
       - name: Download Chromium Allure results
         uses: actions/download-artifact@v4
         with:
@@ -172,36 +189,30 @@ jobs:
           mkdir -p combined-allure-results
 
           echo "Combining Chromium results..."
-          cp allure-results/chromium/*-result.json combined-allure-results/ || true
+          cp allure-results/chromium/*-result.json combined-allure-results/
           cp allure-results/chromium/*-attachment.* combined-allure-results/ 2>/dev/null || true
 
           echo "Combining Firefox results..."
-          cp allure-results/firefox/*-result.json combined-allure-results/ || true
+          cp allure-results/firefox/*-result.json combined-allure-results/
           cp allure-results/firefox/*-attachment.* combined-allure-results/ 2>/dev/null || true
 
           echo "Combining WebKit results..."
-          cp allure-results/webkit/*-result.json combined-allure-results/ || true
+          cp allure-results/webkit/*-result.json combined-allure-results/
           cp allure-results/webkit/*-attachment.* combined-allure-results/ 2>/dev/null || true
 
           echo "Combining Performance results..."
-          cp allure-results/performance/*-result.json combined-allure-results/ || true
+          cp allure-results/performance/*-result.json combined-allure-results/
           cp allure-results/performance/*-attachment.* combined-allure-results/ 2>/dev/null || true
 
+          echo ""
           echo "Combined Allure result files:"
           find combined-allure-results -maxdepth 1 -type f -print
 
-      - name: Create Allure environment information
-        run: |
-          {
-            echo "Functional Chromium: Browser=chromium"
-            echo "Functional Firefox: Browser=firefox"
-            echo "Functional WebKit: Browser=webkit"
-            echo "Performance: Browser=chromium"
-          } > combined-allure-results/environment-summary.txt
-
       - name: Generate combined Allure report
         run: |
-            allure generate /allure-results -o /allure-report --clean
+          allure generate combined-allure-results \
+            -o allure-report \
+            --clean
 
       - name: Upload combined Allure report
         if: always()
