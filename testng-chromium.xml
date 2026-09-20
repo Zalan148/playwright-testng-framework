@@ -3,6 +3,7 @@
 
 <suite name="Functional Tests" parallel="classes" thread-count="5">
     <test name="Chromium" parallel="classes" thread-count="5" verbose="2">
+        <parameter name="browser" value="Chromium"/>
         <classes>
             <!-- UI Tests -->
             <class name="com.example.framework.tests.CartTest"/>

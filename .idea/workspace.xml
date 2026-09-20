@@ -7,6 +7,9 @@
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-chromium.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-chromium.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-firefox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-firefox.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-webkit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-webkit.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

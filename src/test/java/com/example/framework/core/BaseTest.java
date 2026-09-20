@@ -11,7 +11,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -47,12 +47,11 @@ public class BaseTest {
     }
 
     @BeforeMethod(alwaysRun = true)
-    public void setUp(Method method, ITestResult result) {
+    @Parameters("browser")
+    public void setUp(String browserParameter, Method method, ITestResult result) {
 
         consoleLogs.clear();
-
-        Allure.parameter("browser", ConfigManager.getBrowser());
-
+        Allure.parameter("browser", browserParameter);
       log.info("Starting test {} on thread {}",
               this.getClass().getSimpleName(),
               Thread.currentThread().getName());
