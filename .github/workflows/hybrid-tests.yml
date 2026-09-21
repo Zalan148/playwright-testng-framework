@@ -126,22 +126,22 @@ jobs:
 
       - name: Prepare combined Allure results
         run: |
-          # Ensure no leftovers from previous runs
-          rm -rf combined-allure-results
-          mkdir -p combined-allure-results
+          # Clean out any leftovers from previous runs
+                    rm -rf combined-allure-results
+                    mkdir -p combined-allure-results
 
-          echo "Combining Chromium results..."
-          rsync -a --delete allure-results/chromium/ combined-allure-results/
+                    echo "Combining Chromium results..."
+                    cp -r allure-results/chromium/* combined-allure-results/ 2>/dev/null || true
 
-          echo "Combining Firefox results..."
-          rsync -a --delete allure-results/firefox/ combined-allure-results/
+                    echo "Combining Firefox results..."
+                    cp -r allure-results/firefox/* combined-allure-results/ 2>/dev/null || true
 
-          echo "Combining WebKit results..."
-          rsync -a --delete allure-results/webkit/ combined-allure-results/
+                    echo "Combining WebKit results..."
+                    cp -r allure-results/webkit/* combined-allure-results/ 2>/dev/null || true
 
-          echo ""
-          echo "Combined Allure result files:"
-          find combined-allure-results -maxdepth 1 -type f -print
+                    echo ""
+                    echo "Combined Allure result files:"
+                    find combined-allure-results -maxdepth 1 -type f -print
 
       - name: Generate combined Allure report
         run: |
