@@ -43,7 +43,7 @@ public class ApiUiFlowTest extends BaseTest {
         Allure.addAttachment("Order JSON", "application/json", response.body().toString());
 
         // Performance budget: API response < 1500ms
-        Assert.assertTrue(duration < 10, "API response exceeded 1500ms");
+        Assert.assertTrue(duration < 1500, "API response exceeded 1500ms");
     }
 
     @Test(dependsOnMethods = "apiCreatesOrder")
