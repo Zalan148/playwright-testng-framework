@@ -126,16 +126,17 @@ jobs:
 
       - name: Prepare combined Allure results
         run: |
+          rm -rf combined-allure-results
           mkdir -p combined-allure-results
 
           echo "Combining Chromium results..."
-          cp allure-results/chromium/* combined-allure-results/ 2>/dev/null || true
+          cp -r allure-results/chromium/* combined-allure-results/ 2>/dev/null || true
 
           echo "Combining Firefox results..."
-          cp allure-results/firefox/* combined-allure-results/ 2>/dev/null || true
+          cp -r allure-results/firefox/* combined-allure-results/ 2>/dev/null || true
 
           echo "Combining WebKit results..."
-          cp allure-results/webkit/* combined-allure-results/ 2>/dev/null || true
+          cp -r allure-results/webkit/* combined-allure-results/ 2>/dev/null || true
 
           echo ""
           echo "Combined Allure result files:"
