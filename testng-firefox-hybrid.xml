@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hybrid Suite - Firefox" parallel="classes" thread-count="5">
+    <test name="Hybrid Tests - Firefox" parallel="classes" thread-count="5" verbose="2">
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <!-- Hybrid Tests -->
+            <class name="com.example.tests.hybrid.HybridLoginBypassTest"/>
+            <class name="com.example.tests.hybrid.HybridOrderFlowTest"/>
+            <class name="com.example.tests.hybrid.HybridProductFlowTest"/>
+            <class name="com.example.tests.hybrid.HybridUserFlowTest"/>
+            <!-- New Parallel API+UI Flow -->
+            <class name="com.example.tests.hybrid.ApiUiFlowTest"/>
+        </classes>
+    </test>
+</suite>

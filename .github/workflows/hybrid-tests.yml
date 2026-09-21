@@ -1,0 +1,156 @@
+name: Playwright Hybrid TestNG CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  hybrid-tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-22.04 ]
+        browser: [ firefox, chromium, webkit ]
+        headless: [ true ]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: |
+          npm install
+          mvn install -DskipTests
+
+      - name: Install Playwright dependencies
+        run: |
+          for i in 1 2 3; do
+              npx playwright install-deps && break || sleep 30
+          done
+
+      - name: Start mock server
+        run: |
+          nohup node server.js &
+          sleep 5
+
+      - name: Run Hybrid TestNG suite
+        run: |
+          if [ "${{ matrix.browser }}" = "firefox" ]; then
+            mvn test -Dsurefire.suiteXmlFiles=testng-firefox-hybrid.xml -Dbrowser=firefox -Dheadless=true -Ddataproviderthreadcount=1 -DforkCount=1
+          elif [ "${{ matrix.browser }}" = "chromium" ]; then
+            mvn test -Dsurefire.suiteXmlFiles=testng-chromium-hybrid.xml -Dbrowser=chromium -Dheadless=true
+          else
+            mvn test -Dsurefire.suiteXmlFiles=testng-webkit-hybrid.xml -Dbrowser=webkit -Dheadless=true
+          fi
+
+      - name: Add environment info
+        run: |
+          echo "Browser=${{ matrix.browser }}" >> target/allure-results/environment.properties
+          echo "Headless=${{ matrix.headless }}" >> target/allure-results/environment.properties
+          echo "OS=${{ matrix.os }}" >> target/allure-results/environment.properties
+          echo "Suite=Hybrid" >> target/allure-results/environment.properties
+
+      - name: Upload Allure results (Hybrid)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
+          path: target/allure-results
+
+      - name: Upload videos (Hybrid)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-videos-${{ matrix.os }}-${{ matrix.browser }}-${{ matrix.headless }}
+          path: videos
+
+
+  # ============================================================
+  # Combine all Allure results and generate one report
+  # ============================================================
+
+  allure-report:
+    runs-on: ubuntu-22.04
+    needs: [ hybrid-tests ]
+    if: always()
+
+    steps:
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline
+
+      - name: Check Allure version
+        run: allure --version
+
+      - name: Download Chromium Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-ubuntu-22.04-chromium-true
+          path: allure-results/chromium
+
+      - name: Download Firefox Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-ubuntu-22.04-firefox-true
+          path: allure-results/firefox
+
+      - name: Download WebKit Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-ubuntu-22.04-webkit-true
+          path: allure-results/webkit
+
+      - name: Prepare combined Allure results
+        run: |
+          mkdir -p combined-allure-results
+
+          echo "Combining Chromium results..."
+          cp allure-results/chromium/* combined-allure-results/ 2>/dev/null || true
+
+          echo "Combining Firefox results..."
+          cp allure-results/firefox/* combined-allure-results/ 2>/dev/null || true
+
+          echo "Combining WebKit results..."
+          cp allure-results/webkit/* combined-allure-results/ 2>/dev/null || true
+
+          echo ""
+          echo "Combined Allure result files:"
+          find combined-allure-results -maxdepth 1 -type f -print
+
+      - name: Generate combined Allure report
+        run: |
+          allure generate combined-allure-results \
+            -o allure-report \
+            --clean
+
+      - name: Upload combined Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report-combined
+          path: allure-report
+          retention-days: 7

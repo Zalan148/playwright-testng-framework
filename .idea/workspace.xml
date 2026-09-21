@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/hybrid-tests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/ApiUiFlowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng-chromium-hybrid.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng-firefox-hybrid.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng-webkit-hybrid.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng-chromium.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-chromium.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng-firefox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-firefox.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng-webkit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-webkit.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
