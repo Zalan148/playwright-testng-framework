@@ -42,8 +42,8 @@ public class ApiUiFlowTest extends BaseTest {
         Allure.step("API created order ID: " + createdOrderId);
         Allure.addAttachment("Order JSON", "application/json", response.body().toString());
 
-        // Performance budget: API response < 2000ms
-        Assert.assertTrue(duration < 2000, "API response exceeded 2000ms");
+        // Performance budget: API response < 1500ms
+        Assert.assertTrue(duration < 1500, "API response exceeded 1500ms");
     }
 
     @Test(dependsOnMethods = "apiCreatesOrder")
@@ -90,7 +90,7 @@ public class ApiUiFlowTest extends BaseTest {
         Allure.addAttachment("Browser Performance Timing", perfTiming.toString());
 
         // Performance budgets
-        Assert.assertTrue(duration < 3000, "UI render exceeded 3s");
+        Assert.assertTrue(duration < 2000, "UI render exceeded 2s");
         Assert.assertTrue(usedMemory < 500_000_000, "Memory usage exceeded 500MB");
         Assert.assertTrue(itemText.contains("Sauce Labs Backpack"), "Expected product not found in UI");
     }
