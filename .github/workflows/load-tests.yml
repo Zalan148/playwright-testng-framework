@@ -1,0 +1,52 @@
+name: Load Tests
+
+on:
+  workflow_dispatch:   # run manually when needed
+  schedule:
+    - cron: "0 2 * * *"  # optional: nightly at 2 AM
+
+jobs:
+  load-tests:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        script: [load-test.js, order-load.js, login-load.js, browse-load.js]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install k6
+        run: sudo apt-get update && sudo apt-get install -y k6
+
+      - name: Run k6 load test
+        run: k6 run load-tests/${{ matrix.script }} --out json=results-${{ matrix.script }}.json
+
+      - name: Upload k6 results
+        uses: actions/upload-artifact@v4
+        with:
+          name: k6-results-${{ matrix.script }}
+          path: results-${{ matrix.script }}.json
+          retention-days: 7
+  aggregate-results:
+    runs-on: ubuntu-22.04
+    needs: load-tests
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download all k6 results
+        uses: actions/download-artifact@v4
+        with:
+          path: ./results
+
+      - name: Aggregate k6 results
+        run: node scripts/aggregate-k6.js
+
+      - name: Upload summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: k6-summary
+          path: ./results/summary.json
+
+      - name: Pretty-print summary.json
+        run: cat ./results/summary.json | jq .
