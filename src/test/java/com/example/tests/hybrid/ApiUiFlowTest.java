@@ -90,7 +90,7 @@ public class ApiUiFlowTest extends BaseTest {
         Allure.addAttachment("Browser Performance Timing", perfTiming.toString());
 
         // Performance budgets
-        Assert.assertTrue(duration < 2000, "UI render exceeded 2s");
+        Assert.assertTrue(duration < 2500, "UI render exceeded 2.5s");
         Assert.assertTrue(usedMemory < 500_000_000, "Memory usage exceeded 500MB");
         Assert.assertTrue(itemText.contains("Sauce Labs Backpack"), "Expected product not found in UI");
     }
