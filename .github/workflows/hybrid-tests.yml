@@ -126,22 +126,23 @@ jobs:
 
       - name: Prepare combined Allure results
         run: |
-          # Clean out any leftovers from previous runs
-                    rm -rf combined-allure-results
-                    mkdir -p combined-allure-results
+          rm -rf combined-allure-results
+          mkdir -p combined-allure-results/chromium
+          mkdir -p combined-allure-results/firefox
+          mkdir -p combined-allure-results/webkit
 
-                    echo "Combining Chromium results..."
-                    cp -r allure-results/chromium/* combined-allure-results/ 2>/dev/null || true
+          echo "Copying Chromium results..."
+          cp -r allure-results/chromium/* combined-allure-results/chromium/ 2>/dev/null || true
 
-                    echo "Combining Firefox results..."
-                    cp -r allure-results/firefox/* combined-allure-results/ 2>/dev/null || true
+          echo "Copying Firefox results..."
+          cp -r allure-results/firefox/* combined-allure-results/firefox/ 2>/dev/null || true
 
-                    echo "Combining WebKit results..."
-                    cp -r allure-results/webkit/* combined-allure-results/ 2>/dev/null || true
+          echo "Copying WebKit results..."
+          cp -r allure-results/webkit/* combined-allure-results/webkit/ 2>/dev/null || true
 
-                    echo ""
-                    echo "Combined Allure result files:"
-                    find combined-allure-results -maxdepth 1 -type f -print
+          echo ""
+          echo "Combined Allure result files:"
+          find combined-allure-results -type f -print
 
       - name: Generate combined Allure report
         run: |
