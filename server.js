@@ -15,6 +15,11 @@ server.post('/auth/login', (req, res) => {
   return res.status(200).json({ token: user.token });
 });
 
+server.post('/orders', (req, res) => {
+  console.log('Order received:', req.body);
+  res.status(201).json({ message: 'Order created successfully' });
+});
+
 server.use(router);
 
 server.listen(3001, () => {

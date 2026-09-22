@@ -21,7 +21,7 @@ export let options = {
 };
 
 export default function () {
-  let res = http.post('http://localhost:3001/orders.html', JSON.stringify({ item: 'Laptop' }), {
+  let res = http.post('http://localhost:3001/orders', JSON.stringify({ item: 'Laptop' }), {
     headers: { 'Content-Type': 'application/json' },
   });
   check(res, { 'status is 201': (r) => r.status === 201 });
