@@ -21,7 +21,7 @@ export let options = {
 };
 
 export default function () {
-  let payload = JSON.stringify({ username: 'testuser', password: 'password123' });
+  let payload = JSON.stringify({ username: 'admin_user', password: 'admin_password123' });
   let res = http.post('http://localhost:3001/login.html', payload, {
     headers: { 'Content-Type': 'application/json' },
   });
