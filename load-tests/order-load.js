@@ -1,3 +1,13 @@
+/*
+  HybridOrderFlowTest
+  --------------------
+  This test uses mock frontend pages (served from /public via Node server on port 3001).
+
+  Reason: SauceDemo requires login before accessing inventory/orders pages.
+  To isolate and load-test flows (login, browse, order) without full login + checkout,
+  we use mock pages instead.
+*/
+
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
@@ -11,7 +21,7 @@ export let options = {
 };
 
 export default function () {
-  let res = http.post('https://your-api-endpoint.com/orders', JSON.stringify({ item: 'Laptop' }), {
+  let res = http.post('http://localhost:3001/orders.html', JSON.stringify({ item: 'Laptop' }), {
     headers: { 'Content-Type': 'application/json' },
   });
   check(res, { 'status is 201': (r) => r.status === 201 });

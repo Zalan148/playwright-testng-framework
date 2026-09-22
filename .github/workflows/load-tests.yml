@@ -24,6 +24,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y k6
 
+      - name: Start mock server
+        run: |
+         nohup node server.js &
 
       - name: Run k6 load test
         run: k6 run load-tests/${{ matrix.script }} --out json=results-${{ matrix.script }}.json

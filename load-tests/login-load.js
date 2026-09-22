@@ -1,3 +1,13 @@
+/*
+  HybridLoginFlowTest
+  --------------------
+  This test uses mock frontend pages (served from /public via Node server on port 3001).
+
+  Reason: SauceDemo requires login before accessing inventory/orders pages.
+  To isolate and load-test flows (login, browse, order) without full login + checkout,
+  we use mock pages instead.
+*/
+
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
@@ -12,7 +22,7 @@ export let options = {
 
 export default function () {
   let payload = JSON.stringify({ username: 'testuser', password: 'password123' });
-  let res = http.post('https://your-api-endpoint.com/login', payload, {
+  let res = http.post('http://localhost:3001/login.html', payload, {
     headers: { 'Content-Type': 'application/json' },
   });
   check(res, { 'login success': (r) => r.status === 200 });
