@@ -16,9 +16,7 @@ public class ApiSmokeTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void verifyApiIsReachable() {
 
-        System.out.println("API TEST DEBUG: Before UserClient creation");
         UserClient userClient = new UserClient(env, apiSecrets);
-        System.out.println("API TEST DEBUG: After UserClient creation");
         APIResponse response = userClient.getAllUsers();
         ResponseValidator.assertStatus(response, 200);
         Allure.addAttachment("Response Body", response.text());

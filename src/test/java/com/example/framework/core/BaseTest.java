@@ -43,6 +43,7 @@ public class BaseTest {
     @BeforeClass(alwaysRun = true)
     public void beforeClassSetup() {
         env = ConfigManager.getEnvironment();
+        log.info("Running against environment: {}", env.getName());
         apiSecrets = ApiSecretsLoader.load(env.getName());
     }
 
