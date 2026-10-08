@@ -22,7 +22,7 @@ export let options = {
 
 export default function () {
   let payload = JSON.stringify({ username: 'admin_user', password: 'admin_password123' });
-  let res = http.post('http://localhost:3001/login.html', payload, {
+  let res = http.post('http://localhost:3001/auth/login', payload, {
     headers: { 'Content-Type': 'application/json' },
   });
   check(res, { 'login success': (r) => r.status === 200 });

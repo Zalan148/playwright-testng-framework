@@ -21,7 +21,7 @@ export let options = {
 };
 
 export default function () {
-  let res = http.get('http://localhost:3001/orders.html');
+  let res = http.get('http://localhost:3001/index.html');
   check(res, { 'status is 200': (r) => r.status === 200 });
   sleep(1);
 }

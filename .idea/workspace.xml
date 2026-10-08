@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/docker-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker-tests.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/ApiSmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/ApiSmokeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load-tests/load-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/load-tests/load-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load-tests/login-load.js" beforeDir="false" afterPath="$PROJECT_DIR$/load-tests/login-load.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
