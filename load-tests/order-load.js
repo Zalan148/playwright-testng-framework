@@ -24,6 +24,14 @@ export default function () {
   let res = http.post('http://localhost:3001/orders', JSON.stringify({ item: 'Laptop' }), {
     headers: { 'Content-Type': 'application/json' },
   });
-  check(res, { 'status is 201': (r) => r.status === 201 });
+  check(res, {
+    'status is 201': (r) => {
+      if (r.status !== 201) {
+        console.log(`Unexpected status: ${r.status}`);
+        console.log(`Response body: ${r.body}`);
+      }
+      return r.status === 201;
+    }
+  });
   sleep(1);
 }
