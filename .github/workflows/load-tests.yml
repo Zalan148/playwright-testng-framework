@@ -49,6 +49,10 @@ jobs:
         with:
           path: ./results
 
+      - name: Show downloaded files
+        run: |
+          find ./results -type f
+
       - name: Aggregate k6 results
         run: node scripts/aggregate-k6.js
 
