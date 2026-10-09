@@ -2,7 +2,29 @@ import fs from 'fs';
 import path from 'path';
 
 const resultsDir = './results';
-const files = fs.readdirSync(resultsDir).filter(f => f.endsWith('.json'));
+
+const files = [];
+
+function findJsonFiles(dir) {
+  const items = fs.readdirSync(dir);
+
+  items.forEach(item => {
+    const fullPath = path.join(dir, item);
+    const stat = fs.statSync(fullPath);
+
+    if (stat.isDirectory()) {
+      findJsonFiles(fullPath);
+    } else if (
+      item.endsWith('.json') &&
+      item !== 'summary.json'
+    ) {
+      files.push(fullPath);
+    }
+  });
+}
+
+findJsonFiles(resultsDir);
+
 
 let summary = {
   scenarios: [],
@@ -12,7 +34,7 @@ let summary = {
 let thresholdFailed = false;
 
 files.forEach(file => {
-  const data = JSON.parse(fs.readFileSync(path.join(resultsDir, file)));
+  const data = JSON.parse(fs.readFileSync(file));
   const metrics = data.metrics;
 
   summary.scenarios.push({
