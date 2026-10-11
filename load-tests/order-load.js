@@ -10,7 +10,10 @@
 
 import http from 'k6/http';
 import { check, sleep } from 'k6';
-import fs from 'fs';
+
+const orderData =
+  JSON.parse(open('./load-tests/order-data.json'));
+
 
 export let options = {
   vus: 20,
@@ -21,8 +24,6 @@ export let options = {
   },
 };
 
-const orderData =
-  JSON.parse(fs.readFileSync('./load-tests/order-data.json'));
 
 const orderId = orderData.orderId;
 
