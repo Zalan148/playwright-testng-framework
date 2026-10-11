@@ -11,10 +11,6 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
-const orderData =
-  JSON.parse(open('./load-tests/order-data.json'));
-
-
 export let options = {
   vus: 20,
   duration: '30s',
@@ -24,23 +20,17 @@ export let options = {
   },
 };
 
-
-const orderId = orderData.orderId;
-
 export default function () {
-
-  let res = http.get(
-    `http://localhost:3001/orders/${orderId}`
+  let res = http.post(
+    'http://localhost:3001/orders',
+    JSON.stringify({ item: 'Laptop' }),
+    {
+      headers: { 'Content-Type': 'application/json' },
+    }
   );
 
   check(res, {
-    'status is 200': (r) => {
-      if (r.status !== 200) {
-        console.log(`Unexpected status: ${r.status}`);
-        console.log(`Response body: ${r.body}`);
-      }
-      return r.status === 200;
-    }
+    'status is 201': (r) => r.status === 201
   });
 
   sleep(1);

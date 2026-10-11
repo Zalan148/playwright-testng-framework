@@ -14,9 +14,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class ApiUiFlowTest extends BaseTest {
     private OrderClient orderClient;
@@ -42,17 +39,6 @@ public class ApiUiFlowTest extends BaseTest {
         // Deserialize payload
         Order createdOrder = JsonUtils.toPojo(response, Order.class);
         createdOrderId = createdOrder.getId(); // capture ID for UI check
-        try {
-            String json =
-                    "{\"orderId\":\"" + createdOrderId + "\"}";
-
-            Files.writeString(
-                    Paths.get("load-tests/order-data.json"),
-                    json
-            );
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to write order-data.json", e);
-        }
 
         Allure.step("API created order ID: " + createdOrderId);
         Allure.addAttachment("Order JSON", "application/json", response.body().toString());
