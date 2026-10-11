@@ -10,6 +10,7 @@
 
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import fs from 'fs';
 
 export let options = {
   vus: 20,
@@ -20,18 +21,26 @@ export let options = {
   },
 };
 
+const orderData =
+  JSON.parse(fs.readFileSync('./load-tests/order-data.json'));
+
+const orderId = orderData.orderId;
+
 export default function () {
-  let res = http.post('http://localhost:3001/orders', JSON.stringify({ item: 'Laptop' }), {
-    headers: { 'Content-Type': 'application/json' },
-  });
+
+  let res = http.get(
+    `http://localhost:3001/orders/${orderId}`
+  );
+
   check(res, {
-    'status is 201': (r) => {
-      if (r.status !== 201) {
+    'status is 200': (r) => {
+      if (r.status !== 200) {
         console.log(`Unexpected status: ${r.status}`);
         console.log(`Response body: ${r.body}`);
       }
-      return r.status === 201;
+      return r.status === 200;
     }
   });
+
   sleep(1);
 }

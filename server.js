@@ -20,6 +20,13 @@ server.post('/orders', (req, res) => {
   res.status(201).json({ message: 'Order created successfully' });
 });
 
+server.get('/orders/:id', (req, res) => {
+  res.status(200).json({
+    id: req.params.id,
+    item: 'Laptop'
+  });
+});
+
 server.use(router);
 
 server.listen(3001, () => {
