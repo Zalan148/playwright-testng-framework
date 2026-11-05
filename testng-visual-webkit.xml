@@ -3,6 +3,7 @@
 
 <suite name="Visual Regression">
     <test name="WebKit">
+        <parameter name="browser" value="webkit"/>
         <classes>
             <class name="com.example.framework.tests.VisualRegressionTest"/>
         </classes>

@@ -3,6 +3,7 @@
 
 <suite name="Visual Regression">
     <test name="Chromium">
+        <parameter name="browser" value="chromium"/>
         <classes>
             <class name="com.example.framework.tests.VisualRegressionTest"/>
         </classes>
