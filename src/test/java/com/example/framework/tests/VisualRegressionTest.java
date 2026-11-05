@@ -79,7 +79,6 @@ public class VisualRegressionTest extends BaseTest {
         Path baselinePath = Paths.get("src/test/resources/baseline", browserName, "inventory.png");
         VisualAssert.assertScreenshot(page, baselinePath, 5, masks);
 
-
     }
 
 }
