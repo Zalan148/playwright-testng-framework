@@ -13,7 +13,15 @@ jobs:
     strategy:
      fail-fast: false
      matrix:
-       browser: [chromium, firefox, webkit]
+       include:
+         - browser: chromium
+           suite: testng-visual-chromium.xml
+
+         - browser: firefox
+           suite: testng-visual-firefox.xml
+
+         - browser: webkit
+           suite: testng-visual-webkit.xml
 
     steps:
       # Checkout repo
@@ -46,7 +54,7 @@ jobs:
 
       # Run visual regression tests (per browser)
       - name: Run VisualRegressionTest suite
-        run: mvn test -Dtest=VisualRegressionTest -Dbrowser=${{ matrix.browser }}
+        run: mvn test -DsuiteXmlFile=${{ matrix.suite }}
 
 
       # Upload allure results (always)
@@ -87,7 +95,15 @@ jobs:
     if: github.event_name == 'workflow_dispatch'   # only runs when manually triggered
     strategy:
       matrix:
-        browser: [ chromium, firefox, webkit ]
+        include:
+          - browser: chromium
+            suite: testng-visual-chromium.xml
+
+          - browser: firefox
+            suite: testng-visual-firefox.xml
+
+          - browser: webkit
+            suite: testng-visual-webkit.xml
 
     steps:
       - name: Checkout repository
@@ -119,7 +135,7 @@ jobs:
 
       # Run tests in baseline mode per browser
       - name: Generate baseline screenshots
-        run: mvn test -Dtest=VisualRegressionTest -Dbaseline=true -Dbrowser=${{ matrix.browser }}
+        run: mvn test -DsuiteXmlFile=${{ matrix.suite }} -Dbaseline=true
 
       - name: Upload baseline screenshots
         uses: actions/upload-artifact@v4
