@@ -70,6 +70,7 @@ public class HybridOrderFlowTest extends BaseTest {
 
         ResponseValidator.assertStatus(createResponse, 201);
 
+        System.out.println(createResponse.text());
         Order createdOrder = JsonUtils.toPojo(createResponse, Order.class);
 
         // Save order ID into localStorage so orders.html can read it

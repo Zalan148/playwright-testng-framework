@@ -60,7 +60,7 @@ public class BaseTest {
       System.out.println("BASE DEBUG: Before Playwright.create()");
       playwright = Playwright.create();
       System.out.println("BASE DEBUG: After Playwright.create()");
-      BrowserType browserType = switch (ConfigManager.getBrowser()) {
+      BrowserType browserType = switch (browserParameter.toLowerCase()) {
           case "firefox" -> playwright.firefox();
           case "webkit" -> playwright.webkit();
           default -> playwright.chromium();

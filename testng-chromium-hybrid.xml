@@ -3,7 +3,7 @@
 
 <suite name="Hybrid Suite - Chromium" parallel="classes" thread-count="5">
     <test name="Hybrid Tests - Chromium" parallel="classes" thread-count="5" verbose="2">
-        <parameter name="browser" value="Chromium"/>
+        <parameter name="browser" value="chromium"/>
         <classes>
             <!-- Hybrid Tests -->
             <class name="com.example.tests.hybrid.HybridLoginBypassTest"/>

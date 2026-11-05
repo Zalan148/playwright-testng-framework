@@ -17,8 +17,18 @@ server.post('/auth/login', (req, res) => {
 
 server.post('/orders', (req, res) => {
   console.log('Order received:', req.body);
-  res.status(201).json({ message: 'Order created successfully' });
+
+  const order = {
+    id: Date.now().toString(),
+    userId: req.body.userId || 'USER-001',
+    productId: req.body.productId || 'PROD-ABC',
+    quantity: req.body.quantity || 1,
+    status: 'CREATED'
+  };
+
+  res.status(201).json(order);
 });
+
 
 server.use(router);
 

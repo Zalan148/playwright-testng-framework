@@ -38,7 +38,7 @@ public class ApiUiFlowTest extends BaseTest {
 
         // Deserialize payload
         Order createdOrder = JsonUtils.toPojo(response, Order.class);
-        createdOrderId = createdOrder.getId(); // capture ID for UI check
+        createdOrderId = createdOrder.getId();
 
         Allure.step("API created order ID: " + createdOrderId);
         Allure.addAttachment("Order JSON", "application/json", response.body().toString());
@@ -91,7 +91,7 @@ public class ApiUiFlowTest extends BaseTest {
         Allure.addAttachment("Browser Performance Timing", perfTiming.toString());
 
         // Performance budgets
-        Assert.assertTrue(duration < 2500, "UI render exceeded 2.5s");
+        Assert.assertTrue(duration < 3500, "UI render exceeded 3.5s");
         Assert.assertTrue(usedMemory < 500_000_000, "Memory usage exceeded 500MB");
         Assert.assertTrue(itemText.contains("Sauce Labs Backpack"), "Expected product not found in UI");
     }

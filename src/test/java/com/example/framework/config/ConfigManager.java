@@ -52,7 +52,6 @@ public class ConfigManager {
         if (browser == null || browser.isBlank()) {
             browser = "chromium";
         }
-        log.info("Browser: {}", browser);
         return browser;
 
     }

@@ -3,7 +3,7 @@
 
 <suite name="Functional Tests" parallel="classes" thread-count="5">
     <test name="Webkit" parallel="classes" thread-count="5" verbose="2">
-        <parameter name="browser" value="Webkit"/>
+        <parameter name="browser" value="webkit"/>
         <classes>
             <!-- UI Tests -->
             <class name="com.example.framework.tests.CartTest"/>

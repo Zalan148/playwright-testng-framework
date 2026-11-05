@@ -6,9 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/load-tests/order-load.js" beforeDir="false" afterPath="$PROJECT_DIR$/load-tests/order-load.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/ApiUiFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/ApiUiFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridOrderFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridOrderFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-chromium-hybrid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-chromium-hybrid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-chromium.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-chromium.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-firefox-hybrid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-firefox-hybrid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-firefox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-firefox.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-webkit-hybrid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-webkit-hybrid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-webkit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-webkit.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +74,7 @@
     &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng-suites/testng-login.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG./Users/zalanwadood/IdeaProjects/playwright-testng-framework/testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.ApiSmokeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ApiUiFlowTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CartTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CheckoutTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.DataFactorySmokeTest.executor&quot;: &quot;Run&quot;,
@@ -102,7 +111,7 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.VisualRegressionTest">
+  <component name="RunManager" selected="TestNG.ApiUiFlowTest">
     <configuration name="PlaywrightStartupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.tests.diagnostic.PlaywrightStartupTest" />
       <module name="playwright-testng-framework" />
@@ -116,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HybridOrderFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiUiFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="playwright-testng-framework" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +134,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.tests.hybrid" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.hybrid.HybridOrderFlowTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.hybrid.ApiUiFlowTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -206,18 +215,18 @@
     <list>
       <item itemvalue="Application.PlaywrightStartupTest" />
       <item itemvalue="TestNG.Login Suite" />
-      <item itemvalue="TestNG.VisualRegressionTest" />
-      <item itemvalue="TestNG.HybridOrderFlowTest" />
+      <item itemvalue="TestNG.ApiUiFlowTest" />
       <item itemvalue="TestNG.HybridProductFlowTest" />
       <item itemvalue="TestNG.HybridUserFlowTest" />
+      <item itemvalue="TestNG.VisualRegressionTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ApiUiFlowTest" />
         <item itemvalue="TestNG.VisualRegressionTest" />
         <item itemvalue="Application.PlaywrightStartupTest" />
         <item itemvalue="TestNG.HybridUserFlowTest" />
         <item itemvalue="TestNG.HybridProductFlowTest" />
-        <item itemvalue="TestNG.HybridOrderFlowTest" />
       </list>
     </recent_temporary>
   </component>

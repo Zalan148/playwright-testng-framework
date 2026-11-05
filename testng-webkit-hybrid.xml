@@ -3,7 +3,7 @@
 
 <suite name="Hybrid Suite - Webkit" parallel="classes" thread-count="5">
     <test name="Hybrid Tests - Webkit" parallel="classes" thread-count="5" verbose="2">
-        <parameter name="browser" value="WebKit"/>
+        <parameter name="browser" value="webKit"/>
         <classes>
             <!-- Hybrid Tests -->
             <class name="com.example.tests.hybrid.HybridLoginBypassTest"/>
