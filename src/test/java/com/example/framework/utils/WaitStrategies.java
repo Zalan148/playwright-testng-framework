@@ -52,4 +52,5 @@
 package com.example.framework.utils;
 
 public class WaitStrategies {
+    // Documentation-only class
 }
