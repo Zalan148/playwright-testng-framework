@@ -44,5 +44,4 @@ public class InventoryTest extends BaseTest {
         assertEquals(names, sorted);
     }
 
-
 }

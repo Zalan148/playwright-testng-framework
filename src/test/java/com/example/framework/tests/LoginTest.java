@@ -17,7 +17,6 @@ public class LoginTest extends BaseTest {
     @Description("Verify an error message appears when login is invalid")
     public void invalidLoginShowsErrorMessage() {
 
-
         //Create page object
         LoginPage loginPage = new LoginPage(page, env);
 
@@ -46,13 +45,10 @@ public class LoginTest extends BaseTest {
         //Use Page Object navigation
         loginPage.open();
 
-
         var inventoryPage = loginPage.login(Secrets.getUsername(), Secrets.getPassword());
 
         //Assert navigation
         Assert.assertTrue(page.url().contains("inventory.html"), "User did not navigate to inventory page after login");
     }
-
-
 
 }

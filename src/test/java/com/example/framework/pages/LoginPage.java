@@ -56,5 +56,4 @@ public class LoginPage extends BasePage {
         return text(errorMessage);
     }
 
-
 }

@@ -8,7 +8,6 @@ import com.microsoft.playwright.Page;
 
 public class CheckoutCompletePage extends BasePage {
 
-
     private final Locator completeHeader = page.locator(".complete-header");
 
     private final Environment env;
