@@ -36,6 +36,7 @@ public class BaseTest {
     public Page page;
     protected Environment env;
     protected ApiSecrets apiSecrets;
+    protected String browserName;
 
     private List<String> consoleLogs = new ArrayList<>();
 
@@ -60,7 +61,10 @@ public class BaseTest {
       System.out.println("BASE DEBUG: Before Playwright.create()");
       playwright = Playwright.create();
       System.out.println("BASE DEBUG: After Playwright.create()");
-      BrowserType browserType = switch (browserParameter.toLowerCase()) {
+
+        browserName = browserParameter.toLowerCase();
+
+        BrowserType browserType = switch (browserParameter.toLowerCase()) {
           case "firefox" -> playwright.firefox();
           case "webkit" -> playwright.webkit();
           default -> playwright.chromium();

@@ -29,7 +29,6 @@ public class VisualRegressionTest extends BaseTest {
     }
 
     private void tagTestCase(String testName) {
-        String browserName = ConfigManager.getBrowser();
 
         Allure.getLifecycle().updateTestCase(testResult ->
                 testResult.setName(testName + " [" + browserName + "]")
@@ -39,7 +38,6 @@ public class VisualRegressionTest extends BaseTest {
     @Test
     public void loginPageVisualCheck() throws IOException {
         tagTestCase("loginPageVisualCheck");
-
         LoginPage loginPage = new LoginPage(page, env);
         loginPage.open();
 
@@ -52,9 +50,9 @@ public class VisualRegressionTest extends BaseTest {
                 page.locator(".rotating-banner")
         };
 
-        String browserName = ConfigManager.getBrowser();
+        //String browserName = ConfigManager.getBrowser();
         Path baselinePath = Paths.get("src/test/resources/baseline", browserName, "login.png");
-        VisualAssert.assertScreenshot(page, baselinePath, 5, masks);
+        VisualAssert.assertScreenshot(page, baselinePath, browserName, 5, masks);
 
     }
 
@@ -75,9 +73,9 @@ public class VisualRegressionTest extends BaseTest {
                 page.locator(".rotating-banner")
         };
 
-        String browserName = ConfigManager.getBrowser();
+       // String browserName = ConfigManager.getBrowser();
         Path baselinePath = Paths.get("src/test/resources/baseline", browserName, "inventory.png");
-        VisualAssert.assertScreenshot(page, baselinePath, 5, masks);
+        VisualAssert.assertScreenshot(page, baselinePath, browserName, 5, masks);
 
     }
 

@@ -25,7 +25,7 @@ public class VisualAssert {
      *
      * Supports masking of dynamic elements via locators.
      */
-    public static void assertScreenshot(Page page, Path baselinePath, int tolerance, Locator... masks) throws IOException {
+    public static void assertScreenshot(Page page, Path baselinePath, String browserName, int tolerance, Locator... masks) throws IOException {
         File baselineFile = baselinePath.toFile();
 
         // Ensure parent directories exist
@@ -54,7 +54,6 @@ public class VisualAssert {
         String baseName = baselinePath.getFileName().toString().replace(".png", "");
 
         // Add browser name into filenames to avoid overwriting
-        String browserName = ConfigManager.getBrowser();
         Path currentPath = Paths.get("target", baseName + "-" + browserName + "-current.png");
         Path diffPath = Paths.get("target", baseName + "-" + browserName + "-diff.png");
 
