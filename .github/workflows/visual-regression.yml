@@ -56,6 +56,11 @@ jobs:
       - name: Run VisualRegressionTest suite
         run: mvn test -DsuiteXmlFile=${{ matrix.suite }}
 
+      - name: Show generated screenshots
+        if: always()
+        run: |
+          find target -type f | sort
+
 
       # Upload allure results (always)
       - name: Upload Allure results
