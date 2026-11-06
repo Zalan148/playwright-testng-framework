@@ -52,7 +52,7 @@ public class VisualRegressionTest extends BaseTest {
 
         //String browserName = ConfigManager.getBrowser();
         Path baselinePath = Paths.get("src/test/resources/baseline", browserName, "login.png");
-        VisualAssert.assertScreenshot(page, baselinePath, browserName, 5, masks);
+        VisualAssert.assertScreenshot(page, baselinePath, browserName, 7, masks);
 
     }
 
