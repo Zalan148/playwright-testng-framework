@@ -2,44 +2,49 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-11T10:59:06 UTC" name="All Test Suite" finished-at="2026-09-11T10:59:19 UTC" duration-ms="12663">
+  <suite started-at="2026-11-07T10:14:26 UTC" name="All Test Suite" finished-at="2026-11-07T10:14:38 UTC" duration-ms="11736">
     <groups>
     </groups>
-    <test started-at="2026-09-11T10:59:06 UTC" name="Playwright TestNG Suite" finished-at="2026-09-11T10:59:19 UTC" duration-ms="12663">
+    <test started-at="2026-11-07T10:14:26 UTC" name="Playwright TestNG Suite" finished-at="2026-11-07T10:14:38 UTC" duration-ms="11736">
       <class name="com.example.tests.hybrid.HybridUserFlowTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@5eeedb60]" started-at="2026-09-11T10:59:16 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:16 UTC" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@25b865b5]" started-at="2026-11-07T10:14:35 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:35 UTC" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@5eeedb60]" started-at="2026-09-11T10:59:16 UTC" name="setUp" finished-at="2026-09-11T10:59:18 UTC" duration-ms="1301" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@25b865b5]" started-at="2026-11-07T10:14:35 UTC" name="setUp" finished-at="2026-11-07T10:14:36 UTC" duration-ms="1367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.tests.hybrid.HybridUserFlowTest.createUserViaApiAndLoginViaUi()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HybridUserFlowTest.createUserViaApiAndLoginViaUi()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@5eeedb60] output={null}]]]>
+                <![CDATA[public void com.example.tests.hybrid.HybridUserFlowTest.createUserViaApiAndLoginViaUi()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HybridUserFlowTest.createUserViaApiAndLoginViaUi()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@25b865b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupClients()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@5eeedb60]" started-at="2026-09-11T10:59:18 UTC" name="setupClients" finished-at="2026-09-11T10:59:18 UTC" duration-ms="382" status="PASS">
+        <test-method is-config="true" signature="setupClients()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@25b865b5]" started-at="2026-11-07T10:14:36 UTC" name="setupClients" finished-at="2026-11-07T10:14:37 UTC" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClients -->
-        <test-method signature="createUserViaApiAndLoginViaUi()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@5eeedb60]" started-at="2026-09-11T10:59:18 UTC" name="createUserViaApiAndLoginViaUi" finished-at="2026-09-11T10:59:19 UTC" duration-ms="537" status="PASS">
+        <test-method signature="createUserViaApiAndLoginViaUi()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@25b865b5]" started-at="2026-11-07T10:14:37 UTC" name="createUserViaApiAndLoginViaUi" finished-at="2026-11-07T10:14:37 UTC" duration-ms="504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserViaApiAndLoginViaUi -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@5eeedb60]" started-at="2026-09-11T10:59:19 UTC" name="tearDown" finished-at="2026-09-11T10:59:19 UTC" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@25b865b5]" started-at="2026-11-07T10:14:37 UTC" name="tearDown" finished-at="2026-11-07T10:14:38 UTC" duration-ms="162" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createUserViaApiAndLoginViaUi status=SUCCESS method=HybridUserFlowTest.createUserViaApiAndLoginViaUi()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@5eeedb60] output={null}]]]>
+                <![CDATA[[TestResult name=createUserViaApiAndLoginViaUi status=SUCCESS method=HybridUserFlowTest.createUserViaApiAndLoginViaUi()[pri:0, instance:com.example.tests.hybrid.HybridUserFlowTest@25b865b5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -48,35 +53,40 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.hybrid.HybridUserFlowTest -->
       <class name="com.example.framework.tests.CartTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.framework.tests.CartTest@1136b469]" started-at="2026-09-11T10:59:06 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:07 UTC" duration-ms="814" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.framework.tests.CartTest@72805168]" started-at="2026-11-07T10:14:26 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:27 UTC" duration-ms="810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.CartTest@1136b469]" started-at="2026-09-11T10:59:07 UTC" name="setUp" finished-at="2026-09-11T10:59:10 UTC" duration-ms="3307" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.CartTest@72805168]" started-at="2026-11-07T10:14:27 UTC" name="setUp" finished-at="2026-11-07T10:14:30 UTC" duration-ms="3367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.framework.tests.CartTest.addedItemAppearsInCart()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.addedItemAppearsInCart()[pri:0, instance:com.example.framework.tests.CartTest@1136b469] output={null}]]]>
+                <![CDATA[public void com.example.framework.tests.CartTest.addedItemAppearsInCart()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.addedItemAppearsInCart()[pri:0, instance:com.example.framework.tests.CartTest@72805168] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addedItemAppearsInCart()[pri:0, instance:com.example.framework.tests.CartTest@1136b469]" started-at="2026-09-11T10:59:11 UTC" name="addedItemAppearsInCart" finished-at="2026-09-11T10:59:14 UTC" duration-ms="2951" status="PASS">
+        <test-method signature="addedItemAppearsInCart()[pri:0, instance:com.example.framework.tests.CartTest@72805168]" started-at="2026-11-07T10:14:30 UTC" name="addedItemAppearsInCart" finished-at="2026-11-07T10:14:33 UTC" duration-ms="2084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addedItemAppearsInCart -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.CartTest@1136b469]" started-at="2026-09-11T10:59:14 UTC" name="tearDown" finished-at="2026-09-11T10:59:14 UTC" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.CartTest@72805168]" started-at="2026-11-07T10:14:33 UTC" name="tearDown" finished-at="2026-11-07T10:14:33 UTC" duration-ms="105" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addedItemAppearsInCart status=SUCCESS method=CartTest.addedItemAppearsInCart()[pri:0, instance:com.example.framework.tests.CartTest@1136b469] output={null}]]]>
+                <![CDATA[[TestResult name=addedItemAppearsInCart status=SUCCESS method=CartTest.addedItemAppearsInCart()[pri:0, instance:com.example.framework.tests.CartTest@72805168] output={null}]]]>
               </value>
             </param>
           </params>
@@ -85,66 +95,76 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.framework.tests.CartTest -->
       <class name="com.example.framework.tests.InventoryTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2]" started-at="2026-09-11T10:59:06 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:07 UTC" duration-ms="814" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788]" started-at="2026-11-07T10:14:26 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:27 UTC" duration-ms="812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2]" started-at="2026-09-11T10:59:07 UTC" name="setUp" finished-at="2026-09-11T10:59:10 UTC" duration-ms="3306" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788]" started-at="2026-11-07T10:14:27 UTC" name="setUp" finished-at="2026-11-07T10:14:30 UTC" duration-ms="3367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.framework.tests.InventoryTest.addItemToCartIncreasesCartCount()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=InventoryTest.addItemToCartIncreasesCartCount()[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2] output={null}]]]>
+                <![CDATA[public void com.example.framework.tests.InventoryTest.addItemToCartIncreasesCartCount()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=InventoryTest.addItemToCartIncreasesCartCount()[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addItemToCartIncreasesCartCount()[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2]" started-at="2026-09-11T10:59:11 UTC" name="addItemToCartIncreasesCartCount" finished-at="2026-09-11T10:59:13 UTC" duration-ms="2808" status="PASS">
+        <test-method signature="addItemToCartIncreasesCartCount()[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788]" started-at="2026-11-07T10:14:30 UTC" name="addItemToCartIncreasesCartCount" finished-at="2026-11-07T10:14:32 UTC" duration-ms="1941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCartIncreasesCartCount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2]" started-at="2026-09-11T10:59:13 UTC" name="tearDown" finished-at="2026-09-11T10:59:14 UTC" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788]" started-at="2026-11-07T10:14:32 UTC" name="tearDown" finished-at="2026-11-07T10:14:33 UTC" duration-ms="121" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addItemToCartIncreasesCartCount status=SUCCESS method=InventoryTest.addItemToCartIncreasesCartCount()[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2] output={null}]]]>
+                <![CDATA[[TestResult name=addItemToCartIncreasesCartCount status=SUCCESS method=InventoryTest.addItemToCartIncreasesCartCount()[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2]" started-at="2026-09-11T10:59:14 UTC" name="setUp" finished-at="2026-09-11T10:59:15 UTC" duration-ms="1415" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788]" started-at="2026-11-07T10:14:33 UTC" name="setUp" finished-at="2026-11-07T10:14:34 UTC" duration-ms="1465" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.framework.tests.InventoryTest.productsSortAlphabetically()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=InventoryTest.productsSortAlphabetically()[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2] output={null}]]]>
+                <![CDATA[public void com.example.framework.tests.InventoryTest.productsSortAlphabetically()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=InventoryTest.productsSortAlphabetically()[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productsSortAlphabetically()[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2]" started-at="2026-09-11T10:59:15 UTC" name="productsSortAlphabetically" finished-at="2026-09-11T10:59:17 UTC" duration-ms="1964" status="PASS">
+        <test-method signature="productsSortAlphabetically()[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788]" started-at="2026-11-07T10:14:34 UTC" name="productsSortAlphabetically" finished-at="2026-11-07T10:14:35 UTC" duration-ms="1372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productsSortAlphabetically -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2]" started-at="2026-09-11T10:59:17 UTC" name="tearDown" finished-at="2026-09-11T10:59:17 UTC" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788]" started-at="2026-11-07T10:14:35 UTC" name="tearDown" finished-at="2026-11-07T10:14:35 UTC" duration-ms="93" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=productsSortAlphabetically status=SUCCESS method=InventoryTest.productsSortAlphabetically()[pri:0, instance:com.example.framework.tests.InventoryTest@3e9803c2] output={null}]]]>
+                <![CDATA[[TestResult name=productsSortAlphabetically status=SUCCESS method=InventoryTest.productsSortAlphabetically()[pri:0, instance:com.example.framework.tests.InventoryTest@61d01788] output={null}]]]>
               </value>
             </param>
           </params>
@@ -153,39 +173,44 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.framework.tests.InventoryTest -->
       <class name="com.example.tests.hybrid.HybridLoginBypassTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@bd2f5a9]" started-at="2026-09-11T10:59:14 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:14 UTC" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@19593091]" started-at="2026-11-07T10:14:33 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:33 UTC" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@bd2f5a9]" started-at="2026-09-11T10:59:14 UTC" name="setUp" finished-at="2026-09-11T10:59:15 UTC" duration-ms="1445" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@19593091]" started-at="2026-11-07T10:14:33 UTC" name="setUp" finished-at="2026-11-07T10:14:34 UTC" duration-ms="1412" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.tests.hybrid.HybridLoginBypassTest.loginViaApiAndBypassUiLogin()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HybridLoginBypassTest.loginViaApiAndBypassUiLogin()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@bd2f5a9] output={null}]]]>
+                <![CDATA[public void com.example.tests.hybrid.HybridLoginBypassTest.loginViaApiAndBypassUiLogin()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HybridLoginBypassTest.loginViaApiAndBypassUiLogin()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@19593091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupClients()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@bd2f5a9]" started-at="2026-09-11T10:59:15 UTC" name="setupClients" finished-at="2026-09-11T10:59:16 UTC" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="setupClients()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@19593091]" started-at="2026-11-07T10:14:34 UTC" name="setupClients" finished-at="2026-11-07T10:14:35 UTC" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClients -->
-        <test-method signature="loginViaApiAndBypassUiLogin()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@bd2f5a9]" started-at="2026-09-11T10:59:16 UTC" name="loginViaApiAndBypassUiLogin" finished-at="2026-09-11T10:59:16 UTC" duration-ms="397" status="PASS">
+        <test-method signature="loginViaApiAndBypassUiLogin()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@19593091]" started-at="2026-11-07T10:14:35 UTC" name="loginViaApiAndBypassUiLogin" finished-at="2026-11-07T10:14:35 UTC" duration-ms="398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginViaApiAndBypassUiLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@bd2f5a9]" started-at="2026-09-11T10:59:16 UTC" name="tearDown" finished-at="2026-09-11T10:59:16 UTC" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@19593091]" started-at="2026-11-07T10:14:35 UTC" name="tearDown" finished-at="2026-11-07T10:14:35 UTC" duration-ms="292" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginViaApiAndBypassUiLogin status=SUCCESS method=HybridLoginBypassTest.loginViaApiAndBypassUiLogin()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@bd2f5a9] output={null}]]]>
+                <![CDATA[[TestResult name=loginViaApiAndBypassUiLogin status=SUCCESS method=HybridLoginBypassTest.loginViaApiAndBypassUiLogin()[pri:0, instance:com.example.tests.hybrid.HybridLoginBypassTest@19593091] output={null}]]]>
               </value>
             </param>
           </params>
@@ -194,35 +219,40 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.hybrid.HybridLoginBypassTest -->
       <class name="com.example.tests.smoke.EnvironmentSmokeTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@60921b21]" started-at="2026-09-11T10:59:14 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:14 UTC" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@69cac930]" started-at="2026-11-07T10:14:33 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:33 UTC" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@60921b21]" started-at="2026-09-11T10:59:14 UTC" name="setUp" finished-at="2026-09-11T10:59:15 UTC" duration-ms="1374" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@69cac930]" started-at="2026-11-07T10:14:33 UTC" name="setUp" finished-at="2026-11-07T10:14:34 UTC" duration-ms="1466" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.tests.smoke.EnvironmentSmokeTest.verifyEnvironmentLoadsCorrectly()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=EnvironmentSmokeTest.verifyEnvironmentLoadsCorrectly()[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@60921b21] output={null}]]]>
+                <![CDATA[public void com.example.tests.smoke.EnvironmentSmokeTest.verifyEnvironmentLoadsCorrectly()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=EnvironmentSmokeTest.verifyEnvironmentLoadsCorrectly()[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@69cac930] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyEnvironmentLoadsCorrectly()[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@60921b21]" started-at="2026-09-11T10:59:15 UTC" name="verifyEnvironmentLoadsCorrectly" finished-at="2026-09-11T10:59:15 UTC" duration-ms="3" status="PASS">
+        <test-method signature="verifyEnvironmentLoadsCorrectly()[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@69cac930]" started-at="2026-11-07T10:14:34 UTC" name="verifyEnvironmentLoadsCorrectly" finished-at="2026-11-07T10:14:34 UTC" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEnvironmentLoadsCorrectly -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@60921b21]" started-at="2026-09-11T10:59:15 UTC" name="tearDown" finished-at="2026-09-11T10:59:15 UTC" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@69cac930]" started-at="2026-11-07T10:14:34 UTC" name="tearDown" finished-at="2026-11-07T10:14:34 UTC" duration-ms="134" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyEnvironmentLoadsCorrectly status=SUCCESS method=EnvironmentSmokeTest.verifyEnvironmentLoadsCorrectly()[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@60921b21] output={null}]]]>
+                <![CDATA[[TestResult name=verifyEnvironmentLoadsCorrectly status=SUCCESS method=EnvironmentSmokeTest.verifyEnvironmentLoadsCorrectly()[pri:0, instance:com.example.tests.smoke.EnvironmentSmokeTest@69cac930] output={null}]]]>
               </value>
             </param>
           </params>
@@ -231,66 +261,76 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.smoke.EnvironmentSmokeTest -->
       <class name="com.example.framework.tests.LoginTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3]" started-at="2026-09-11T10:59:06 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:07 UTC" duration-ms="814" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f]" started-at="2026-11-07T10:14:26 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:27 UTC" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3]" started-at="2026-09-11T10:59:07 UTC" name="setUp" finished-at="2026-09-11T10:59:10 UTC" duration-ms="3317" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f]" started-at="2026-11-07T10:14:27 UTC" name="setUp" finished-at="2026-11-07T10:14:30 UTC" duration-ms="3367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.framework.tests.LoginTest.invalidLoginShowsErrorMessage()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.invalidLoginShowsErrorMessage()[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3] output={null}]]]>
+                <![CDATA[public void com.example.framework.tests.LoginTest.invalidLoginShowsErrorMessage()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.invalidLoginShowsErrorMessage()[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShowsErrorMessage()[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3]" started-at="2026-09-11T10:59:11 UTC" name="invalidLoginShowsErrorMessage" finished-at="2026-09-11T10:59:13 UTC" duration-ms="2698" status="PASS">
+        <test-method signature="invalidLoginShowsErrorMessage()[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f]" started-at="2026-11-07T10:14:30 UTC" name="invalidLoginShowsErrorMessage" finished-at="2026-11-07T10:14:32 UTC" duration-ms="1734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3]" started-at="2026-09-11T10:59:13 UTC" name="tearDown" finished-at="2026-09-11T10:59:14 UTC" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f]" started-at="2026-11-07T10:14:32 UTC" name="tearDown" finished-at="2026-11-07T10:14:32 UTC" duration-ms="115" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLoginShowsErrorMessage status=SUCCESS method=LoginTest.invalidLoginShowsErrorMessage()[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3] output={null}]]]>
+                <![CDATA[[TestResult name=invalidLoginShowsErrorMessage status=SUCCESS method=LoginTest.invalidLoginShowsErrorMessage()[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3]" started-at="2026-09-11T10:59:14 UTC" name="setUp" finished-at="2026-09-11T10:59:15 UTC" duration-ms="1374" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f]" started-at="2026-11-07T10:14:32 UTC" name="setUp" finished-at="2026-11-07T10:14:34 UTC" duration-ms="1466" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.framework.tests.LoginTest.validLoginNavigatesToInventoryPage()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.validLoginNavigatesToInventoryPage()[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3] output={null}]]]>
+                <![CDATA[public void com.example.framework.tests.LoginTest.validLoginNavigatesToInventoryPage()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.validLoginNavigatesToInventoryPage()[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginNavigatesToInventoryPage()[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3]" started-at="2026-09-11T10:59:15 UTC" name="validLoginNavigatesToInventoryPage" finished-at="2026-09-11T10:59:17 UTC" duration-ms="1814" status="PASS">
+        <test-method signature="validLoginNavigatesToInventoryPage()[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f]" started-at="2026-11-07T10:14:34 UTC" name="validLoginNavigatesToInventoryPage" finished-at="2026-11-07T10:14:35 UTC" duration-ms="1155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginNavigatesToInventoryPage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3]" started-at="2026-09-11T10:59:17 UTC" name="tearDown" finished-at="2026-09-11T10:59:17 UTC" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f]" started-at="2026-11-07T10:14:35 UTC" name="tearDown" finished-at="2026-11-07T10:14:35 UTC" duration-ms="92" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLoginNavigatesToInventoryPage status=SUCCESS method=LoginTest.validLoginNavigatesToInventoryPage()[pri:0, instance:com.example.framework.tests.LoginTest@4525d1d3] output={null}]]]>
+                <![CDATA[[TestResult name=validLoginNavigatesToInventoryPage status=SUCCESS method=LoginTest.validLoginNavigatesToInventoryPage()[pri:0, instance:com.example.framework.tests.LoginTest@2b9b7f1f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -299,35 +339,40 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.framework.tests.LoginTest -->
       <class name="com.example.tests.smoke.ApiSmokeTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@7c974942]" started-at="2026-09-11T10:59:06 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:07 UTC" duration-ms="814" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@264c5d07]" started-at="2026-11-07T10:14:26 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:27 UTC" duration-ms="812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@7c974942]" started-at="2026-09-11T10:59:07 UTC" name="setUp" finished-at="2026-09-11T10:59:10 UTC" duration-ms="3306" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@264c5d07]" started-at="2026-11-07T10:14:27 UTC" name="setUp" finished-at="2026-11-07T10:14:30 UTC" duration-ms="3368" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.tests.smoke.ApiSmokeTest.verifyApiIsReachable()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ApiSmokeTest.verifyApiIsReachable()[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@7c974942] output={null}]]]>
+                <![CDATA[public void com.example.tests.smoke.ApiSmokeTest.verifyApiIsReachable()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApiSmokeTest.verifyApiIsReachable()[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@264c5d07] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyApiIsReachable()[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@7c974942]" started-at="2026-09-11T10:59:11 UTC" name="verifyApiIsReachable" finished-at="2026-09-11T10:59:12 UTC" duration-ms="946" status="PASS">
+        <test-method signature="verifyApiIsReachable()[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@264c5d07]" started-at="2026-11-07T10:14:30 UTC" name="verifyApiIsReachable" finished-at="2026-11-07T10:14:31 UTC" duration-ms="831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApiIsReachable -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@7c974942]" started-at="2026-09-11T10:59:12 UTC" name="tearDown" finished-at="2026-09-11T10:59:12 UTC" duration-ms="374" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@264c5d07]" started-at="2026-11-07T10:14:31 UTC" name="tearDown" finished-at="2026-11-07T10:14:32 UTC" duration-ms="464" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyApiIsReachable status=SUCCESS method=ApiSmokeTest.verifyApiIsReachable()[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@7c974942] output={null}]]]>
+                <![CDATA[[TestResult name=verifyApiIsReachable status=SUCCESS method=ApiSmokeTest.verifyApiIsReachable()[pri:0, instance:com.example.tests.smoke.ApiSmokeTest@264c5d07] output={null}]]]>
               </value>
             </param>
           </params>
@@ -336,39 +381,44 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.smoke.ApiSmokeTest -->
       <class name="com.example.tests.hybrid.HybridProductFlowTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@6443b128]" started-at="2026-09-11T10:59:15 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:15 UTC" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@37a64f9d]" started-at="2026-11-07T10:14:34 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:34 UTC" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@6443b128]" started-at="2026-09-11T10:59:15 UTC" name="setUp" finished-at="2026-09-11T10:59:17 UTC" duration-ms="1327" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@37a64f9d]" started-at="2026-11-07T10:14:34 UTC" name="setUp" finished-at="2026-11-07T10:14:36 UTC" duration-ms="1480" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.tests.hybrid.HybridProductFlowTest.createProductViaApiAndVerifyInUi()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HybridProductFlowTest.createProductViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@6443b128] output={null}]]]>
+                <![CDATA[public void com.example.tests.hybrid.HybridProductFlowTest.createProductViaApiAndVerifyInUi()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HybridProductFlowTest.createProductViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@37a64f9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupClients()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@6443b128]" started-at="2026-09-11T10:59:17 UTC" name="setupClients" finished-at="2026-09-11T10:59:17 UTC" duration-ms="470" status="PASS">
+        <test-method is-config="true" signature="setupClients()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@37a64f9d]" started-at="2026-11-07T10:14:36 UTC" name="setupClients" finished-at="2026-11-07T10:14:36 UTC" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClients -->
-        <test-method signature="createProductViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@6443b128]" started-at="2026-09-11T10:59:17 UTC" name="createProductViaApiAndVerifyInUi" finished-at="2026-09-11T10:59:17 UTC" duration-ms="390" status="PASS">
+        <test-method signature="createProductViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@37a64f9d]" started-at="2026-11-07T10:14:36 UTC" name="createProductViaApiAndVerifyInUi" finished-at="2026-11-07T10:14:36 UTC" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProductViaApiAndVerifyInUi -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@6443b128]" started-at="2026-09-11T10:59:17 UTC" name="tearDown" finished-at="2026-09-11T10:59:18 UTC" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@37a64f9d]" started-at="2026-11-07T10:14:36 UTC" name="tearDown" finished-at="2026-11-07T10:14:37 UTC" duration-ms="207" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createProductViaApiAndVerifyInUi status=SUCCESS method=HybridProductFlowTest.createProductViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@6443b128] output={null}]]]>
+                <![CDATA[[TestResult name=createProductViaApiAndVerifyInUi status=SUCCESS method=HybridProductFlowTest.createProductViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridProductFlowTest@37a64f9d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -377,39 +427,44 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.hybrid.HybridProductFlowTest -->
       <class name="com.example.tests.hybrid.HybridOrderFlowTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@3f36b447]" started-at="2026-09-11T10:59:14 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:14 UTC" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@6090f3ca]" started-at="2026-11-07T10:14:34 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:34 UTC" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@3f36b447]" started-at="2026-09-11T10:59:14 UTC" name="setUp" finished-at="2026-09-11T10:59:16 UTC" duration-ms="1372" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@6090f3ca]" started-at="2026-11-07T10:14:34 UTC" name="setUp" finished-at="2026-11-07T10:14:36 UTC" duration-ms="1491" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.tests.hybrid.HybridOrderFlowTest.createOrderViaApiAndVerifyInUi()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HybridOrderFlowTest.createOrderViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@3f36b447] output={null}]]]>
+                <![CDATA[public void com.example.tests.hybrid.HybridOrderFlowTest.createOrderViaApiAndVerifyInUi()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HybridOrderFlowTest.createOrderViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@6090f3ca] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupClients()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@3f36b447]" started-at="2026-09-11T10:59:16 UTC" name="setupClients" finished-at="2026-09-11T10:59:16 UTC" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="setupClients()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@6090f3ca]" started-at="2026-11-07T10:14:36 UTC" name="setupClients" finished-at="2026-11-07T10:14:36 UTC" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClients -->
-        <test-method signature="createOrderViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@3f36b447]" started-at="2026-09-11T10:59:16 UTC" name="createOrderViaApiAndVerifyInUi" finished-at="2026-09-11T10:59:17 UTC" duration-ms="399" status="PASS">
+        <test-method signature="createOrderViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@6090f3ca]" started-at="2026-11-07T10:14:36 UTC" name="createOrderViaApiAndVerifyInUi" finished-at="2026-11-07T10:14:36 UTC" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrderViaApiAndVerifyInUi -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@3f36b447]" started-at="2026-09-11T10:59:17 UTC" name="tearDown" finished-at="2026-09-11T10:59:17 UTC" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@6090f3ca]" started-at="2026-11-07T10:14:36 UTC" name="tearDown" finished-at="2026-11-07T10:14:37 UTC" duration-ms="210" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createOrderViaApiAndVerifyInUi status=SUCCESS method=HybridOrderFlowTest.createOrderViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@3f36b447] output={null}]]]>
+                <![CDATA[[TestResult name=createOrderViaApiAndVerifyInUi status=SUCCESS method=HybridOrderFlowTest.createOrderViaApiAndVerifyInUi()[pri:0, instance:com.example.tests.hybrid.HybridOrderFlowTest@6090f3ca] output={null}]]]>
               </value>
             </param>
           </params>
@@ -418,35 +473,40 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.hybrid.HybridOrderFlowTest -->
       <class name="com.example.tests.smoke.DataFactorySmokeTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@1eea9d2d]" started-at="2026-09-11T10:59:12 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:12 UTC" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@847f3e7]" started-at="2026-11-07T10:14:32 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:32 UTC" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@1eea9d2d]" started-at="2026-09-11T10:59:12 UTC" name="setUp" finished-at="2026-09-11T10:59:14 UTC" duration-ms="1583" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@847f3e7]" started-at="2026-11-07T10:14:32 UTC" name="setUp" finished-at="2026-11-07T10:14:33 UTC" duration-ms="1544" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.tests.smoke.DataFactorySmokeTest.verifyDynamicUserCreation()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=DataFactorySmokeTest.verifyDynamicUserCreation()[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@1eea9d2d] output={null}]]]>
+                <![CDATA[public void com.example.tests.smoke.DataFactorySmokeTest.verifyDynamicUserCreation()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=DataFactorySmokeTest.verifyDynamicUserCreation()[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@847f3e7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDynamicUserCreation()[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@1eea9d2d]" started-at="2026-09-11T10:59:14 UTC" name="verifyDynamicUserCreation" finished-at="2026-09-11T10:59:14 UTC" duration-ms="537" status="PASS">
+        <test-method signature="verifyDynamicUserCreation()[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@847f3e7]" started-at="2026-11-07T10:14:33 UTC" name="verifyDynamicUserCreation" finished-at="2026-11-07T10:14:34 UTC" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDynamicUserCreation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@1eea9d2d]" started-at="2026-09-11T10:59:14 UTC" name="tearDown" finished-at="2026-09-11T10:59:14 UTC" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@847f3e7]" started-at="2026-11-07T10:14:34 UTC" name="tearDown" finished-at="2026-11-07T10:14:34 UTC" duration-ms="251" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDynamicUserCreation status=SUCCESS method=DataFactorySmokeTest.verifyDynamicUserCreation()[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@1eea9d2d] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDynamicUserCreation status=SUCCESS method=DataFactorySmokeTest.verifyDynamicUserCreation()[pri:0, instance:com.example.tests.smoke.DataFactorySmokeTest@847f3e7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -455,35 +515,40 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.smoke.DataFactorySmokeTest -->
       <class name="com.example.framework.tests.CheckoutTest">
-        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.framework.tests.CheckoutTest@16fe9c29]" started-at="2026-09-11T10:59:06 UTC" name="beforeClassSetup" finished-at="2026-09-11T10:59:07 UTC" duration-ms="814" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.example.framework.tests.CheckoutTest@4bdcaf36]" started-at="2026-11-07T10:14:26 UTC" name="beforeClassSetup" finished-at="2026-11-07T10:14:27 UTC" duration-ms="811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.CheckoutTest@16fe9c29]" started-at="2026-09-11T10:59:07 UTC" name="setUp" finished-at="2026-09-11T10:59:10 UTC" duration-ms="3306" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.CheckoutTest@4bdcaf36]" started-at="2026-11-07T10:14:27 UTC" name="setUp" finished-at="2026-11-07T10:14:30 UTC" duration-ms="3367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.example.framework.tests.CheckoutTest.userCanCompleteCheckoutFlow()]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CheckoutTest.userCanCompleteCheckoutFlow()[pri:0, instance:com.example.framework.tests.CheckoutTest@16fe9c29] output={null}]]]>
+                <![CDATA[public void com.example.framework.tests.CheckoutTest.userCanCompleteCheckoutFlow()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CheckoutTest.userCanCompleteCheckoutFlow()[pri:0, instance:com.example.framework.tests.CheckoutTest@4bdcaf36] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userCanCompleteCheckoutFlow()[pri:0, instance:com.example.framework.tests.CheckoutTest@16fe9c29]" started-at="2026-09-11T10:59:11 UTC" name="userCanCompleteCheckoutFlow" finished-at="2026-09-11T10:59:14 UTC" duration-ms="3125" status="PASS">
+        <test-method signature="userCanCompleteCheckoutFlow()[pri:0, instance:com.example.framework.tests.CheckoutTest@4bdcaf36]" started-at="2026-11-07T10:14:30 UTC" name="userCanCompleteCheckoutFlow" finished-at="2026-11-07T10:14:33 UTC" duration-ms="2238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanCompleteCheckoutFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.CheckoutTest@16fe9c29]" started-at="2026-09-11T10:59:14 UTC" name="tearDown" finished-at="2026-09-11T10:59:14 UTC" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.example.framework.tests.CheckoutTest@4bdcaf36]" started-at="2026-11-07T10:14:33 UTC" name="tearDown" finished-at="2026-11-07T10:14:33 UTC" duration-ms="104" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanCompleteCheckoutFlow status=SUCCESS method=CheckoutTest.userCanCompleteCheckoutFlow()[pri:0, instance:com.example.framework.tests.CheckoutTest@16fe9c29] output={null}]]]>
+                <![CDATA[[TestResult name=userCanCompleteCheckoutFlow status=SUCCESS method=CheckoutTest.userCanCompleteCheckoutFlow()[pri:0, instance:com.example.framework.tests.CheckoutTest@4bdcaf36] output={null}]]]>
               </value>
             </param>
           </params>

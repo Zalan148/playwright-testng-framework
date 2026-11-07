@@ -6,7 +6,31 @@
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/WaitStrategies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/WaitStrategies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/All Test Suite/Playwright TestNG Suite.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/All Test Suite/Playwright TestNG Suite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/All Test Suite/Playwright TestNG Suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/All Test Suite/Playwright TestNG Suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.framework.tests.CartTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.framework.tests.CartTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.framework.tests.CheckoutTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.framework.tests.CheckoutTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.framework.tests.InventoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.framework.tests.InventoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.framework.tests.LoginTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.framework.tests.LoginTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.hybrid.HybridLoginBypassTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.hybrid.HybridLoginBypassTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.hybrid.HybridOrderFlowTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.hybrid.HybridOrderFlowTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.hybrid.HybridProductFlowTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.hybrid.HybridProductFlowTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.hybrid.HybridUserFlowTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.hybrid.HybridUserFlowTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.smoke.ApiSmokeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.smoke.ApiSmokeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.smoke.DataFactorySmokeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.smoke.DataFactorySmokeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.smoke.EnvironmentSmokeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/junitreports/TEST-com.example.tests.smoke.EnvironmentSmokeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/components/AuthComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/AuthComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/Secrets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/Secrets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

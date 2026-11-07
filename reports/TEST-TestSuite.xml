@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="14.417" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="13.466" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/java/openjdk/lib"/>
-    <property name="sun.java.command" value="/app/target/surefire/surefirebooter-20260911105903572_3.jar /app/target/surefire 2026-09-11T10-59-00_891-jvmRun1 surefire-20260911105903572_1tmp surefire_0-20260911105903572_2tmp"/>
+    <property name="sun.java.command" value="/app/target/surefire/surefirebooter-20261107101423160_3.jar /app/target/surefire 2026-11-07T10-14-22_714-jvmRun1 surefire-20261107101423160_1tmp surefire_0-20261107101423160_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/app/target/test-classes:/app/target/classes:/root/.m2/repository/com/microsoft/playwright/playwright/1.44.0/playwright-1.44.0.jar:/root/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/root/.m2/repository/com/microsoft/playwright/driver/1.44.0/driver-1.44.0.jar:/root/.m2/repository/com/microsoft/playwright/driver-bundle/1.44.0/driver-bundle-1.44.0.jar:/root/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/root/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/root/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/root/.m2/repository/io/qameta/allure/allure-testng/2.24.0/allure-testng-2.24.0.jar:/root/.m2/repository/io/qameta/allure/allure-test-filter/2.24.0/allure-test-filter-2.24.0.jar:/root/.m2/repository/io/qameta/allure/allure-java-commons/2.24.0/allure-java-commons-2.24.0.jar:/root/.m2/repository/io/qameta/allure/allure-model/2.24.0/allure-model-2.24.0.jar:/root/.m2/repository/io/github/cdimascio/dotenv-java/3.0.0/dotenv-java-3.0.0.jar:/root/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/app/target/surefire/surefirebooter-20260911105903572_3.jar"/>
+    <property name="surefire.real.class.path" value="/app/target/surefire/surefirebooter-20261107101423160_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.3+9-LTS"/>
     <property name="user.name" value="root"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="verifyApiIsReachable" classname="com.example.tests.smoke.ApiSmokeTest" time="0.966">
+  <testcase name="verifyApiIsReachable" classname="com.example.tests.smoke.ApiSmokeTest" time="0.851">
     <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
 BASE DEBUG: Before Playwright.create()
 BASE DEBUG: Before Playwright.create()
@@ -84,451 +84,475 @@ BASE DEBUG: After page creation
 BASE DEBUG: After page creation
 BASE DEBUG: After page creation
 BASE DEBUG: After page creation
-[10:59:10.894] SETUP: ApiSmokeTest on thread TestNG-test-Playwright TestNG Suite-5
-[10:59:10.894] SETUP: InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
-[10:59:10.894] SETUP: CartTest on thread TestNG-test-Playwright TestNG Suite-1
-[10:59:10.894] SETUP: CheckoutTest on thread TestNG-test-Playwright TestNG Suite-2
-Active groups for test 'userCanCompleteCheckoutFlow': none
+[10:14:30.561] SETUP: CartTest on thread TestNG-test-Playwright TestNG Suite-1
+[10:14:30.561] SETUP: ApiSmokeTest on thread TestNG-test-Playwright TestNG Suite-5
+[10:14:30.561] SETUP: InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
+[10:14:30.561] SETUP: CheckoutTest on thread TestNG-test-Playwright TestNG Suite-2
 Active groups for test 'verifyApiIsReachable': none
-Active groups for test 'addItemToCartIncreasesCartCount': none
 Active groups for test 'addedItemAppearsInCart': none
-[10:59:10.914] SETUP: LoginTest on thread TestNG-test-Playwright TestNG Suite-4
+Active groups for test 'addItemToCartIncreasesCartCount': none
+Active groups for test 'userCanCompleteCheckoutFlow': none
+Playwright browser type: chromium
+Playwright browser type: chromium
+Playwright browser type: chromium
+Playwright browser type: chromium
+[10:14:30.584] SETUP: LoginTest on thread TestNG-test-Playwright TestNG Suite-4
 Active groups for test 'invalidLoginShowsErrorMessage': none
-API TEST DEBUG: Before UserClient creation
-API DEBUG: Before Playwright.create()
-API DEBUG: After Playwright.create()
-API DEBUG: After request.newContext()
-API TEST DEBUG: After UserClient creation
+Playwright browser type: chromium
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
 ]]></system-out>
-    <system-err><![CDATA[10:59:06.312 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.319 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
-10:59:06.320 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.321 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.321 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.321 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.324 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.324 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.326 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.339 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
-10:59:06.340 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.340 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.342 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.342 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.343 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.343 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.346 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.347 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.360 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 10 ms.
-10:59:06.362 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-10:59:06.366 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.366 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.366 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.366 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.367 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.367 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.367 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.367 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.367 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.368 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.369 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.369 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.369 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.369 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.369 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.369 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.371 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.371 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.373 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.373 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.375 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.376 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.377 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.377 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.377 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.377 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.378 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.378 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.379 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.379 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.380 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.380 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.381 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.381 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.381 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.381 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.384 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.384 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.386 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.386 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.389 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.389 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.390 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.390 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.390 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.390 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.391 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.391 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.391 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.391 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.392 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.392 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.392 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.392 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.392 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.392 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.392 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.394 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.396 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.396 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.397 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.397 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.397 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.397 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.397 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.397 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.397 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.397 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.398 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.399 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.399 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.399 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.400 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.400 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.400 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.400 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.400 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.401 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.401 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.402 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.407 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.408 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.408 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.408 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.410 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.410 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.413 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.413 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.414 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.414 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.416 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.416 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.420 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.421 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.421 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.421 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.421 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.421 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.421 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.421 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.422 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.423 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.423 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.423 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.423 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.423 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.423 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.423 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.425 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.426 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.427 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.427 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.429 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.429 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.429 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.429 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.430 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.430 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.430 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.430 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.431 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.431 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.433 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.433 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.435 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.435 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.435 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.435 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.435 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.455 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 19 ms.
-10:59:06.457 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.457 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.459 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.460 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.460 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.460 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.461 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.461 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.461 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.462 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.462 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.463 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.464 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.464 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.464 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.464 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.464 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.464 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.465 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.466 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.467 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.467 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.469 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.469 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.487 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.487 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.488 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.488 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.488 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.488 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.489 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.490 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.490 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.491 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.492 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.493 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.493 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.493 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.493 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.495 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-10:59:06.495 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.496 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.498 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.498 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.498 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.498 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.498 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.499 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.499 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.499 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.499 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.500 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.503 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.503 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.503 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.504 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.504 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.504 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.504 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.505 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-10:59:06.506 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.506 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.509 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.509 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.509 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.509 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.514 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.521 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
-10:59:06.523 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.523 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.523 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-10:59:06.523 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-10:59:06.556 [main] INFO org.testng.internal.Utils - [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:3
-10:59:06.578 [TestNG-tests-1] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
-10:59:06.594 [TestNG-tests-1] INFO org.testng.internal.Utils - [TestTaskExecutor] Starting executor test 2147483647 with time out: 2147483647 milliseconds.
-10:59:07.678 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Starting test CheckoutTest on thread TestNG-test-Playwright TestNG Suite-2
-10:59:07.678 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Starting test InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
-10:59:07.678 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Starting test CartTest on thread TestNG-test-Playwright TestNG Suite-1
-10:59:07.678 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Starting test LoginTest on thread TestNG-test-Playwright TestNG Suite-4
-10:59:07.678 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Starting test ApiSmokeTest on thread TestNG-test-Playwright TestNG Suite-5
-10:59:09.442 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:09.442 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:09.443 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:09.443 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:09.443 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:09.446 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:09.446 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:09.446 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:09.446 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:09.446 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:10.851 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-10:59:10.851 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-10:59:10.851 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-10:59:10.851 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-10:59:10.851 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+    <system-err><![CDATA[10:14:26.052 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.058 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+10:14:26.060 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.060 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.061 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.061 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.062 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.062 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.066 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.082 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+10:14:26.083 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.083 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.083 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.083 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.084 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.084 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.087 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.088 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.097 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 8 ms.
+10:14:26.098 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.102 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.102 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.103 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.103 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.103 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.103 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.104 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.104 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.105 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.105 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.107 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.107 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.107 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.108 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.108 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.108 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.108 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.108 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.111 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.111 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.113 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.113 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.113 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.113 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.116 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.116 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.117 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.117 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.117 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.117 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.119 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.119 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.120 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.120 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.121 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.121 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.122 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.122 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.125 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.125 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.129 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.129 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.130 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.130 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.130 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.131 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.131 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.131 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.131 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.132 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.132 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.132 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.132 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.132 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.132 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.133 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.133 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.133 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.135 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.136 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.137 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.138 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.138 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.138 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.138 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.138 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.139 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.139 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.139 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.139 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.140 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.140 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.140 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.140 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.144 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.144 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.145 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.145 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.145 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.146 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.149 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.149 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.150 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.150 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.151 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.151 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.151 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.151 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.152 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.153 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.156 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.156 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.156 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.156 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.156 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.156 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.156 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.157 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.157 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.158 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.160 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.161 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.161 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.161 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.161 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.161 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.161 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.161 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.162 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.163 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.163 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.163 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.164 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.164 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.164 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.164 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.164 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.164 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.165 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.166 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.172 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.173 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.174 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.175 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.175 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.175 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.175 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.175 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.175 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.193 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
+10:14:26.195 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.195 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.199 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.199 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.199 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.199 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.199 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.199 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.199 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.199 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.200 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.200 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.201 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.201 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.202 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.202 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.203 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.203 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.206 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.207 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.208 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.208 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.213 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.213 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.213 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.213 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.213 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.213 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.214 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.214 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.214 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.214 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.214 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.215 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.215 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.215 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.216 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.216 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.216 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.219 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+10:14:26.219 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.220 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.220 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.220 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.221 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.221 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.221 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.221 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.221 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.221 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.221 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.221 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.222 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.222 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.222 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.222 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.222 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.222 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.222 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.223 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+10:14:26.224 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.224 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.227 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.227 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.227 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.227 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.232 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+10:14:26.247 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+10:14:26.250 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.250 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.251 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+10:14:26.251 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+10:14:26.281 [main] INFO org.testng.internal.Utils - [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:3
+10:14:26.313 [TestNG-tests-1] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 7 ms.
+10:14:26.334 [TestNG-tests-1] INFO org.testng.internal.Utils - [TestTaskExecutor] Starting executor test 2147483647 with time out: 2147483647 milliseconds.
+10:14:27.103 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:27.103 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:27.103 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:27.103 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:27.103 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 185ca89d-bf6e-402e-9fe5-b7eac5276222 not found
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid db269667-cbfa-4376-9c01-37b3eb6de088 not found
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Starting test CheckoutTest on thread TestNG-test-Playwright TestNG Suite-2
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid c88a0203-b941-484d-b3a9-93ab1e7e7228 not found
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 93e0c3a1-e3c8-4616-807d-16550c35889f not found
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Starting test LoginTest on thread TestNG-test-Playwright TestNG Suite-4
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Starting test CartTest on thread TestNG-test-Playwright TestNG Suite-1
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid acbab4df-69b7-4da0-85b5-e855a4bd34b3 not found
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Starting test InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
+10:14:27.365 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Starting test ApiSmokeTest on thread TestNG-test-Playwright TestNG Suite-5
+10:14:29.182 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:29.182 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:29.182 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:29.182 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:29.182 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:30.518 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:30.518 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:30.519 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:30.519 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:30.518 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Timeout: 30000
 ]]></system-err>
   </testcase>
-  <testcase name="invalidLoginShowsErrorMessage" classname="com.example.framework.tests.LoginTest" time="2.703">
-    <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
-BASE DEBUG: After Playwright.create()
-BASE DEBUG: Before browser.launch()
-BASE DEBUG: After browser.launch()
-]]></system-out>
-    <system-err><![CDATA[10:59:12.131 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Finished test ApiSmokeTest on thread TestNG-test-Playwright TestNG Suite-5
-10:59:12.511 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Starting test DataFactorySmokeTest on thread TestNG-test-Playwright TestNG Suite-5
-10:59:12.925 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:12.926 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:13.268 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
-10:59:13.268 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.pages.LoginPage - Logging with username wrong_user and password wrong_password
-10:59:13.268 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
-10:59:13.268 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
-10:59:13.718 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.pages.InventoryPage - Adding product to cart: Sauce Labs Backpack
-10:59:13.717 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.InventoryPage - Adding product to cart: Sauce Labs Backpack
-10:59:13.732 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.pages.InventoryPage - Adding product to cart: Sauce Labs Backpack
-]]></system-err>
-  </testcase>
-  <testcase name="validLoginNavigatesToInventoryPage" classname="com.example.framework.tests.LoginTest" time="0.511">
-    <system-err><![CDATA[10:59:17.118 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Finished test HybridOrderFlowTest on thread TestNG-test-Playwright TestNG Suite-5
-]]></system-err>
-  </testcase>
-  <testcase name="addItemToCartIncreasesCartCount" classname="com.example.framework.tests.InventoryTest" time="2.804">
-    <system-err><![CDATA[10:59:13.862 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Finished test LoginTest on thread TestNG-test-Playwright TestNG Suite-4
-]]></system-err>
-  </testcase>
-  <testcase name="productsSortAlphabetically" classname="com.example.framework.tests.InventoryTest" time="0.745">
-    <system-out><![CDATA[BASE DEBUG: After Playwright.create()
-BASE DEBUG: Before browser.launch()
-]]></system-out>
-    <system-err><![CDATA[10:59:17.229 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Finished test LoginTest on thread TestNG-test-Playwright TestNG Suite-4
-10:59:17.319 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:17.319 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Headless: true
-]]></system-err>
-  </testcase>
-  <testcase name="addedItemAppearsInCart" classname="com.example.framework.tests.CartTest" time="0.011">
-    <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
-BASE DEBUG: Before Playwright.create()
-BASE DEBUG: After page creation
-[10:59:14.094] SETUP: DataFactorySmokeTest on thread TestNG-test-Playwright TestNG Suite-5
-Active groups for test 'verifyDynamicUserCreation': none
-API DEBUG: Before Playwright.create()
-]]></system-out>
-    <system-err><![CDATA[10:59:13.963 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.InventoryPage - Opening cart
-10:59:13.967 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Finished test InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
-10:59:14.001 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.pages.InventoryPage - Opening cart
-10:59:14.038 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Starting test LoginTest on thread TestNG-test-Playwright TestNG Suite-4
-10:59:14.076 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.CartPage - Clicking checkout button
-10:59:14.080 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Starting test InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
-10:59:14.092 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-]]></system-err>
-  </testcase>
-  <testcase name="userCanCompleteCheckoutFlow" classname="com.example.framework.tests.CheckoutTest" time="0.181">
+  <testcase name="invalidLoginShowsErrorMessage" classname="com.example.framework.tests.LoginTest" time="1.733">
     <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
 ]]></system-out>
-    <system-err><![CDATA[10:59:14.109 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Finished test CartTest on thread TestNG-test-Playwright TestNG Suite-1
-10:59:14.117 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.CheckoutStepOnePage - Filling checkout info: Zalan QA CR0 1AA
-10:59:14.164 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.CheckoutStepOnePage - Clicking continue button
-10:59:14.208 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Starting test EnvironmentSmokeTest on thread TestNG-test-Playwright TestNG Suite-1
-10:59:14.230 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.CheckoutStepTwoPage - Clicking finish button
+    <system-err><![CDATA[10:14:31.829 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Finished test ApiSmokeTest on thread TestNG-test-Playwright TestNG Suite-5
+10:14:32.270 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.pages.LoginPage - Logging with username wrong_user and password wrong_password
+10:14:32.288 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
+10:14:32.288 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
+10:14:32.288 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
+10:14:32.329 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:32.332 [TestNG-test-Playwright TestNG Suite-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 8cc525ca-bf67-46f2-8f37-ce337f6a2e63 not found
+10:14:32.333 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Starting test DataFactorySmokeTest on thread TestNG-test-Playwright TestNG Suite-5
+10:14:32.647 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.InventoryPage - Adding product to cart: Sauce Labs Backpack
+10:14:32.653 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.pages.InventoryPage - Adding product to cart: Sauce Labs Backpack
 ]]></system-err>
   </testcase>
-  <testcase name="verifyDynamicUserCreation" classname="com.example.tests.smoke.DataFactorySmokeTest" time="0.538">
-    <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
-BASE DEBUG: After Playwright.create()
-BASE DEBUG: Before browser.launch()
-BASE DEBUG: After Playwright.create()
-BASE DEBUG: Before browser.launch()
-API DEBUG: After Playwright.create()
-API DEBUG: After request.newContext()
-BASE DEBUG: After Playwright.create()
-BASE DEBUG: Before browser.launch()
-]]></system-out>
-    <system-err><![CDATA[10:59:14.278 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Finished test CheckoutTest on thread TestNG-test-Playwright TestNG Suite-2
-10:59:14.360 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Starting test HybridLoginBypassTest on thread TestNG-test-Playwright TestNG Suite-2
-10:59:14.454 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:14.454 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:14.493 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:14.493 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:14.616 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:14.616 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Headless: true
-]]></system-err>
-  </testcase>
-  <testcase name="verifyEnvironmentLoadsCorrectly" classname="com.example.tests.smoke.EnvironmentSmokeTest" time="0.001">
-    <system-out><![CDATA[BASE DEBUG: After Playwright.create()
-BASE DEBUG: Before browser.launch()
-BASE DEBUG: After browser.launch()
-BASE DEBUG: Before Playwright.create()
-BASE DEBUG: After browser.launch()
-BASE DEBUG: After browser.launch()
-BASE DEBUG: After browser.launch()
-BASE DEBUG: After Playwright.create()
-BASE DEBUG: Before browser.launch()
-BASE DEBUG: After page creation
-[10:59:15.411] SETUP: LoginTest on thread TestNG-test-Playwright TestNG Suite-4
-Active groups for test 'validLoginNavigatesToInventoryPage': none
-BASE DEBUG: After page creation
-[10:59:15.494] SETUP: InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
-Active groups for test 'productsSortAlphabetically': none
-BASE DEBUG: After page creation
-[10:59:15.581] SETUP: EnvironmentSmokeTest on thread TestNG-test-Playwright TestNG Suite-1
-Active groups for test 'verifyEnvironmentLoadsCorrectly': none
-]]></system-out>
-    <system-err><![CDATA[10:59:14.635 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Finished test DataFactorySmokeTest on thread TestNG-test-Playwright TestNG Suite-5
-10:59:14.783 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:14.783 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:14.880 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Starting test HybridOrderFlowTest on thread TestNG-test-Playwright TestNG Suite-5
-10:59:15.324 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:15.324 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:15.410 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-10:59:15.493 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-10:59:15.579 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-]]></system-err>
-  </testcase>
-  <testcase name="loginViaApiAndBypassUiLogin" classname="com.example.tests.hybrid.HybridLoginBypassTest" time="0.396">
-    <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
-BASE DEBUG: After browser.launch()
-BASE DEBUG: After page creation
-[10:59:15.804] SETUP: HybridLoginBypassTest on thread TestNG-test-Playwright TestNG Suite-2
-Active groups for test 'loginViaApiAndBypassUiLogin': none
-API DEBUG: Before Playwright.create()
-BASE DEBUG: After Playwright.create()
-BASE DEBUG: Before browser.launch()
-API DEBUG: After Playwright.create()
-API DEBUG: After request.newContext()
-BASE DEBUG: After page creation
-[10:59:16.252] SETUP: HybridOrderFlowTest on thread TestNG-test-Playwright TestNG Suite-5
-Active groups for test 'createOrderViaApiAndVerifyInUi': none
-API DEBUG: Before Playwright.create()
-BASE DEBUG: After browser.launch()
-]]></system-out>
-    <system-err><![CDATA[10:59:15.587 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Finished test EnvironmentSmokeTest on thread TestNG-test-Playwright TestNG Suite-1
-10:59:15.716 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Starting test HybridProductFlowTest on thread TestNG-test-Playwright TestNG Suite-1
-10:59:15.802 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-10:59:16.127 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Browser: chromium
-10:59:16.128 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Headless: true
-10:59:16.250 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-]]></system-err>
-  </testcase>
-  <testcase name="createOrderViaApiAndVerifyInUi" classname="com.example.tests.hybrid.HybridOrderFlowTest" time="0.4">
-    <system-out><![CDATA[API DEBUG: After Playwright.create()
-API DEBUG: After request.newContext()
-BASE DEBUG: Before Playwright.create()
-BASE DEBUG: After page creation
-[10:59:17.043] SETUP: HybridProductFlowTest on thread TestNG-test-Playwright TestNG Suite-1
-Active groups for test 'createProductViaApiAndVerifyInUi': none
-API DEBUG: Before Playwright.create()
-]]></system-out>
-    <system-err><![CDATA[10:59:16.643 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Finished test HybridLoginBypassTest on thread TestNG-test-Playwright TestNG Suite-2
-10:59:16.786 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
-10:59:16.798 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
-10:59:16.881 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Starting test HybridUserFlowTest on thread TestNG-test-Playwright TestNG Suite-2
-10:59:17.041 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Timeout: 30000
-]]></system-err>
-  </testcase>
-  <testcase name="createProductViaApiAndVerifyInUi" classname="com.example.tests.hybrid.HybridProductFlowTest" time="0.391">
-    <system-out><![CDATA[API DEBUG: After Playwright.create()
-API DEBUG: After request.newContext()
-BASE DEBUG: After browser.launch()
-]]></system-out>
-    <system-err><![CDATA[10:59:17.463 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Finished test InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
-]]></system-err>
-  </testcase>
-  <testcase name="createUserViaApiAndLoginViaUi" classname="com.example.tests.hybrid.HybridUserFlowTest" time="0.539">
+  <testcase name="validLoginNavigatesToInventoryPage" classname="com.example.framework.tests.LoginTest" time="0.237">
     <system-out><![CDATA[BASE DEBUG: After page creation
-[10:59:18.181] SETUP: HybridUserFlowTest on thread TestNG-test-Playwright TestNG Suite-2
-Active groups for test 'createUserViaApiAndLoginViaUi': none
-API DEBUG: Before Playwright.create()
-API DEBUG: After Playwright.create()
-API DEBUG: After request.newContext()
+[10:14:34.666] SETUP: HybridLoginBypassTest on thread TestNG-test-Playwright TestNG Suite-2
+Active groups for test 'loginViaApiAndBypassUiLogin': none
+Playwright browser type: chromium
+BASE DEBUG: Before Playwright.create()
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+BASE DEBUG: Before Playwright.create()
+BASE DEBUG: After Playwright.create()
+BASE DEBUG: Before browser.launch()
+BASE DEBUG: After Playwright.create()
+BASE DEBUG: Before browser.launch()
 ]]></system-out>
-    <system-err><![CDATA[10:59:17.908 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Finished test HybridProductFlowTest on thread TestNG-test-Playwright TestNG Suite-1
-10:59:18.181 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+    <system-err><![CDATA[10:14:34.631 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Finished test EnvironmentSmokeTest on thread TestNG-test-Playwright TestNG Suite-1
+10:14:34.664 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:34.711 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:34.716 [TestNG-test-Playwright TestNG Suite-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 9a317ebc-908e-4447-8329-b9ebc3f05b43 not found
+10:14:34.716 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Starting test HybridOrderFlowTest on thread TestNG-test-Playwright TestNG Suite-5
+10:14:34.767 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:34.768 [TestNG-test-Playwright TestNG Suite-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 503b6c31-fea1-49d4-9655-5d2c7981c886 not found
+10:14:34.769 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Starting test HybridProductFlowTest on thread TestNG-test-Playwright TestNG Suite-1
+10:14:34.979 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
+10:14:35.142 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:35.169 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.pages.LoginPage - Logging with username standard_user and password secret_sauce
+10:14:35.207 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Headless: true
+]]></system-err>
+  </testcase>
+  <testcase name="addItemToCartIncreasesCartCount" classname="com.example.framework.tests.InventoryTest" time="1.935">
+    <system-out><![CDATA[BASE DEBUG: After Playwright.create()
+BASE DEBUG: Before browser.launch()
+BASE DEBUG: Before Playwright.create()
+]]></system-out>
+    <system-err><![CDATA[10:14:32.707 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Finished test LoginTest on thread TestNG-test-Playwright TestNG Suite-4
+10:14:32.712 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.pages.InventoryPage - Adding product to cart: Sauce Labs Backpack
+10:14:32.813 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:32.823 [TestNG-test-Playwright TestNG Suite-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid d3e43803-0b18-44f9-8795-9e980f08f2db not found
+10:14:32.823 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Starting test LoginTest on thread TestNG-test-Playwright TestNG Suite-4
+10:14:32.904 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.InventoryPage - Opening cart
+]]></system-err>
+  </testcase>
+  <testcase name="productsSortAlphabetically" classname="com.example.framework.tests.InventoryTest" time="0.659">
+    <system-out><![CDATA[BASE DEBUG: After browser.launch()
+BASE DEBUG: After browser.launch()
+]]></system-out>
+    <system-err><![CDATA[10:14:35.612 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Finished test HybridLoginBypassTest on thread TestNG-test-Playwright TestNG Suite-2
+]]></system-err>
+  </testcase>
+  <testcase name="addedItemAppearsInCart" classname="com.example.framework.tests.CartTest" time="2.08">
+    <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
+]]></system-out>
+    <system-err><![CDATA[10:14:32.909 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Finished test InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
+10:14:32.962 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.pages.InventoryPage - Opening cart
+10:14:32.982 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.CartPage - Clicking checkout button
+10:14:33.028 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.CheckoutStepOnePage - Filling checkout info: Zalan QA CR0 1AA
+10:14:33.031 [TestNG-test-Playwright TestNG Suite-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 2c85d43b-f23e-4456-875e-685505f30d04 not found
+10:14:33.032 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Starting test InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
+]]></system-err>
+  </testcase>
+  <testcase name="userCanCompleteCheckoutFlow" classname="com.example.framework.tests.CheckoutTest" time="2.231">
+    <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
+]]></system-out>
+    <system-err><![CDATA[10:14:33.052 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Finished test CartTest on thread TestNG-test-Playwright TestNG Suite-1
+10:14:33.081 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.CheckoutStepOnePage - Clicking continue button
+10:14:33.149 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.pages.CheckoutStepTwoPage - Clicking finish button
+10:14:33.159 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:33.162 [TestNG-test-Playwright TestNG Suite-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 6c399794-a6dc-4ef7-9a72-d28aacbf7f2b not found
+10:14:33.162 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Starting test EnvironmentSmokeTest on thread TestNG-test-Playwright TestNG Suite-1
+]]></system-err>
+  </testcase>
+  <testcase name="verifyDynamicUserCreation" classname="com.example.tests.smoke.DataFactorySmokeTest" time="0.167">
+    <system-out><![CDATA[BASE DEBUG: After Playwright.create()
+BASE DEBUG: Before browser.launch()
+BASE DEBUG: Before Playwright.create()
+BASE DEBUG: After browser.launch()
+BASE DEBUG: After Playwright.create()
+BASE DEBUG: Before browser.launch()
+BASE DEBUG: After Playwright.create()
+BASE DEBUG: Before browser.launch()
+BASE DEBUG: After browser.launch()
+BASE DEBUG: After Playwright.create()
+BASE DEBUG: Before browser.launch()
+BASE DEBUG: After page creation
+[10:14:33.814] SETUP: DataFactorySmokeTest on thread TestNG-test-Playwright TestNG Suite-5
+Active groups for test 'verifyDynamicUserCreation': none
+Playwright browser type: chromium
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+BASE DEBUG: After browser.launch()
+BASE DEBUG: After browser.launch()
+BASE DEBUG: After browser.launch()
+BASE DEBUG: After page creation
+[10:14:34.225] SETUP: LoginTest on thread TestNG-test-Playwright TestNG Suite-4
+Active groups for test 'validLoginNavigatesToInventoryPage': none
+Playwright browser type: chromium
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+BASE DEBUG: After page creation
+[10:14:34.430] SETUP: InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
+Active groups for test 'productsSortAlphabetically': none
+Playwright browser type: chromium
+]]></system-out>
+    <system-err><![CDATA[10:14:33.205 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Finished test CheckoutTest on thread TestNG-test-Playwright TestNG Suite-2
+10:14:33.255 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:33.313 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:33.316 [TestNG-test-Playwright TestNG Suite-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 01f219f9-118f-4122-9bc9-9a2485965133 not found
+10:14:33.316 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.core.BaseTest - Starting test HybridLoginBypassTest on thread TestNG-test-Playwright TestNG Suite-2
+10:14:33.457 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:33.589 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:33.743 [TestNG-test-Playwright TestNG Suite-2] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:33.812 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:34.223 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:34.429 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+]]></system-err>
+  </testcase>
+  <testcase name="verifyEnvironmentLoadsCorrectly" classname="com.example.tests.smoke.EnvironmentSmokeTest" time="0.003">
+    <system-out><![CDATA[User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+BASE DEBUG: After page creation
+[10:14:34.563] SETUP: EnvironmentSmokeTest on thread TestNG-test-Playwright TestNG Suite-1
+Active groups for test 'verifyEnvironmentLoadsCorrectly': none
+Playwright browser type: chromium
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+]]></system-out>
+    <system-err><![CDATA[10:14:34.459 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Finished test DataFactorySmokeTest on thread TestNG-test-Playwright TestNG Suite-5
+10:14:34.562 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+]]></system-err>
+  </testcase>
+  <testcase name="loginViaApiAndBypassUiLogin" classname="com.example.tests.hybrid.HybridLoginBypassTest" time="0.399">
+    <system-out><![CDATA[BASE DEBUG: Before Playwright.create()
+]]></system-out>
+    <system-err><![CDATA[10:14:35.448 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Finished test LoginTest on thread TestNG-test-Playwright TestNG Suite-4
+10:14:35.541 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Running against environment: local
+10:14:35.545 [TestNG-test-Playwright TestNG Suite-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 277ce02e-204a-4952-84c0-ad0b1106b239 not found
+10:14:35.545 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.core.BaseTest - Starting test HybridUserFlowTest on thread TestNG-test-Playwright TestNG Suite-4
+]]></system-err>
+  </testcase>
+  <testcase name="createOrderViaApiAndVerifyInUi" classname="com.example.tests.hybrid.HybridOrderFlowTest" time="0.271">
+    <system-out><![CDATA[BASE DEBUG: After Playwright.create()
+BASE DEBUG: Before browser.launch()
+BASE DEBUG: After page creation
+[10:14:36.143] SETUP: HybridOrderFlowTest on thread TestNG-test-Playwright TestNG Suite-5
+Active groups for test 'createOrderViaApiAndVerifyInUi': none
+Playwright browser type: chromium
+BASE DEBUG: After page creation
+[10:14:36.191] SETUP: HybridProductFlowTest on thread TestNG-test-Playwright TestNG Suite-1
+Active groups for test 'createProductViaApiAndVerifyInUi': none
+Playwright browser type: chromium
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+BASE DEBUG: After browser.launch()
+{
+  "id": "1794046476667",
+  "userId": "USER-001",
+  "productId": "PROD-ABC",
+  "quantity": 2,
+  "status": "CREATED"
+}
+BASE DEBUG: After page creation
+[10:14:36.850] SETUP: HybridUserFlowTest on thread TestNG-test-Playwright TestNG Suite-4
+Active groups for test 'createUserViaApiAndLoginViaUi': none
+Playwright browser type: chromium
+User agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.26 Safari/537.36
+]]></system-out>
+    <system-err><![CDATA[10:14:35.869 [TestNG-test-Playwright TestNG Suite-3] INFO com.example.framework.core.BaseTest - Finished test InventoryTest on thread TestNG-test-Playwright TestNG Suite-3
+10:14:35.990 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Headless: true
+10:14:36.143 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:36.189 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+10:14:36.849 [TestNG-test-Playwright TestNG Suite-4] INFO com.example.framework.config.ConfigManager - Timeout: 30000
+]]></system-err>
+  </testcase>
+  <testcase name="createProductViaApiAndVerifyInUi" classname="com.example.tests.hybrid.HybridProductFlowTest" time="0.308">
+    <system-err><![CDATA[10:14:36.954 [TestNG-test-Playwright TestNG Suite-5] INFO com.example.framework.core.BaseTest - Finished test HybridOrderFlowTest on thread TestNG-test-Playwright TestNG Suite-5
+]]></system-err>
+  </testcase>
+  <testcase name="createUserViaApiAndLoginViaUi" classname="com.example.tests.hybrid.HybridUserFlowTest" time="0.504">
+    <system-err><![CDATA[10:14:36.990 [TestNG-test-Playwright TestNG Suite-1] INFO com.example.framework.core.BaseTest - Finished test HybridProductFlowTest on thread TestNG-test-Playwright TestNG Suite-1
 ]]></system-err>
   </testcase>
 </testsuite>

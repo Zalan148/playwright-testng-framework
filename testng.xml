@@ -19,7 +19,6 @@
             <class name="com.example.tests.hybrid.HybridOrderFlowTest"/>
             <class name="com.example.tests.hybrid.HybridProductFlowTest"/>
             <class name="com.example.tests.hybrid.HybridUserFlowTest"/>
-
         </classes>
     </test>
 </suite>

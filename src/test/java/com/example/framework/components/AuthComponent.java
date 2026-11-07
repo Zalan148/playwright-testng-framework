@@ -55,5 +55,5 @@
 package com.example.framework.components;
 
 public class AuthComponent {
-
+    // Documentation-only class
 }

@@ -40,7 +40,6 @@ public class BaseTest {
 
     private List<String> consoleLogs = new ArrayList<>();
 
-
     @BeforeClass(alwaysRun = true)
     public void beforeClassSetup() {
         env = ConfigManager.getEnvironment();

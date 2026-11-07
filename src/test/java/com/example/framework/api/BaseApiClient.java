@@ -18,7 +18,6 @@ public class BaseApiClient {
         Playwright playwright = Playwright.create();
         // Version only supports this simple context creation
         this.request = playwright.request().newContext();
-
     }
 
     protected RequestOptions withHeaders() {

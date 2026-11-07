@@ -24,7 +24,6 @@ public class CheckoutTest extends BaseTest {
         loginPage.open();
 
         InventoryPage inventoryPage =  loginPage.login(Secrets.getUsername(), Secrets.getPassword());
-
         inventoryPage.addProductToCart("Sauce Labs Backpack");
         inventoryPage.openCart();
 

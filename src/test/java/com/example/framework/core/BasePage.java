@@ -24,7 +24,6 @@ public abstract class BasePage {
         locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
     }
 
-
     //click element
     protected void click(Locator locator){
         waitForVisible(locator);
@@ -42,6 +41,5 @@ public abstract class BasePage {
         waitForVisible(locator);
         return locator.innerText();
     }
-
 
 }
