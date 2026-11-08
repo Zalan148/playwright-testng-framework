@@ -105,8 +105,6 @@ public class BaseTest {
   @AfterMethod
     public void tearDown(ITestResult result){
 
-        String browserName = ConfigManager.getBrowser();
-
         log.info("Finished test {} on thread {}",
                 this.getClass().getSimpleName(),
                 Thread.currentThread().getName());

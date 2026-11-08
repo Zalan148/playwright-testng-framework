@@ -27,7 +27,7 @@ public class CartTest extends BaseTest {
 
         CartPage cartPage = new CartPage(page, env);
         var items = cartPage.getCartItemNames();
-        Assert.assertTrue(items.contains("Sauce Labs Backpack"));
+        Assert.assertTrue(items.contains("Sauce Labs Backpacks"));
 
     }
 }
