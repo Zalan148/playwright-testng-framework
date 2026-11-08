@@ -16,7 +16,6 @@ public class LoginTest extends BaseTest {
     @Test
     @Description("Verify an error message appears when login is invalid")
     public void invalidLoginShowsErrorMessage() {
-
         //Create page object
         LoginPage loginPage = new LoginPage(page, env);
 
