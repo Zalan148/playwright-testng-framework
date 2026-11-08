@@ -189,20 +189,16 @@ jobs:
           mkdir -p combined-allure-results
 
           echo "Combining Chromium results..."
-          cp allure-results/chromium/*-result.json combined-allure-results/
-          cp allure-results/chromium/*-attachment.* combined-allure-results/ 2>/dev/null || true
+          cp allure-results/chromium/* combined-allure-results/ 2>/dev/null || true
 
           echo "Combining Firefox results..."
-          cp allure-results/firefox/*-result.json combined-allure-results/
-          cp allure-results/firefox/*-attachment.* combined-allure-results/ 2>/dev/null || true
+          cp allure-results/firefox/* combined-allure-results/ 2>/dev/null || true
 
           echo "Combining WebKit results..."
-          cp allure-results/webkit/*-result.json combined-allure-results/
-          cp allure-results/webkit/*-attachment.* combined-allure-results/ 2>/dev/null || true
+          cp allure-results/webkit/* combined-allure-results/ 2>/dev/null || true
 
           echo "Combining Performance results..."
-          cp allure-results/performance/*-result.json combined-allure-results/
-          cp allure-results/performance/*-attachment.* combined-allure-results/ 2>/dev/null || true
+          cp allure-results/performance/* combined-allure-results/ 2>/dev/null || true
 
           echo ""
           echo "Combined Allure result files:"

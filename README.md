@@ -93,7 +93,7 @@ To run locally
 - the framework workflow file for this suite is called docker-tests.yml
 - the attachments on failure (screenshot capture, HTML snapshot, video, console logs are not included in the report.
   Those attachments can be included by updating the workflow file.
-- the framework workflow file for this suite is called docker-tests.yml
+
 ------------------------------------------------------------------
 
 # Playwright TestNG Diagnostic Suite
