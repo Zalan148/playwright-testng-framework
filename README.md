@@ -33,17 +33,17 @@ testing using modern automation tooling.
 
 ### Technology Stack
 
-Area	             Technology
-Language	         Java 21
-UI Automation	     Playwright
-Test Framework	     TestNG
-API Testing	         Playwright APIRequestContext
-Reporting	         Allure
-CI/CD	             GitHub Actions
-Visual Testing	     Custom VisualAssert Utility
-Load Testing	     k6
-Mock Services	     Node.js + json-server
-Containerisation	 Docker
+* **Language**: Java 21
+* **UI Automation**: Playwright
+* **Test Framework**: TestNG
+* **API Testing**: Playwright APIRequestContext
+* **Reporting**: Allure
+* **CI/CD**: GitHub Actions
+* **Visual Testing**: Custom VisualAssert Utility
+* **Performance Testing**: Playwright Performance API
+* **Load Testing**: k6
+* **Mock Services**: Node.js + json-server
+* **Containerisation**: Docker
 
 **Cross Browser Allure Overview**
 
@@ -142,11 +142,10 @@ testing.
 
 **Workflow Coverage**
 
-**Area	          Browser Coverage**
-UI Tests	      Chromium, Firefox, WebKit
-Hybrid Tests	  Chromium, Firefox, WebKit
-API Smoke Tests	  Chromium, Firefox, WebKit
-Performance Test  Chromium
+* **UI Tests**: Chromium, Firefox, WebKit
+* **Hybrid Tests**: Chromium, Firefox, WebKit
+* **API Smoke Tests**: Chromium, Firefox, WebKit
+* **Performance Test**: Chromium
 
 **Workflow Structure**
 
@@ -235,12 +234,13 @@ From the project root directory:
 1. `docker build --platform linux/amd64 -t playwright-tests .`
 
 **Run the Container**
-
-`docker run --rm --platform linux/amd64 \
+```bash
+docker run --rm --platform linux/amd64 \
 --env-file .env \
 -p 3001:3001 \
 -v $(pwd)/reports:/app/target/surefire-reports \
-playwright-tests`
+playwright-tests
+```
 
 **View the Generated Reports**
 
@@ -442,8 +442,8 @@ and viewed locally using:
 
 **Automatic failure diagnostics including screenshot, HTML snapshot, console logs and video recording.**
 
-
 ![failure-diagnostics.jpg](images/failure-diagnostics.jpg)
+
 
 
 
@@ -895,7 +895,7 @@ The suite behaves as follows:
 Baseline images act as the approved visual reference for regression testing and should be updated only when a UI change 
 is expected and has been reviewed.
 
-**Refresh Baselines When**
+**When To Refresh Baselines**
 
 Update baselines only after intentional UI changes, such as:
 
@@ -928,6 +928,8 @@ reviewed and approved.
 
 
 **Visual regression failure highlighting differences between the baseline and current screenshot.**
+
+
 
 
 
