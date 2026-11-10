@@ -30,5 +30,4 @@ public class BaseApiClient {
         options.setHeader("Authorization", "Bearer " + apiSecrets.getApiToken());
         return options;
     }
-
 }

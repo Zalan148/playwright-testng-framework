@@ -12,7 +12,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.lang.reflect.Method;
@@ -55,28 +54,19 @@ public class BaseTest {
         log.info("Starting test {} on thread {}",
               this.getClass().getSimpleName(),
               Thread.currentThread().getName());
-
-        System.out.println("BASE DEBUG: Before Playwright.create()");
         playwright = Playwright.create();
-        System.out.println("BASE DEBUG: After Playwright.create()");
-
         browserName = browserParameter.toLowerCase();
-
         BrowserType browserType = switch (browserParameter.toLowerCase()) {
           case "firefox" -> playwright.firefox();
           case "webkit" -> playwright.webkit();
           default -> playwright.chromium();
       };
-
-        System.out.println("BASE DEBUG: Before browser.launch()");
         browser = browserType.launch(new BrowserType.LaunchOptions()
               .setHeadless(ConfigManager.isHeadless()));
-        System.out.println("BASE DEBUG: After browser.launch()");
         context = browser.newContext(
               new Browser.NewContextOptions().setRecordVideoDir(Paths.get("videos")).setRecordVideoSize(1280,720)
       );
         page = context.newPage();
-        System.out.println("BASE DEBUG: After page creation");
         page.setDefaultTimeout(ConfigManager.getDefaultTimeout());
         page.onConsoleMessage(msg -> {
             consoleLogs.add(msg.type() + ": " + msg.text());
@@ -85,7 +75,6 @@ public class BaseTest {
         // 1. Create a millisecond-precise time formatter
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss.SSS");
         String currentTime = LocalTime.now().format(timeFormatter);
-
 
         // 2. Print the log with the timestamp at the very beginning
         System.out.println("[" + currentTime + "] SETUP: " + this.getClass().getSimpleName()
@@ -99,16 +88,13 @@ public class BaseTest {
         // 4. Print browser info (after page is created)
         System.out.println("Playwright browser type: " + browserType.name());
         System.out.println("User agent: " + page.evaluate("navigator.userAgent"));
-
     }
 
-  @AfterMethod
+    @AfterMethod
     public void tearDown(ITestResult result){
-
         log.info("Finished test {} on thread {}",
                 this.getClass().getSimpleName(),
                 Thread.currentThread().getName());
-
         Path videoPath = null;
 
     try {
@@ -148,7 +134,6 @@ public class BaseTest {
 
             // Save video path BEFORE closing anything
             videoPath = page.video().path();
-
         }
     } catch (Exception e) {
         e.printStackTrace();
@@ -183,7 +168,6 @@ public class BaseTest {
           e.printStackTrace();
       }
 
-
       // PHASE 4 — CLEANUP CHUNK FILES (but keep the final merged video)
       try {
           if (videoPath != null) {
@@ -204,5 +188,4 @@ public class BaseTest {
       browser.close();
       playwright.close();
   }
-
 }

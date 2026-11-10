@@ -54,5 +54,4 @@ public class CheckoutStepOnePage extends BasePage {
         enterPostalCode(postal);
         clickContinue();
     }
-
 }

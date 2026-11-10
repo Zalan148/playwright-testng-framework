@@ -1,6 +1,5 @@
 package com.example.framework.utils;
 
-import com.example.framework.config.ConfigManager;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import javax.imageio.ImageIO;

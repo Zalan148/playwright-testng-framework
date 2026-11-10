@@ -96,7 +96,6 @@ public class ApiUiFlowTest extends BaseTest {
         Assert.assertTrue(itemText.contains("Sauce Labs Backpack"), "Expected product not found in UI");
     }
 
-
     /**
      * Helper method to attach Playwright screenshot to Allure.
      */

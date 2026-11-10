@@ -3,7 +3,6 @@ package com.example.framework.utils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.playwright.APIResponse;
-
 import java.util.Map;
 import java.util.List;
 

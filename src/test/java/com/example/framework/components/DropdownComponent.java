@@ -1,7 +1,6 @@
 package com.example.framework.components;
 
 import com.microsoft.playwright.Locator;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -41,5 +40,4 @@ public class DropdownComponent {
     public void selectCustomOption(String optionText) {
         root.locator("text=" + optionText).click();
     }
-
 }

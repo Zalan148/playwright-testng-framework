@@ -669,7 +669,7 @@ and viewed locally using:
 #### Hybrid Testing Flow
 
 The hybrid tests follow the workflow below:
-
+```text
 API creates test data
 ↓
 Playwright injects data into browser storage
@@ -677,7 +677,7 @@ Playwright injects data into browser storage
 UI navigates to mock frontend page
 ↓
 Assertions verify expected behaviour
-
+```
 Examples include:
 
 * Creating users via API and validating through the UI
@@ -747,7 +747,7 @@ Each browser maintains its own visual baselines to account for browser-specific 
 #### Baseline Structure
 
 Visual baselines are stored separately for each browser:
-
+```text
 src/test/resources/baseline/
 ├── chromium/
 │   ├── login.png
@@ -758,7 +758,7 @@ src/test/resources/baseline/
 └── webkit/
     ├── login.png
     └── inventory.png
-
+```
 This ensures visual comparisons are performed against the correct browser-specific reference images.
 
 #### Running Visual Tests Locally
@@ -804,13 +804,13 @@ When baseline mode is enabled, the existing baseline image is replaced with the 
 #### Visual Regression Results
 
 During a normal visual comparison run, the framework generates:
-
+```text
 target/
 ├── login-<browser>-current.png
 ├── login-<browser>-diff.png
 ├── inventory-<browser>-current.png
 └── inventory-<browser>-diff.png
-
+```
 **Current Image**
 
 Represents the screenshot captured during the current test execution.
@@ -911,10 +911,11 @@ Update baselines only after intentional UI changes, such as:
 3. Replace the corresponding images in:
    src/test/resources/baseline/<browser>/
 4. Commit the updated baseline images:
-   `git add src/test/resources/baseline/
+   ```bash
+   git add src/test/resources/baseline/
    git commit -m "Refresh visual baselines after approved UI update"
-   git push origin main`
-
+   git push origin main
+   ```
 **Review Requirement**
 
 Baseline updates should be reviewed in pull requests to confirm that visual differences are intentional and expected.

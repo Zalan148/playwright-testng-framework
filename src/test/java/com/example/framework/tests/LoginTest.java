@@ -37,7 +37,6 @@ public class LoginTest extends BaseTest {
     @Description("Verify able to login successfully and navigate to the inventory page")
     @Severity(SeverityLevel.CRITICAL)
     public void validLoginNavigatesToInventoryPage(){
-
         //Create page object
         LoginPage loginPage = new LoginPage(page, env);
 
@@ -49,5 +48,4 @@ public class LoginTest extends BaseTest {
         //Assert navigation
         Assert.assertTrue(page.url().contains("inventory.html"), "User did not navigate to inventory page after login");
     }
-
 }

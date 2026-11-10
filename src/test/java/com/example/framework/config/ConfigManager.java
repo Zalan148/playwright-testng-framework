@@ -2,13 +2,13 @@ package com.example.framework.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigManager {
     private static final Logger log = LoggerFactory.getLogger(ConfigManager.class);
+
     private static Properties properties;
 
     private static final String CONFIG_PATH = "src/test/resources/config.properties";
@@ -53,7 +53,6 @@ public class ConfigManager {
             browser = "chromium";
         }
         return browser;
-
     }
 
     public static boolean isHeadless() {
@@ -83,5 +82,4 @@ public class ConfigManager {
     public static int getApiTimeout() {
         return Integer.parseInt(get("api.timeout"));
     }
-
 }

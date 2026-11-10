@@ -9,7 +9,6 @@ import com.example.framework.pages.LoginPage;
 import io.qameta.allure.Description;
 import org.slf4j.Logger;
 import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -43,5 +42,4 @@ public class InventoryTest extends BaseTest {
         Collections.sort(sorted);
         assertEquals(names, sorted);
     }
-
 }

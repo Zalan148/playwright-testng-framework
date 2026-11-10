@@ -61,7 +61,6 @@ jobs:
         run: |
           find target -type f | sort
 
-
       # Upload allure results (always)
       - name: Upload Allure results
         if: always()

@@ -35,11 +35,9 @@ public class CheckoutTest extends BaseTest {
 
         CheckoutStepTwoPage stepTwo = new CheckoutStepTwoPage(page, env);
         Assert.assertEquals(stepTwo.getItemName(), "Sauce Labs Backpack");
-
         stepTwo.clickFinish();
 
         CheckoutCompletePage completePage = new CheckoutCompletePage(page, env);
         Assert.assertEquals(completePage.getCompleteMessage(), "Thank you for your order!");
     }
-
 }

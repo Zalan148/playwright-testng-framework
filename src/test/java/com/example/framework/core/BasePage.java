@@ -41,5 +41,4 @@ public abstract class BasePage {
         waitForVisible(locator);
         return locator.innerText();
     }
-
 }

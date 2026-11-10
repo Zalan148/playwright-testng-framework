@@ -3,7 +3,6 @@ package com.example.framework.api;
 import com.example.framework.config.ApiSecrets;
 import com.example.framework.config.Environment;
 import com.microsoft.playwright.APIResponse;
-
 import java.util.Map;
 
 public class UserClient extends BaseApiClient {
@@ -17,7 +16,6 @@ public class UserClient extends BaseApiClient {
                 withHeaders()
         );
     }
-
 
     public APIResponse getUserById(String userId) {
         return request.get(

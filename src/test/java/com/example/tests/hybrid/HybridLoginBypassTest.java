@@ -57,7 +57,6 @@ public class HybridLoginBypassTest extends BaseTest {
 
     @Test
     public void loginViaApiAndBypassUiLogin() {
-
         // 1. API Login — Get token instantly
         APIResponse loginResponse = authClient.login(
                 "admin_user",
@@ -76,6 +75,5 @@ public class HybridLoginBypassTest extends BaseTest {
 
         // 4. UI Verification — Confirm dashboard loads
         assertThat(page.locator("div.inventory_list")).isVisible();
-
     }
 }

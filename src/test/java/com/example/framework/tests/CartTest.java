@@ -20,14 +20,13 @@ public class CartTest extends BaseTest {
     public void addedItemAppearsInCart(){
         LoginPage loginPage = new LoginPage(page, env);
         loginPage.open();
-        InventoryPage inventoryPage = loginPage.login(Secrets.getUsername(), Secrets.getPassword());
 
+        InventoryPage inventoryPage = loginPage.login(Secrets.getUsername(), Secrets.getPassword());
         inventoryPage.addProductToCart("Sauce Labs Backpack");
         inventoryPage.openCart();
 
         CartPage cartPage = new CartPage(page, env);
         var items = cartPage.getCartItemNames();
         Assert.assertTrue(items.contains("Sauce Labs Backpack"));
-
     }
 }

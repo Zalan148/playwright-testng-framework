@@ -8,7 +8,6 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.slf4j.Logger;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -39,7 +38,6 @@ public class CartPage extends BasePage {
                 .map(String::trim)
                 .collect(Collectors.toList());
     }
-
 
     //Remove a specific product from the cart
     @Step("remove item: {0}")
@@ -72,7 +70,5 @@ public class CartPage extends BasePage {
     public void clickCheckout() {
         log.info("Clicking checkout button");
         checkoutButton.click();
-
     }
-
 }

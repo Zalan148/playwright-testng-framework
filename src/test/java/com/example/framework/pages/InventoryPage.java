@@ -9,7 +9,6 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.slf4j.Logger;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,7 +31,6 @@ public class InventoryPage extends BasePage {
     public void waitForPageLoad() {
         page.waitForSelector(".inventory_list"); // waits until product grid is visible
     }
-
 
     public void open(){
         page.navigate(env.getBaseURL() + "/inventory");
@@ -88,7 +86,6 @@ public class InventoryPage extends BasePage {
         log.info("Opening cart");
         cartIcon.click();
     }
-
 
     public DropdownComponent getSortDropdown() {
         Locator dropdownRoot = page.locator("select[data-test='product-sort-container']");

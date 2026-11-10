@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 
-
 public class PerformanceUtils {
 
     private static final Logger log = LoggerFactory.getLogger(PerformanceUtils.class);
@@ -22,7 +21,6 @@ public class PerformanceUtils {
      * attaches the results to Allure, and validates the default budgets.
      */
     public static void assertPerformanceBudgets(Page page, long inventoryUiReadyMs) {
-
         // DOM Content Loaded
         Number domContentLoaded = (Number) page.evaluate(
                 "() => performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart"
@@ -40,7 +38,6 @@ public class PerformanceUtils {
                 "() => performance.memory ? performance.memory.usedJSHeapSize : 0"
         );
         long jsHeapUsedMB = jsHeapUsedSize.longValue() / 1024 / 1024;
-
 
         // Console output
         log.info("========== PERFORMANCE RESULTS ==========");

@@ -32,5 +32,4 @@ public class PerformanceTest extends BaseTest {
                 inventoryUiReadyMs
         );
     }
-
 }

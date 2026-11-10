@@ -59,7 +59,6 @@ public class HybridProductFlowTest extends BaseTest {
 
     @Test
     public void createProductViaApiAndVerifyInUi() {
-
         // 1. API Setup — Create product instantly
         APIResponse createResponse = productClient.createProduct(
                 "PROD-XYZ",

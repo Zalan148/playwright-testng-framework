@@ -15,7 +15,6 @@ public class ApiSmokeTest extends BaseTest {
     @Description("Verify that the /users endpoint is reachable and returns 200")
     @Severity(SeverityLevel.CRITICAL)
     public void verifyApiIsReachable() {
-
         UserClient userClient = new UserClient(env, apiSecrets);
         APIResponse response = userClient.getAllUsers();
         ResponseValidator.assertStatus(response, 200);

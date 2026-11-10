@@ -41,8 +41,6 @@
  * external verification pages, and embedded admin tools.
  */
 
-
-
 package com.example.framework.components;
 
 import com.microsoft.playwright.BrowserContext;
