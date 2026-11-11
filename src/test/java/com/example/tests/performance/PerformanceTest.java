@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 public class PerformanceTest extends BaseTest {
     @Test
     public void inventoryPagePerformanceBudget() {
-
         LoginPage loginPage = new LoginPage(page, env);
         loginPage.open();
 
