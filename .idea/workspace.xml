@@ -5,54 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/visual-regression.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/visual-regression.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/api/AuthClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/AuthClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/BaseApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/api/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/OrderClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/api/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/ProductClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/api/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/api/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/components/AuthComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/AuthComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/components/DropdownComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/DropdownComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ModalComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ModalComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/components/MultiTabComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/MultiTabComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ShadowComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/components/ShadowComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ApiSecretsLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ApiSecretsLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/config/EnvironmentSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/config/EnvironmentSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutCompletePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepOnePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/CheckoutStepOnePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/InventoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/CheckoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/InventoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/InventoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/VisualRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/tests/VisualRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/NetworkMocking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/NetworkMocking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/PerformanceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/PerformanceUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/VisualAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/framework/utils/VisualAssert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/diagnostic/PlaywrightStartupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/diagnostic/PlaywrightStartupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/ApiUiFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/ApiUiFlowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridLoginBypassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridLoginBypassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridOrderFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridOrderFlowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridProductFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridProductFlowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/performance/PerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/performance/PerformanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/ApiSmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/smoke/ApiSmokeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/chromium/inventory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/chromium/login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/firefox/inventory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/firefox/login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/webkit/inventory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/webkit/login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng-suites/testng-login.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

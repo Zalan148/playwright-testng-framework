@@ -40,7 +40,7 @@ testing using modern automation tooling.
 * **Reporting**: Allure
 * **CI/CD**: GitHub Actions
 * **Visual Testing**: Custom VisualAssert Utility
-* **Performance Testing**: Playwright Performance API
+* **Performance Testing**: Browser Performance API + Playwright
 * **Load Testing**: k6
 * **Mock Services**: Node.js + json-server
 * **Containerisation**: Docker
