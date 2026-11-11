@@ -1069,3 +1069,15 @@ The load tests validate that:
 
 Threshold validation is performed automatically by k6 during execution.
 
+------------------------------------------------------------------------------------------------------------------------
+
+## Author
+
+Created and maintained by Zalan.
+
+This repository was developed as a personal automation engineering portfolio project demonstrating Playwright, TestNG, 
+API testing, hybrid testing, visual regression testing, performance testing, load testing, Docker and GitHub Actions 
+CI/CD.
+
+- LinkedIn: www.linkedin.com/in/zalan-wadood-37098217
+- GitHub: https://github.com/Zalan148
