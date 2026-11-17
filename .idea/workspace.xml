@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ff1a2c-bfd6-4729-a539-b4b70a564a29" name="Changes" comment="Module 1 — Core Framework Foundation">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docker-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker-tests.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/hybrid-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/hybrid-tests.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/test-suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test-suite.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/visual-regression.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/visual-regression.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/chromium/inventory.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/baseline/chromium/login.png" beforeDir="false" />
@@ -94,7 +98,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Markdown&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -262,5 +266,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Module 1 — Core Framework Foundation" />
     <option name="LAST_COMMIT_MESSAGE" value="Module 1 — Core Framework Foundation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/tests/hybrid/HybridLoginBypassTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

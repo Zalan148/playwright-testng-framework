@@ -77,7 +77,7 @@ jobs:
           name: test-videos-${{ matrix.browser }}
           path: videos
 
-      # Upload visual regression artifacts (only if tests fail)
+      # Upload visual regression artifacts (always)
       - name: Upload current screenshots
         if: always()
         uses: actions/upload-artifact@v4
